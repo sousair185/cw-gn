@@ -1,4 +1,6 @@
 import withStyles from '@mui/styles/withStyles';
+import "./App.css"
+import "@fontsource/raleway"
 
 const styles = theme => ({
   "@global": {
@@ -42,11 +44,15 @@ const styles = theme => ({
     ".row": {
       display: "flex",
       flexWrap: "wrap",
+      justifyContent: "start",
       marginRight: -theme.spacing(2),
       marginLeft: -theme.spacing(2)
     },
     ".container-fluid": {
       width: "100%",
+      height: "800px",
+      borderRadius: "15px",
+      marginTop: "10px",
       paddingRight: theme.spacing(2),
       paddingLeft: theme.spacing(2),
       marginRight: "auto",
@@ -78,9 +84,9 @@ const styles = theme => ({
       }
     },
     ".lg-p-top": {
-      paddingTop: `${theme.spacing(20)} !important`,
+      paddingTop: `${theme.spacing(10)} !important`,
       [theme.breakpoints.down('lg')]: {
-        paddingTop: `${theme.spacing(18)} !important`
+        paddingTop: `${theme.spacing(10)} !important`
       },
       [theme.breakpoints.down('md')]: {
         paddingTop: `${theme.spacing(16)} !important`

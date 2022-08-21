@@ -20,8 +20,13 @@ const Footer2 = () => {
         lowerColor="#3900E7"
         animationNegativeDelay={4}
       />
-      <Box style={{ background: `url(${footerbg})` }}>
-        <Container>
+      <Box style={{ backgroundColor: "#3900E7" }}>
+        <Container
+          style={{
+            background: `url(${footerbg})`,
+            borderRadius: 10,
+          }}
+        >
           <Row>
             <Column>
               <Heading>Sobre Nós</Heading>

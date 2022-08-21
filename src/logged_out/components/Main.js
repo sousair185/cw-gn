@@ -11,6 +11,7 @@ import DialogSelector from "./register_login/DialogSelector";
 import Routing from "./Routing";
 import smoothScrollTop from "../../shared/functions/smoothScrollTop";
 import Footer2 from "./footer/Footer2";
+import ContactCard from "./contactCard/ContactCard";
 
 AOS.init({ once: true });
 
@@ -131,6 +132,7 @@ function Main(props) {
         selectHome={selectHome}
         selectBlog={selectBlog}
       />
+      <ContactCard />
       <Footer2 />
     </div>
   );

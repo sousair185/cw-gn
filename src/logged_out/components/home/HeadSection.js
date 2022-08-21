@@ -6,6 +6,7 @@ import withStyles from "@mui/styles/withStyles";
 import WaveBorder from "../../../shared/components/WaveBorder";
 import ZoomImage from "../../../shared/components/ZoomImage";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import Headerbg from "../../../assets/header-bg.jpg"
 
 const styles = (theme) => ({
   extraLargeButtonLabel: {
@@ -15,6 +16,9 @@ const styles = (theme) => ({
     },
   },
   extraLargeButton: {
+    borderRadius: "30px",
+    paddingLeft: "30px",
+    paddingRight: "30px",
     paddingTop: theme.spacing(1.5),
     paddingBottom: theme.spacing(1.5),
     [theme.breakpoints.up("xs")]: {
@@ -61,6 +65,11 @@ const styles = (theme) => ({
     backgroundColor: theme.palette.secondary.main,
     paddingBottom: theme.spacing(2),
   },
+  bg: {
+    height: "100%",
+    width: "70%",
+    padding: "20px",
+  },
   image: {
     maxWidth: "100%",
     verticalAlign: "middle",
@@ -97,34 +106,44 @@ function HeadSection(props) {
   return (
     <Fragment>
       <div className={classNames("lg-p-top", classes.wrapper)}>
-        <div className={classNames("container-fluid", classes.container)}>
-          <Box display="flex" justifyContent="center" className="row">
-            <Card
-              className={classes.card}
-              data-aos-delay="200"
+        <div className={classNames("container-fluid-standard", classes.container)}>
+          <Box  data-aos-delay="200"
               data-aos="zoom-in"
-            >
+          display="flex" justifyContent="start" className={classes.bg}>
+            {/* <Card style={{backgroundColor: "#000", opacity: 0.1}}
+              // className={classes.bg}
+              
+            > */}
               <div className={classNames(classes.containerFix, "container")}>
-                <Box justifyContent="center" className="row">
-                  <Grid item xs={12} md={5}>
-                    <Box
+                <Box justifyContent="start" className="row">
+                  {/* <Grid item xs={12} md={5}> */}
+                    <Box 
                       display="flex"
                       flexDirection="column"
-                      justifyContent="center"
+                      justifyContent="start"
                       height="100%"
                     >
-                      <Box mb={4}>
+                      {/* <Box mb={4}>
                         <Typography variant={isWidthUpLg ? "h3" : "h4"}>
                           Geração Net - Internet Fibra Ótica de Ultravelocidade
                         </Typography>
-                      </Box>
-                      <div>
-                        <Box mb={2}>
+                      </Box> */}
+                      <div >
+                        <Box mb={1}
+                        style={{textAlign: "left"}}
+                        >
                           <Typography
-                            variant={isWidthUpLg ? "h6" : "body1"}
-                            color="textSecondary"
+                            variant={isWidthUpLg ? "h3" : "body1"}
+                            color="#fff"
                           >
-                            Consulte seu cep
+                            A ULTRAVELOCIDADE DA GERAÇÃO NET IRÁ TE SURPREENDER
+                            {/* <BuscaCep2 /> */}
+                          </Typography>
+                          <Typography
+                            variant={isWidthUpLg ? "h5" : "body1"}
+                            color="#fff"
+                          >
+                            Conheça nossas melhores opções de planos de internet para você e sua família! Muito mais diversão, qualidade e entretenimento!
                             {/* <BuscaCep2 /> */}
                           </Typography>
                         </Box>
@@ -140,8 +159,8 @@ function HeadSection(props) {
                         </Button>
                       </div>
                     </Box>
-                  </Grid>
-                  <Hidden mdDown>
+                  {/* </Grid> */}
+                  {/* <Hidden mdDown>
                     <Grid item md={1}>
                       <ZoomImage
                         src={`${process.env.PUBLIC_URL}/images/logged_out/co-face.png`}
@@ -150,10 +169,10 @@ function HeadSection(props) {
                         alt="header example"
                       />
                     </Grid>
-                  </Hidden>
+                  </Hidden> */}
                 </Box>
               </div>
-            </Card>
+            {/* </Card> */}
           </Box>
         </div>
       </div>

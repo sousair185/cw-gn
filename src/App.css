@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
-* {
+*,
+html,
+body,
+:root {
   font-family: "Raleway", sans-serif;
 }
 #root {
@@ -9,6 +12,7 @@
   margin: 0;
   padding: 0;
   text-align: center;
+  font-family: "Raleway", sans-serif;
 }
 
 .whats {
@@ -135,7 +139,6 @@ nav {
 }
 
 .form input {
-  /* text-align: center; */
   display: block;
   margin: 60px auto;
   font-weight: bold;
@@ -143,12 +146,8 @@ nav {
   max-width: 720px;
   width: 90%;
   height: 100%;
-  /* color: rgb(48, 8, 192); */
   padding: 15px;
   border: none;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px;
-  /* rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
-  /* background-color: #f38181; */
 }
 
 input[type="submit"] {
@@ -187,9 +186,11 @@ input[type="submit"]:hover {
 .data {
   list-style: none;
   color: white;
+  width: 80%;
+  margin: 0 auto;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  padding: 10px;
+  padding: 30px;
   background: rgb(0, 212, 255);
   background: linear-gradient(
     234deg,
@@ -199,9 +200,18 @@ input[type="submit"]:hover {
   );
 }
 
+.data-name {
+  font-size: 20px;
+}
+
+.data-desc {
+  font-size: 18px;
+}
+
 .ul-data {
-  padding: 10px;
+  padding: 20px 10px;
   margin: 0.1rem;
+  transition: all 0.3s ease;
 }
 
 li.data {
@@ -413,31 +423,241 @@ body {
 .container-box .box .content a {
   display: inline-block;
   font-size: 1.1em;
-  color: #111;
-  background: #fff;
-  padding: 10px;
-  border-radius: 4px;
+  color: rgb(11, 37, 85);
+  background: #00c8e2;
+  padding: 10px 20px;
+  border-radius: 25px;
   text-decoration: none;
   font-weight: 700;
   margin-top: 5px;
 }
 
 .container-box .box .content a:hover {
-  background: #3cc4f7;
+  background: #0c17ad;
   color: #fff;
-  /* border: 1px solid rgba(255, 0, 88, 0.4); */
   box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
 }
 
+.container-fluid-standard {
+  background-image: url("../src/assets/header-bg.jpg");
+  height: 55vw;
+  border-radius: 15px;
+  width: 95%;
+  margin: 0 auto;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-aboutus {
+  background-image: url("../src/assets/aboutus-bg.jpg");
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  min-height: 500px;
+  background-position: inherit;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.about-text {
+  color: #fff;
+  text-shadow: 0 1px 3px #000;
+  font-size: 20px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: left;
+  padding: 10px;
+}
+
+.about-text span.title {
+  color: #00aaac;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.about-btn {
+  background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
+  background-size: 800% 400%;
+  margin-top: 20px;
+  padding: 1em 2em;
+  display: inline-block;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 700;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  animation: gradient 10s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
+}
+
+.about-btn:hover {
+  animation: gradient 3s infinite;
+  transform: scale(1.05);
+}
+
+.about-btn:active {
+  animation: gradient 3s infinite;
+  transform: scale(0.8);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.card {
+  margin-top: 100px;
+  box-shadow: none;
+  border: 1px solid rgba(16, 24, 99, 0.37);
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  margin: 10px;
+  width: 190px;
+  height: 150px;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+.card2 {
+  width: 190px;
+  height: 150px;
+  color: #fff;
+  background-color: #6d00fb;
+  /* border-radius: 20px; */
+  transition: all 0.2s;
+}
+
+.card2:hover {
+  border-radius: 20px;
+}
+
+.card:hover {
+  transform: scale(0.9);
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
+}
+
+.container-business {
+  background-image: url("../src/assets/business-bg.png");
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  min-height: 880px;
+  background-position: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.business-text {
+  position: relative;
+  top: 180px;
+  color: #fff;
+  text-shadow: 0 1px 3px #000;
+  font-size: 20px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: left;
+  padding: 10px;
+}
+
+.business-text span.title {
+  color: #00aaac;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.container-contact {
+  background-image: url("../src/assets/contact-bg.jpg");
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.contact-text {
+  width: 50%;
+  height: 80%;
+  position: relative;
+  top: 15px;
+  right: 15rem;
+  color: #000;
+  text-shadow: 0 1px 3px #000;
+  font-size: 15px;
+  align-items: center;
+}
+
+.contact-text span.title {
+  color: #00aaac;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.container-contact a {
+  width: 100px;
+  height: 100px;
+}
+
+.contact-text span.subtitle {
+  color: #1b128e;
+  width: 100%;
+  text-align: center;
+  font-size: 19px;
+}
+
 @media screen and (max-width: 900px) {
+  .container-fluid-standard {
+    background-image: none;
+    height: auto;
+  }
   .container-fluid {
     display: flex;
     flex-flow: column-nowrap;
     flex-direction: column;
   }
+  .about-text {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 480px) {
+  .container-aboutus {
+    background-image: none;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      317deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 15%,
+      rgba(0, 212, 255, 1) 100%
+    );
+  }
   .nav-mobile {
     display: inline-flex;
     flex-direction: row;

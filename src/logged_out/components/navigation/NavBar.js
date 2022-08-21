@@ -16,7 +16,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import LockOpenIcon from "@mui/icons-material/LockOpen";
 import BookIcon from "@mui/icons-material/Book";
 import NavigationDrawer from "../../../shared/components/NavigationDrawer";
-import logo from "../../../assets/gn-logo.png";
+import logo from "../../../assets/menu-logo.png";
 import classNames from "classnames";
 const styles = (theme) => ({
   appBar: {
@@ -31,12 +31,12 @@ const styles = (theme) => ({
     fontSize: theme.typography.body1.fontSize,
     fontWeight: theme.typography.h6.fontWeight,
   },
-  brandText: {
-    fontFamily: "Raleway",
-    fontWeight: 400,
-  },
+  // brandText: {
+  //   fontFamily: "Raleway",
+  //   fontWeight: 400,
+  // },
   logo: {
-    width: "35px",
+    width: "200px",
   },
   noDecoration: {
     textDecoration: "none !important",
@@ -87,7 +87,7 @@ function NavBar(props) {
                 alt="gn-logo"
               />
             </a>
-            <Typography
+            {/* <Typography
               variant="h4"
               className={classes.brandText}
               display="inline"
@@ -102,7 +102,7 @@ function NavBar(props) {
               color="secondary"
             >
               Net
-            </Typography>
+            </Typography> */}
           </div>
           <div>
             <Hidden mdUp>

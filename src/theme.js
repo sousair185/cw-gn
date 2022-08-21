@@ -120,7 +120,7 @@ const theme = createTheme(({
     }
   },
   typography: {
-    useNextVariants: true
+    useNextVariants: false
   }
 }));
 

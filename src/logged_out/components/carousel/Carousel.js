@@ -1,34 +1,28 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import React from "react";
-import {
-  Card,
-  CardActionArea,
-  CardContent,
-  Grid,
-  Typography,
-} from "@mui/material";
+import { Card, CardActionArea, CardContent, Typography } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import DescriptionIcon from "@mui/icons-material/Description";
-import ComputerIcon from "@mui/icons-material/Computer";
-import CompassCalibrationIcon from "@mui/icons-material/CompassCalibration";
 import HeadsetMicIcon from "@mui/icons-material/HeadsetMic";
-import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
+import SpeedIcon from "@mui/icons-material/Speed";
+import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
+import ContactSupportIcon from "@mui/icons-material/ContactSupport";
 
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 1920, min: 1024 },
-    items: 6,
+    items: 5,
     slidesToSlide: 3,
   },
   desktop: {
     breakpoint: { max: 1024, min: 900 },
-    items: 5,
+    items: 3,
     slidesToSlide: 3,
   },
   tablet: {
     breakpoint: { max: 900, min: 464 },
-    items: 4,
+    items: 2,
     slidesToSlide: 2,
   },
   mobile: {
@@ -38,7 +32,7 @@ const responsive = {
   },
 };
 
-const iconSize = 30;
+const iconSize = 40;
 
 const features = [
   {
@@ -53,34 +47,34 @@ const features = [
   {
     color: "#7201B7",
     url: "https://www.google.com.br",
-    headline: "Recarga",
+    headline: "Teste a velocidade da sua internet",
     text: "Texto descritivo",
-    icon: <CalendarTodayIcon style={{ fontSize: iconSize }} />,
+    icon: <SpeedIcon style={{ fontSize: iconSize }} />,
     mdDelay: "200",
     smDelay: "200",
   },
   {
     color: "#480CA8",
     url: "https://www.google.com.br",
-    headline: "Consumo de internet",
+    headline: "Baixe nosso aplicativo",
     text: "Texto descritivo",
-    icon: <CompassCalibrationIcon style={{ fontSize: iconSize }} />,
+    icon: <PhoneIphoneIcon style={{ fontSize: iconSize }} />,
     mdDelay: "400",
     smDelay: "0",
   },
   {
     color: "#4895EF",
     url: "https://www.google.com.br",
-    headline: "Mudar senha do Wi-Fi",
+    headline: "Fale com o Suporte",
     text: "Texto descritivo",
-    icon: <ComputerIcon style={{ fontSize: iconSize }} />,
+    icon: <ContactSupportIcon style={{ fontSize: iconSize }} />,
     mdDelay: "0",
     smDelay: "200",
   },
   {
     color: "#4361EE",
     url: "https://www.google.com.br",
-    headline: "Suporte",
+    headline: "Fale com o Financeiro",
     text: "Whatsapp (11) 99991-0621",
     icon: <WhatsAppIcon style={{ fontSize: iconSize }} />,
     mdDelay: "200",
@@ -89,7 +83,7 @@ const features = [
   {
     color: "#4CC9F0",
     url: "https://www.google.com.br",
-    headline: "Todos os serviços",
+    headline: "Central do Assinante",
     text: "Texto descritivo",
     icon: <HeadsetMicIcon style={{ fontSize: iconSize }} />,
     mdDelay: "400",
@@ -99,7 +93,10 @@ const features = [
 
 export const Carrocel = () => {
   return (
-    <div>
+    <div className="container-fluid lg-p-top">
+      <Typography variant="h3" align="center" className="lg-mg-bottom">
+        Acesse com facilidade
+      </Typography>
       <Carousel
         swipeable={true}
         draggable={true}
@@ -111,34 +108,22 @@ export const Carrocel = () => {
         autoPlaySpeed={8000}
         keyBoardControl={true}
         customTransition="all .5"
-        transitionDuration={500}
+        transitionDuration={800}
         containerClass="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile"]}
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
       >
-        {/* <Grid
-          style={{
-            display: "flex",
-            justifyContent: "space-around",
-            padding: 20,
-            width: "fit-content",
-          }}
-        > */}
         {features.map((element) => (
-          <Card
-            style={{ width: 200, height: 150, margin: "5px" }}
-            data-aos="zoom-in-up"
-            key={element.headline}
-          >
-            <CardActionArea href={element.url}>
+          <Card className="card" key={element.headline}>
+            <CardActionArea href={element.url} className="card2">
               <CardContent>
+                {element.icon}
                 <Typography>{element.headline}</Typography>
               </CardContent>
             </CardActionArea>
           </Card>
         ))}
-        {/* </Grid> */}
       </Carousel>
     </div>
   );

@@ -1,10 +1,12 @@
 import React, { Fragment, useEffect } from "react";
 import PropTypes from "prop-types";
 import HeadSection from "./HeadSection";
-import FeatureSection from "./FeatureSection";
+// import FeatureSection from "./FeatureSection";
 import PricingSection from "./PricingSection";
 import BuscaCep2 from "../BuscaCep2/BuscaCep";
 import Carrocel from "../carousel/Carousel";
+import AboutUs from "../aboutus/AboutUs";
+import Business from "../business/Business";
 
 function Home(props) {
   const { selectHome } = props;
@@ -16,14 +18,16 @@ function Home(props) {
       <HeadSection />
       <BuscaCep2 />
       <PricingSection />
+      <AboutUs />
+      <Business />
       <Carrocel />
-      <FeatureSection />
+      {/* <FeatureSection /> */}
     </Fragment>
   );
 }
 
 Home.propTypes = {
-  selectHome: PropTypes.func.isRequired
+  selectHome: PropTypes.func.isRequired,
 };
 
 export default Home;

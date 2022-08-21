@@ -149,31 +149,31 @@ function PricingSection(props) {
     //     </Grid>
     //   </div>
     // </div>
-    <div class="container-box">
-      <div class="box">
+    <div className="container-box">
+      <div className="box">
         <span></span>
-        <div class="content">
+        <div className="content">
           <h2>Para Toda Família</h2>
           <PublicIcon /> <LiveTvIcon />
           <p>Filmes, Vídeos e Séries</p>
-          <a href="whatsapp://send?">Saiba Mais</a>
+          <a href="whatsapp://send?">Contratar</a>
         </div>
       </div>
-      <div class="box">
+      <div className="box">
         <span></span>
-        <div class="content">
+        <div className="content">
           <h2>Para Você</h2>
           <PublicIcon /> <SportsEsportsIcon />
-          <p>Jogar Online, Estudar e Navegar à vontade</p>
-          <a href="whatsapp://send?">Saiba Mais</a>
+          <p>Jogar Online, Estudar e Redes Sociais</p>
+          <a href="whatsapp://send?">Contratar</a>
         </div>
       </div>
-      <div class="box">
+      <div className="box">
         <span></span>
-        <div class="content">
+        <div className="content">
           <h2>Para Sua Empresa</h2>
-          <p>Texto</p>
-          <a href="whatsapp://send?">Saiba Mais</a>
+          <p>Ultravelocidade, Suporte e Qualidade</p>
+          <a href="whatsapp://send?">Contratar</a>
         </div>
       </div>
     </div>
