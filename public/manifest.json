@@ -1,0 +1,25 @@
+{
+  "short_name": "GN",
+  "name": "Geração Net",
+  "icons": [
+    {
+      "src": "../src/assets/gn-logo.ico",
+      "sizes": "64x64 32x32 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "../src/assets/gn-logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "../src/assets/gn-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#D32072",
+  "background_color": "#f5f5f5"
+}
