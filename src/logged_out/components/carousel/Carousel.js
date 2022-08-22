@@ -1,5 +1,3 @@
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
 import React from "react";
 import { Card, CardActionArea, CardContent, Typography } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
@@ -9,28 +7,7 @@ import SpeedIcon from "@mui/icons-material/Speed";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import ContactSupportIcon from "@mui/icons-material/ContactSupport";
 
-const responsive = {
-  superLargeDesktop: {
-    breakpoint: { max: 1920, min: 1024 },
-    items: 5,
-    slidesToSlide: 3,
-  },
-  desktop: {
-    breakpoint: { max: 1024, min: 900 },
-    items: 3,
-    slidesToSlide: 3,
-  },
-  tablet: {
-    breakpoint: { max: 900, min: 464 },
-    items: 2,
-    slidesToSlide: 2,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-    slidesToSlide: 1,
-  },
-};
+
 
 const iconSize = 40;
 
@@ -93,38 +70,22 @@ const features = [
 
 export const Carrocel = () => {
   return (
-    <div className="container-fluid lg-p-top">
+    <div>
       <Typography variant="h3" align="center" className="lg-mg-bottom">
         Acesse com facilidade
       </Typography>
-      <Carousel
-        swipeable={true}
-        draggable={true}
-        showDots={false}
-        responsive={responsive}
-        ssr={true} // means to render carousel on server-side.
-        infinite={true}
-        autoPlay={true}
-        autoPlaySpeed={8000}
-        keyBoardControl={true}
-        customTransition="all .5"
-        transitionDuration={800}
-        containerClass="carousel-container"
-        removeArrowOnDeviceType={["tablet", "mobile"]}
-        dotListClass="custom-dot-list-style"
-        itemClass="carousel-item-padding-40-px"
-      >
+      <div className="container-carrocel">
         {features.map((element) => (
           <Card className="card" key={element.headline}>
             <CardActionArea href={element.url} className="card2">
               <CardContent>
                 {element.icon}
-                <Typography>{element.headline}</Typography>
+                <Typography variant="h5">{element.headline}</Typography>
               </CardContent>
             </CardActionArea>
           </Card>
         ))}
-      </Carousel>
+      </div>
     </div>
   );
 };

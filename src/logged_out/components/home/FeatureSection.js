@@ -15,7 +15,7 @@ import { withTheme } from "@mui/styles";
 import FeatureCard from "./FeatureCard";
 import useWidth from "../../../shared/functions/useWidth";
 
-const iconSize = 30;
+const iconSize = 22;
 
 const features = [
   {

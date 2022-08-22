@@ -1,12 +1,10 @@
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import { Grid, Typography, Card, Button, Hidden, Box } from "@mui/material";
+import { Typography, Button, Box } from "@mui/material";
 import withStyles from "@mui/styles/withStyles";
 import WaveBorder from "../../../shared/components/WaveBorder";
-import ZoomImage from "../../../shared/components/ZoomImage";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import Headerbg from "../../../assets/header-bg.jpg"
 
 const styles = (theme) => ({
   extraLargeButtonLabel: {
@@ -110,44 +108,32 @@ function HeadSection(props) {
           <Box  data-aos-delay="200"
               data-aos="zoom-in"
           display="flex" justifyContent="start" className={classes.bg}>
-            {/* <Card style={{backgroundColor: "#000", opacity: 0.1}}
-              // className={classes.bg}
-              
-            > */}
               <div className={classNames(classes.containerFix, "container")}>
                 <Box justifyContent="start" className="row">
-                  {/* <Grid item xs={12} md={5}> */}
                     <Box 
                       display="flex"
                       flexDirection="column"
                       justifyContent="start"
                       height="100%"
                     >
-                      {/* <Box mb={4}>
-                        <Typography variant={isWidthUpLg ? "h3" : "h4"}>
-                          Geração Net - Internet Fibra Ótica de Ultravelocidade
-                        </Typography>
-                      </Box> */}
                       <div >
                         <Box mb={1}
                         style={{textAlign: "left"}}
                         >
-                          <Typography
-                            variant={isWidthUpLg ? "h3" : "body1"}
-                            color="#fff"
+                          <Typography sx={{textAlign: "center", marginTop: 8, fontSize: 30}}
+                            variant={isWidthUpLg ? "h2" : "body1"}
+                            // color="#fff"
                           >
                             A ULTRAVELOCIDADE DA GERAÇÃO NET IRÁ TE SURPREENDER
-                            {/* <BuscaCep2 /> */}
                           </Typography>
-                          <Typography
-                            variant={isWidthUpLg ? "h5" : "body1"}
-                            color="#fff"
+                          <Typography sx={{marginTop: 8, fontSize: 25}}
+                            variant={isWidthUpLg ? "h4" : "body1"}
+                            // color="#fff"
                           >
                             Conheça nossas melhores opções de planos de internet para você e sua família! Muito mais diversão, qualidade e entretenimento!
-                            {/* <BuscaCep2 /> */}
                           </Typography>
                         </Box>
-                        <Button
+                        <Button sx={{marginTop: 8}}
                           variant="contained"
                           color="secondary"
                           // fullWidth
@@ -159,20 +145,9 @@ function HeadSection(props) {
                         </Button>
                       </div>
                     </Box>
-                  {/* </Grid> */}
-                  {/* <Hidden mdDown>
-                    <Grid item md={1}>
-                      <ZoomImage
-                        src={`${process.env.PUBLIC_URL}/images/logged_out/co-face.png`}
-                        className={classNames(classes.image, "logo-home")}
-                        
-                        alt="header example"
-                      />
-                    </Grid>
-                  </Hidden> */}
+
                 </Box>
               </div>
-            {/* </Card> */}
           </Box>
         </div>
       </div>

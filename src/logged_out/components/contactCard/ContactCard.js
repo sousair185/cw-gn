@@ -1,4 +1,3 @@
-import { Facebook, Instagram } from "@mui/icons-material";
 import React from "react";
 
 const ContactCard = () => {
@@ -13,15 +12,6 @@ const ContactCard = () => {
         <p>Rua Pedro Elias, 681 - Vista Alegre, Limeira - SP, 13487-031</p>
         <span className="subtitle">E-mail</span>
         <p>atendimento@geracaonet.com.br</p>
-        <span className="subtitle">Siga nossas redes sociais</span>
-        <p>
-          <a href="https://www.instagram.com/geracaonet">
-            <Instagram sx={{ fontSize: 50, color: "#170061" }} />
-          </a>
-          <a href="https://www.facebook.com/geracaonet">
-            <Facebook sx={{ fontSize: 50, color: "#170061" }} />
-          </a>
-        </p>
       </div>
     </div>
   );
