@@ -7,8 +7,6 @@ import SpeedIcon from "@mui/icons-material/Speed";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import ContactSupportIcon from "@mui/icons-material/ContactSupport";
 
-
-
 const iconSize = 40;
 
 const features = [
@@ -71,8 +69,15 @@ const features = [
 export const Carrocel = () => {
   return (
     <div>
-      <Typography variant="h3" align="center" className="lg-mg-bottom">
+      <Typography
+        variant="h4"
+        align="center"
+        sx={{ paddingBottom: 2, fontWeight: "bold" }}
+      >
         Acesse com facilidade
+      </Typography>
+      <Typography variant="h5" align="left" className="carrocel-subtitle">
+        Tudo o que você precisa a um clique!
       </Typography>
       <div className="container-carrocel">
         {features.map((element) => (
@@ -80,7 +85,7 @@ export const Carrocel = () => {
             <CardActionArea href={element.url} className="card2">
               <CardContent>
                 {element.icon}
-                <Typography variant="h5">{element.headline}</Typography>
+                <Typography variant="h6">{element.headline}</Typography>
               </CardContent>
             </CardActionArea>
           </Card>

@@ -4,13 +4,13 @@ import { Typography, Box } from "@mui/material";
 // import SettingsArea from "./SettingsArea";
 // import UserDataArea from "./UserDataArea";
 import AccountInformationArea from "./AccountInformationArea";
-import StatisticsArea from "./StatisticsArea";
+// import StatisticsArea from "./StatisticsArea";
 
 function Dashboard(props) {
   const {
     selectDashboard,
-    CardChart,
-    statistics,
+    // CardChart,
+    // statistics,
     toggleAccountActivation,
     // pushMessageToSnackbar,
     // targets,
@@ -22,7 +22,7 @@ function Dashboard(props) {
 
   return (
     <Fragment>
-      <StatisticsArea CardChart={CardChart} data={statistics} />
+      {/* <StatisticsArea CardChart={CardChart} data={statistics} /> */}
       <Box mt={4}>
         <Typography variant="subtitle1" gutterBottom>
           Sua Conta

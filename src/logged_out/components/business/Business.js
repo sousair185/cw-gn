@@ -5,19 +5,19 @@ const Business = () => {
   return (
     <div className="container-business">
       <div className="business-text">
-        <span className="title">PARA SUA EMPRESA</span>
-        <p>CONHEÇA AS SOLUÇÕES DE CONECTIVIDADE PARA SUA EMPRESA</p>
+        <p>Conheça as soluções de conectividade</p>
+        <span className="title">Para sua empresa</span>
         <span className="business-detail">
           Desenvolvemos projetos de telecomunicação personalizados que atendem
           as necessidades de empresas exigentes que buscam segurança, alta
           qualidade e ultravelocidade.
         </span>
-        <span className="title">O QUE OFERECEMOS:</span>
+        <span className="title">O que oferecemos:</span>
         <List
           sx={{ width: "100%", maxWidth: 660 }}
           arial-label="business-services"
         >
-          <ListItem disablePadding>
+          <ListItem disablePadding >
             <ListItemText primary="Internet banda larga (fibra óptica)" />
           </ListItem>
           <ListItem disablePadding>

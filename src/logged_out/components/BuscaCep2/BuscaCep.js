@@ -1,15 +1,34 @@
-/* eslint-disable jsx-a11y/accessible-emoji */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import { Link, List, Typography } from "@mui/material";
 import React, { useState } from "react";
 import ReactModal from "react-modal";
+import CheckIcon from "@mui/icons-material/Check";
 
 const CEPS = [
-  { id: 1, name: "13480001", desc: "Nossa tecnologia cobre este endereço" },
-  { id: 2, name: "13480002", desc: "Nossa tecnologia cobre este endereço" },
-  { id: 3, name: "13480003", desc: "Nossa tecnologia cobre este endereço" },
-  { id: 4, name: "13480004", desc: "Nossa tecnologia cobre este endereço" },
-  { id: 5, name: "13480005", desc: "Nossa tecnologia cobre este endereço" },
+  {
+    id: 1,
+    name: "13480001",
+    desc: "Nossa tecnologia está disponível neste endereço",
+  },
+  {
+    id: 2,
+    name: "13480002",
+    desc: "Nossa tecnologia está disponível neste endereço",
+  },
+  {
+    id: 3,
+    name: "13480003",
+    desc: "Nossa tecnologia está disponível neste endereço",
+  },
+  {
+    id: 4,
+    name: "13480004",
+    desc: "Nossa tecnologia está disponível neste endereço",
+  },
+  {
+    id: 5,
+    name: "13480005",
+    desc: "Nossa tecnologia está disponível neste endereço",
+  },
 ];
 
 ReactModal.setAppElement("#root");
@@ -71,36 +90,48 @@ function BuscaCep2() {
 
   return (
     <div className="form">
+      <Typography
+        variant="h4"
+        align="center"
+        sx={{ paddingTop: 2, fontWeight: "bold" }}
+      >
+        Confira se nossa ultravelocidade
+      </Typography>
+      <Typography
+        variant="h4"
+        align="center"
+        sx={{ paddingBottom: 2, fontWeight: "bold" }}
+      >
+        está disponível no seu endereço
+      </Typography>
       <input
         type="search"
         value={cep}
         onChange={filter}
         className="input"
-        placeholder="Consulte seu cep"
+        placeholder="🔍 Consulte seu CEP"
         maxLength={8}
         autoComplete="off"
         name="text"
       />
+      <p className="input-detail">
+        Caso sua região ainda não seja atendida por nós{" "}
+        <a href="/planos">clique aqui</a>
+      </p>
       <br />
       {foundData.length === 1 ? (
         <List className="ul-data" data-aos-delay="200">
           {foundData.map((data) => (
-            <List key={data.id} className="data" >
-              <Typography
-                component={"span"}
-                className="data-name"
-              >
-                ✅ {data.name},
+            <List key={data.id} className="data">
+              <Typography component={"span"} className="data-name">
+                <CheckIcon />
               </Typography>
-              <Typography
-                component={"span"}
-                className="data-desc"
-              >
+              <Typography component={"span"} className="data-desc">
                 {" "}
                 {data.desc}
               </Typography>
               <br />
-              <Typography>
+              <Typography className="data-desc">
                 <Link className="link" href="/planos">
                   Clique aqui{" "}
                 </Link>
@@ -112,10 +143,6 @@ function BuscaCep2() {
       ) : (
         <ExampleApp {...props} className="modal" />
       )}
-      <p>
-        Caso sua região ainda não seja atendida por nós{" "}
-        <a href="#">clique aqui</a>
-      </p>
     </div>
   );
 }

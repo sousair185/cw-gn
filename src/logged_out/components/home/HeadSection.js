@@ -1,10 +1,10 @@
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import { Typography, Button, Box } from "@mui/material";
+import { Box } from "@mui/material";
 import withStyles from "@mui/styles/withStyles";
 import WaveBorder from "../../../shared/components/WaveBorder";
-import useMediaQuery from "@mui/material/useMediaQuery";
+import HeaderCarrocel from "../header/HeaderCarrocel";
 
 const styles = (theme) => ({
   extraLargeButtonLabel: {
@@ -61,18 +61,16 @@ const styles = (theme) => ({
   wrapper: {
     position: "relative",
     backgroundColor: theme.palette.secondary.main,
-    paddingBottom: theme.spacing(2),
+    paddingBottom: theme.spacing(1),
   },
   bg: {
     height: "100%",
-    width: "70%",
-    padding: "20px",
+    width: "100%",
   },
   image: {
     maxWidth: "100%",
     verticalAlign: "middle",
     borderRadius: theme.shape.borderRadius,
-    // boxShadow: theme.shadows[6],
   },
   container: {
     marginTop: theme.spacing(6),
@@ -97,56 +95,24 @@ const styles = (theme) => ({
   },
 });
 
+
+
 function HeadSection(props) {
   const { classes, theme } = props;
-  const isWidthUpLg = useMediaQuery(theme.breakpoints.up("lg"));
 
   return (
     <Fragment>
-      <div className={classNames("lg-p-top", classes.wrapper)}>
-        <div className={classNames("container-fluid-standard", classes.container)}>
-          <Box  data-aos-delay="200"
-              data-aos="zoom-in"
-          display="flex" justifyContent="start" className={classes.bg}>
-              <div className={classNames(classes.containerFix, "container")}>
-                <Box justifyContent="start" className="row">
-                    <Box 
-                      display="flex"
-                      flexDirection="column"
-                      justifyContent="start"
-                      height="100%"
-                    >
-                      <div >
-                        <Box mb={1}
-                        style={{textAlign: "left"}}
-                        >
-                          <Typography sx={{textAlign: "center", marginTop: 8, fontSize: 30}}
-                            variant={isWidthUpLg ? "h2" : "body1"}
-                            // color="#fff"
-                          >
-                            A ULTRAVELOCIDADE DA GERAÇÃO NET IRÁ TE SURPREENDER
-                          </Typography>
-                          <Typography sx={{marginTop: 8, fontSize: 25}}
-                            variant={isWidthUpLg ? "h4" : "body1"}
-                            // color="#fff"
-                          >
-                            Conheça nossas melhores opções de planos de internet para você e sua família! Muito mais diversão, qualidade e entretenimento!
-                          </Typography>
-                        </Box>
-                        <Button sx={{marginTop: 8}}
-                          variant="contained"
-                          color="secondary"
-                          // fullWidth
-                          className={classes.extraLargeButton}
-                          classes={{ label: classes.extraLargeButtonLabel }}
-                          href="/planos"
-                        >
-                          Planos
-                        </Button>
-                      </div>
-                    </Box>
-
-                </Box>
+      <div className={classNames(classes.wrapper)}>
+        <div className={classNames("container-fluid-standard")}>
+          <Box
+            data-aos-delay="200"
+            data-aos="zoom-in"
+            display="flex"
+            justifyContent="start"
+          >
+            <div className={classNames(classes.containerFix, "header-container")}>
+            <HeaderCarrocel />
+                
               </div>
           </Box>
         </div>

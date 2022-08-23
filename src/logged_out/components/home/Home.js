@@ -7,6 +7,7 @@ import Carrocel from "../carousel/Carousel";
 import AboutUs from "../aboutus/AboutUs";
 import Business from "../business/Business";
 import ClientsCarrocel from "../clients/ClientsCarrocel";
+import ContactCard from "../contactCard/ContactCard";
 
 function Home(props) {
   const { selectHome } = props;
@@ -19,9 +20,10 @@ function Home(props) {
       <BuscaCep2 />
       <PricingSection />
       <AboutUs />
-      <ClientsCarrocel />
       <Business />
+      <ClientsCarrocel />
       <Carrocel />
+      <ContactCard />
     </Fragment>
   );
 }

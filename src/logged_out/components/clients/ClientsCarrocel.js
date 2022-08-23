@@ -39,38 +39,42 @@ const clients = [
 export const ClientsCarrocel = () => {
   return (
     <div className="container-clients">
-      <Typography variant="h3" align="center" className="lg-mg-bottom">
+      <Typography
+        variant="h4"
+        align="center"
+        sx={{ paddingBottom: 2, fontWeight: "bold" }}
+      >
         Alguns de nossos clientes
       </Typography>
       <Carousel
         swipeable={true}
-  draggable={false}
-  showDots={false}
-  responsive={responsive}
-  ssr={true} // means to render carousel on server-side.
-  infinite={true}
-  autoPlay={true}
-  autoPlaySpeed={5000}
-  keyBoardControl={true}
-  customTransition="all .5"
-  transitionDuration={500}
-  containerClass="carousel-container"
-  removeArrowOnDeviceType={["tablet", "mobile"]}
-  deviceType={responsive}
-  dotListClass="custom-dot-list-style"
-  itemClass="carousel-item-padding-40-px"
+        draggable={false}
+        showDots={false}
+        responsive={responsive}
+        ssr={true} // means to render carousel on server-side.
+        infinite={true}
+        autoPlay={true}
+        autoPlaySpeed={5000}
+        keyBoardControl={true}
+        customTransition="all .5"
+        transitionDuration={500}
+        containerClass="carousel-container"
+        removeArrowOnDeviceType={["tablet", "mobile"]}
+        deviceType={responsive}
+        dotListClass="custom-dot-list-style"
+        itemClass="carousel-item-padding-40-px"
       >
         {/* <div className="client-container"> */}
-          {clients.map((element) => (
-            <img
-              className="client-icon"
-              key={element.nome}
-              data-aos="zoom-in-up"
-              data-aos-delay="200"
-              src={element.icon}
-              alt={element.nome}
-            />
-          ))}
+        {clients.map((element) => (
+          <img
+            className="client-icon"
+            key={element.nome}
+            data-aos="zoom-in-up"
+            data-aos-delay="200"
+            src={element.icon}
+            alt={element.nome}
+          />
+        ))}
         {/* </div> */}
       </Carousel>
     </div>

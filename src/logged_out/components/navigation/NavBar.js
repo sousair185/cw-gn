@@ -24,18 +24,10 @@ const styles = (theme) => ({
   },
   toolbar: {
     display: "flex",
-    justifyContent: "space-between",
+    justifyContent: "space-around",
   },
-  menuButtonText: {
-    fontSize: theme.typography.body1.fontSize,
-    fontWeight: theme.typography.h6.fontWeight,
-  },
-  // brandText: {
-  //   fontFamily: "Raleway",
-  //   fontWeight: 400,
-  // },
   logo: {
-    width: "200px",
+    width: "300px",
   },
   noDecoration: {
     textDecoration: "none !important",
@@ -63,6 +55,31 @@ function NavBar(props) {
       name: "Planos",
       icon: <BookIcon className="text-white" />,
     },
+    {
+      link: "",
+      name: "Sobre nós",
+      icon: <BookIcon className="text-white" />,
+    },
+    {
+      link: "",
+      name: "Para você",
+      icon: <BookIcon className="text-white" />,
+    },
+    {
+      link: "",
+      name: "Para sua empresa",
+      icon: <BookIcon className="text-white" />,
+    },
+    {
+      link: "",
+      name: "Contrate",
+      icon: <BookIcon className="text-white" />,
+    },
+    {
+      link: "",
+      name: "Área do Assinante",
+      icon: <BookIcon className="text-white" />,
+    },
     // {
     //   name: "Registro",
     //   onClick: openRegisterDialog,
@@ -86,22 +103,6 @@ function NavBar(props) {
                 alt="gn-logo"
               />
             </a>
-            {/* <Typography
-              variant="h4"
-              className={classes.brandText}
-              display="inline"
-              color="primary"
-            >
-              Geração
-            </Typography>
-            <Typography
-              variant="h4"
-              className={classes.brandText}
-              display="inline"
-              color="secondary"
-            >
-              Net
-            </Typography> */}
           </div>
           <div>
             <Hidden mdUp>
@@ -111,7 +112,7 @@ function NavBar(props) {
                 aria-label="Abrir navegação"
                 size="large"
               >
-                <MenuIcon color="primary" />
+                <MenuIcon color="secondary" />
               </IconButton>
             </Hidden>
             <Hidden mdDown>
@@ -125,9 +126,7 @@ function NavBar(props) {
                       onClick={handleMobileDrawerClose}
                     >
                       <Button
-                        color="secondary"
-                        size="large"
-                        classes={{ text: classes.menuButtonText }}
+                        className="menu-text"
                       >
                         {element.name}
                       </Button>
@@ -136,10 +135,8 @@ function NavBar(props) {
                 }
                 return (
                   <Button
-                    color="secondary"
-                    size="large"
                     onClick={element.onClick}
-                    classes={{ text: classes.menuButtonText }}
+                    className="menu-text"
                     key={element.name}
                   >
                     {element.name}

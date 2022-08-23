@@ -1,9 +1,10 @@
 import React from "react";
 
-import PublicIcon from "@mui/icons-material/Public";
 import LiveTvIcon from "@mui/icons-material/LiveTv";
 import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
-
+import CableIcon from '@mui/icons-material/Cable';
+import WifiSharpIcon from '@mui/icons-material/WifiSharp';
+import AssuredWorkloadSharpIcon from '@mui/icons-material/AssuredWorkloadSharp';
 
 
 function PricingSection() {
@@ -12,28 +13,38 @@ function PricingSection() {
 
     <div className="container-box">
       <div className="box">
-        <span></span>
         <div className="content">
-          <h2>Para Toda Família</h2>
-          <PublicIcon /> <LiveTvIcon />
-          <p>Filmes, Vídeos e Séries</p>
+        <span>Para</span>
+          <h2>Família</h2>
+          <div className="box-list">
+          <p><CableIcon sx={{marginRight: 0.6}}/> 100% Fibra Óptica</p> 
+          <p><WifiSharpIcon sx={{marginRight: 0.6}}/> Wi-fi incluso</p>
+          <p><LiveTvIcon sx={{marginRight: 0.6}}/> Assista Filmes, Séries e Vídeos</p>
+          </div>
           <a href="whatsapp://send?">Contratar</a>
         </div>
       </div>
       <div className="box">
-        <span></span>
         <div className="content">
-          <h2>Para Você</h2>
-          <PublicIcon /> <SportsEsportsIcon />
-          <p>Jogar Online, Estudar e Redes Sociais</p>
+        <span>Para</span>
+          <h2>Você</h2>
+          <div className="box-list">
+          <p><CableIcon sx={{marginRight: 0.6}}/> 100% Fibra Óptica</p> 
+          <p><WifiSharpIcon sx={{marginRight: 0.6}}/> Wi-fi incluso</p>
+          <p><SportsEsportsIcon sx={{marginRight: 0.6}}/> Jogue com ping baixo</p>
+          </div>
           <a href="whatsapp://send?">Contratar</a>
         </div>
       </div>
       <div className="box">
-        <span></span>
         <div className="content">
-          <h2>Para Sua Empresa</h2>
-          <p>Ultravelocidade, Suporte e Qualidade</p>
+        <span>Para</span>
+          <h2>Empresas</h2>
+          <div className="box-list">
+          <p><CableIcon sx={{marginRight: 0.6}}/> 100% Fibra Óptica</p> 
+          <p><WifiSharpIcon sx={{marginRight: 0.6}}/> Wi-fi incluso</p>
+          <p><AssuredWorkloadSharpIcon sx={{marginRight: 0.6}}/> Suporte, estabilidade e segurança</p>
+          </div>
           <a href="whatsapp://send?">Contratar</a>
         </div>
       </div>
