@@ -32,18 +32,18 @@ export const HeaderCarrocel = () => {
     <div className="container-banners">
       <Carousel
         swipeable={false}
-        draggable={false}
+        draggable={true}
         showDots={false}
         responsive={responsive}
         ssr={true} // means to render carousel on server-side.
         infinite={true}
         autoPlay={true}
-        autoPlaySpeed={5000}
-        keyBoardControl={false}
+        autoPlaySpeed={3000}
+        keyBoardControl={true}
         customTransition="all .5"
-        transitionDuration={800}
+        transitionDuration={300}
         containerClass="carousel-container"
-        removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
+        removeArrowOnDeviceType={["mobile"]}
         deviceType={responsive}
       >
         {banners.map((element) => (

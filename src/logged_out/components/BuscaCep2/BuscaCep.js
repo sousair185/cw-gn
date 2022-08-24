@@ -120,7 +120,7 @@ function BuscaCep2() {
       </p>
       <br />
       {foundData.length === 1 ? (
-        <List className="ul-data" data-aos-delay="200">
+        <List className="ul-data" data-aos="zoom-in-up" data-aos-delay="200">
           {foundData.map((data) => (
             <List key={data.id} className="data">
               <Typography component={"span"} className="data-name">

@@ -17,25 +17,25 @@ const Business = () => {
           sx={{ width: "100%", maxWidth: 660 }}
           arial-label="business-services"
         >
-          <ListItem disablePadding>
+          <ListItem disablePadding data-aos="fade-right" data-aos-delay="300">
             <ListItemText primary="Internet banda larga (fibra óptica)" />
           </ListItem>
-          <ListItem disablePadding>
+          <ListItem disablePadding data-aos="fade-right" data-aos-delay="600">
             <ListItemText primary="IP dinâmico ou fixo" />
           </ListItem>
-          <ListItem disablePadding>
+          <ListItem disablePadding data-aos="fade-right" data-aos-delay="900">
             <ListItemText primary="SLA de 12 ou 24 horas" />
           </ListItem>
-          <ListItem disablePadding>
+          <ListItem disablePadding data-aos="fade-right" data-aos-delay="1200">
             <ListItemText primary="90% de garantia de banda" />
           </ListItem>
-          <ListItem disablePadding>
+          <ListItem disablePadding data-aos="fade-right" data-aos-delay="1500">
             <ListItemText primary="50% de upload da velocidade contratada" />
           </ListItem>
-          <ListItem disablePadding>
+          <ListItem disablePadding data-aos="fade-right" data-aos-delay="1800">
             <ListItemText primary="Suporte técnico especializado das 8h às 23h" />
           </ListItem>
-          <ListItem disablePadding>
+          <ListItem disablePadding data-aos="fade-right" data-aos-delay="2100">
             <ListItemText primary="Segurança dos dados da sua empresa" />
           </ListItem>
         </List>

@@ -95,8 +95,6 @@ const styles = (theme) => ({
   },
 });
 
-
-
 function HeadSection(props) {
   const { classes, theme } = props;
 
@@ -110,11 +108,21 @@ function HeadSection(props) {
             display="flex"
             justifyContent="start"
           >
-            <div className={classNames(classes.containerFix, "header-container")}>
-            <HeaderCarrocel />
-                
-              </div>
+            <div
+              className={classNames(classes.containerFix, "header-container")}
+            >
+              <HeaderCarrocel />
+            </div>
           </Box>
+        </div>
+        <div className="btn-home">
+          <a className="animated-button1" href="/planos">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Contrate Aqui
+          </a>
         </div>
       </div>
       <WaveBorder

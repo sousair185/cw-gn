@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const Box = styled.div`
-  padding: 80px 60px;
+  padding: 60px 40px;
   color: #fff;
   /* height: 400px; */
-  text-shadow: 1px 1px 2px black;
+  /* text-shadow: 1px 1px 2px black; */
   /* background: rgb(0, 245, 214);
   background: linear-gradient(
     90deg,
@@ -40,7 +40,8 @@ export const Column = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin-left: 60px;
+  margin-left: 10px;
+  width: 100%;
 `;
 
 export const Row = styled.div`

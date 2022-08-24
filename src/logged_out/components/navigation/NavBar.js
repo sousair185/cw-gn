@@ -1,13 +1,7 @@
 import React, { memo } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import {
-  AppBar,
-  Toolbar,
-  Button,
-  Hidden,
-  IconButton,
-} from "@mui/material";
+import { AppBar, Toolbar, Button, Hidden, IconButton } from "@mui/material";
 import withStyles from "@mui/styles/withStyles";
 import MenuIcon from "@mui/icons-material/Menu";
 import HomeIcon from "@mui/icons-material/Home";
@@ -16,6 +10,8 @@ import LockOpenIcon from "@mui/icons-material/LockOpen";
 import BookIcon from "@mui/icons-material/Book";
 import NavigationDrawer from "../../../shared/components/NavigationDrawer";
 import logo from "../../../assets/menu-logo.png";
+import mascote from "../../../assets/mascote.png";
+
 import classNames from "classnames";
 const styles = (theme) => ({
   appBar: {
@@ -125,11 +121,7 @@ function NavBar(props) {
                       className={classes.noDecoration}
                       onClick={handleMobileDrawerClose}
                     >
-                      <Button
-                        className="menu-text"
-                      >
-                        {element.name}
-                      </Button>
+                      <Button className="menu-text">{element.name}</Button>
                     </Link>
                   );
                 }
@@ -146,6 +138,9 @@ function NavBar(props) {
             </Hidden>
           </div>
         </Toolbar>
+        <a href="whatsapp://send?">
+          <img src={mascote} alt="mascote-geração-net" className="mascote-gn" />
+        </a>
       </AppBar>
       <NavigationDrawer
         menuItems={menuItems}

@@ -47,24 +47,24 @@ export const ClientsCarrocel = () => {
         Alguns de nossos clientes
       </Typography>
       <Carousel
-        swipeable={true}
+        centerMode={true}
+        swipeable={false}
         draggable={false}
         showDots={false}
         responsive={responsive}
         ssr={true} // means to render carousel on server-side.
         infinite={true}
         autoPlay={true}
-        autoPlaySpeed={5000}
-        keyBoardControl={true}
+        autoPlaySpeed={3000}
+        keyBoardControl={false}
         customTransition="all .5"
         transitionDuration={500}
         containerClass="carousel-container"
-        removeArrowOnDeviceType={["tablet", "mobile"]}
+        removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
         deviceType={responsive}
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
       >
-        {/* <div className="client-container"> */}
         {clients.map((element) => (
           <img
             className="client-icon"
@@ -75,7 +75,6 @@ export const ClientsCarrocel = () => {
             alt={element.nome}
           />
         ))}
-        {/* </div> */}
       </Carousel>
     </div>
   );
