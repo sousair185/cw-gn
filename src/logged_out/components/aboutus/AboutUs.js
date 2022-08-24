@@ -23,8 +23,8 @@ const AboutUs = () => {
         <span>
           
         </span>
-        <a href="/planos" className="about-btn">Conheça nossos Planos</a>
       </div>
+        <a href="/planos" className="about-btn">Conheça nossos Planos</a>
     </div>
   );
 };

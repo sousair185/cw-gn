@@ -17,7 +17,7 @@ const Business = () => {
           sx={{ width: "100%", maxWidth: 660 }}
           arial-label="business-services"
         >
-          <ListItem disablePadding >
+          <ListItem disablePadding>
             <ListItemText primary="Internet banda larga (fibra óptica)" />
           </ListItem>
           <ListItem disablePadding>
