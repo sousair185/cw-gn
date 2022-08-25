@@ -1,4 +1,4 @@
-import { Email, Facebook, Instagram } from "@mui/icons-material";
+import { Facebook, Instagram } from "@mui/icons-material";
 import footerbg from "../../../assets/fbgtexture.png";
 import React from "react";
 import {
@@ -9,7 +9,6 @@ import {
   FooterLink,
   Heading,
 } from "./FooterStyles";
-import Phone from "@mui/icons-material/Phone";
 import WaveBorder from "../../../shared/components/WaveBorder";
 
 const Footer2 = () => {
@@ -17,14 +16,14 @@ const Footer2 = () => {
     <footer className="lg-p-top">
       <WaveBorder
         upperColor="#FFFFFF"
-        lowerColor="#3900E7"
-        animationNegativeDelay={4}
+        lowerColor="#170061"
+        animationNegativeDelay={3}
       />
-      <Box style={{ backgroundColor: "#3900E7" }}>
+      <Box style={{ backgroundColor: "#170061" }}>
         <Container
           style={{
             background: `url(${footerbg})`,
-            width: "100vw",
+            width: "100%",
           }}
         >
           <Row>
@@ -34,11 +33,9 @@ const Footer2 = () => {
             </Column>
             <Column>
               <Heading>Contato</Heading>
-                <Phone />
               <span>
                 (19) 9 9893-0633
               </span>
-                <Email />
               <span>
                 atendimento@geracaonet.com.br
               </span>

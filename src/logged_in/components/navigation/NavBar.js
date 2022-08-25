@@ -109,7 +109,7 @@ const styles = (theme) => ({
   },
   brandText: {
     fontFamily: "Raleway",
-    fontWeight: 400,
+    fontWeight: "bold",
   },
   username: {
     paddingLeft: 0,

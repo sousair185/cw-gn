@@ -1,5 +1,6 @@
 import { List, ListItem, ListItemText } from "@mui/material";
 import React from "react";
+import businessicon from "../../../assets/business-icon.png";
 
 const Business = () => {
   return (
@@ -40,6 +41,7 @@ const Business = () => {
           </ListItem>
         </List>
       </div>
+      <img src={businessicon} alt="business-icon" className="business-icon" />
     </div>
   );
 };

@@ -1,35 +1,7 @@
 import { Link, List, Typography } from "@mui/material";
 import React, { useState } from "react";
 import ReactModal from "react-modal";
-import CheckIcon from "@mui/icons-material/Check";
-
-const CEPS = [
-  {
-    id: 1,
-    name: "13480001",
-    desc: "Nossa tecnologia está disponível neste endereço",
-  },
-  {
-    id: 2,
-    name: "13480002",
-    desc: "Nossa tecnologia está disponível neste endereço",
-  },
-  {
-    id: 3,
-    name: "13480003",
-    desc: "Nossa tecnologia está disponível neste endereço",
-  },
-  {
-    id: 4,
-    name: "13480004",
-    desc: "Nossa tecnologia está disponível neste endereço",
-  },
-  {
-    id: 5,
-    name: "13480005",
-    desc: "Nossa tecnologia está disponível neste endereço",
-  },
-];
+import ceps from "./../dbceps/MyData";
 
 ReactModal.setAppElement("#root");
 
@@ -70,21 +42,22 @@ const props = {};
 
 function BuscaCep2() {
   const [cep, setCep] = useState("");
-  const [foundData, setFoundData] = useState(CEPS);
+  const [foundData, setFoundData] = useState(ceps);
 
   const filter = (e) => {
     const keyword = e.target.value;
 
-    if (keyword !== "") {
-      const results = CEPS.filter((data) => {
+    if (keyword.length === 8) {
+      const results = ceps.filter((data) => {
         return data.name
           .toLowerCase()
           .startsWith(keyword.toLowerCase().toString());
       });
       setFoundData(results);
     } else {
-      setFoundData(CEPS);
+      setFoundData(ceps);
     }
+    console.log(`ceps: ${cep}`);
     setCep(keyword);
   };
 
@@ -95,7 +68,7 @@ function BuscaCep2() {
         align="center"
         sx={{ paddingTop: 2, fontWeight: "bold" }}
       >
-        Confira se nossa ultravelocidade
+        Confira se nossa <span>ultravelocidade</span>
       </Typography>
       <Typography
         variant="h4"
@@ -120,15 +93,12 @@ function BuscaCep2() {
       </p>
       <br />
       {foundData.length === 1 ? (
-        <List className="ul-data" data-aos="zoom-in-up" data-aos-delay="200">
+        <List className="ul-data" data-aos="zoom-in" data-aos-delay="200">
           {foundData.map((data) => (
-            <List key={data.id} className="data">
-              <Typography component={"span"} className="data-name">
-                <CheckIcon />
-              </Typography>
-              <Typography component={"span"} className="data-desc">
-                {" "}
-                {data.desc}
+            <List key={data.name} className="data">
+              <Typography className="data-name"></Typography>
+              <Typography className="data-desc">
+                "Nossa tecnologia está disponível neste endereço"
               </Typography>
               <br />
               <Typography className="data-desc">

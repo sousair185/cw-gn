@@ -115,15 +115,11 @@ function HeadSection(props) {
             </div>
           </Box>
         </div>
-        <div className="btn-home">
-          <a className="animated-button1" href="/planos">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+        <a className="btn-home" href="/planos">
+          <div className="home-button">
             Contrate Aqui
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
       <WaveBorder
         upperColor={theme.palette.secondary.main}

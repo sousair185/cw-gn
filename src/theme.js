@@ -25,6 +25,20 @@ const xs = 0;
 const spacing = 8;
 
 const theme = createTheme(({
+  typography: {
+    fontFamily: "Raleway, sans-serif",
+  },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: `
+        @font-face {
+          font-family: 'Raleway',
+          font-style: normal,
+          font-weight: 400,
+          `,
+        }
+      },
+    
   palette: {
     primary: { main: primary },
     secondary: { main: secondary },
@@ -118,9 +132,6 @@ const theme = createTheme(({
         }
       }
     }
-  },
-  typography: {
-    useNextVariants: false
   }
 }));
 
