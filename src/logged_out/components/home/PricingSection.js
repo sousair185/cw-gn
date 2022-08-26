@@ -15,9 +15,10 @@ function PricingSection() {
       </strong>
       <div className="container-box">
         <div className="box">
+          <div className="content-title">
+            <h2>Para você</h2>
+            </div>
           <div className="content">
-            <span>Para</span>
-            <h2>Família</h2>
             <div className="box-list">
               <p>
                 <CableIcon sx={{ marginRight: 0.6 }} /> 100% Fibra Óptica
@@ -34,9 +35,10 @@ function PricingSection() {
           </div>
         </div>
         <div className="box">
+        <div className="content-title">
+            <h2>Para família</h2>
+            </div>
           <div className="content">
-            <span>Para</span>
-            <h2>Você</h2>
             <div className="box-list">
               <p>
                 <CableIcon sx={{ marginRight: 0.6 }} /> 100% Fibra Óptica
@@ -53,9 +55,10 @@ function PricingSection() {
           </div>
         </div>
         <div className="box">
+        <div className="content-title">
+            <h2>Para empresa</h2>
+            </div>
           <div className="content">
-            <span>Para</span>
-            <h2>Empresas</h2>
             <div className="box-list">
               <p>
                 <CableIcon sx={{ marginRight: 0.6 }} /> 100% Fibra Óptica

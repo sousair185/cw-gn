@@ -1,20 +1,119 @@
-import React from "react";
+import React, { useState } from "react";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
-const ContactCard = () => {
+const FORM_ENDPOINT =
+  "https://public.herotofu.com/v1/4839e490-256d-11ed-9dc3-136bfcd2b0ee";
+
+const ContactForm = () => {
+  const [status, setStatus] = useState();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const injectedData = {
+      Contact_Received_by: "Herotofu - Geração Net",
+    };
+    const inputs = e.target.elements;
+    const data = {};
+
+    for (let i = 0; i < inputs.length; i++) {
+      if (inputs[i].name) {
+        data[inputs[i].name] = inputs[i].value;
+      }
+    }
+
+    Object.assign(data, injectedData);
+
+    fetch(FORM_ENDPOINT, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => {
+        if (response.status === 422) {
+          Object.keys(injectedData).forEach((key) => {
+            const el = document.createElement("input");
+            el.type = "hidden";
+            el.name = key;
+            el.value = injectedData[key];
+
+            e.target.appendChild(el);
+          });
+
+          e.target.submit();
+          throw new Error("Por favor resolva o Captcha");
+        }
+
+        if (response.status !== 200) {
+          throw new Error(response.statusText);
+        }
+
+        return response.json();
+      })
+      .then(() => setStatus("Retornaremos em breve"))
+      .catch((err) => setStatus(err.toString()));
+  };
+
+  if (status) {
+    return (
+      <>
+        <div className="text-2xl">Agradecemos o contato!</div>
+        <div className="text-md">{status}</div>
+      </>
+    );
+  }
+
+  class PhoneInputGn extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = { phone: "" };
+    }
+    render() {
+      return (
+        <div>
+          <PhoneInput
+            country={"br"}
+            value={this.state.phone}
+            onChange={(phone) => this.setState({ phone })}
+            placeholder="Telefone"
+            name="phone"
+            required
+          />
+        </div>
+      );
+    }
+  }
+
   return (
     <div className="container-contact">
-      <div className="contact-text">
-        <span className="title">FALE CONOSCO</span>
-        <p>Telefones:</p>
-        <p>(19) 3703-1136 | (19) 9 9893-0633 - Financeiro</p>
-        <p>(19) 9 8441-6101 - Suporte</p>
-        <span className="subtitle">Endereço</span>
-        <p>Rua Pedro Elias, 681 - Vista Alegre, Limeira - SP, 13487-031</p>
-        <span className="subtitle">E-mail</span>
-        <p>atendimento@geracaonet.com.br</p>
-      </div>
+      <form
+        className="contact-form"
+        action={FORM_ENDPOINT}
+        onSubmit={handleSubmit}
+        method="POST"
+        target="_blank"
+      >
+        <div>
+          <span>Nome</span>
+          <input type="text" placeholder="Seu nome" name="name" required />
+        </div>
+        <div>
+          <span>E-mail de contato</span>
+          <input type="email" placeholder="E-mail" name="email" required />
+        </div>
+        <div aria-label="Telefone">
+          <span>Telefone</span>
+          <PhoneInputGn />
+        </div>
+        <div>
+          <button type="submit"> Enviar </button>
+        </div>
+      </form>
     </div>
   );
 };
 
-export default ContactCard;
+export default ContactForm;

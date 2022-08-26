@@ -131,7 +131,7 @@ function CookieRulesDialog(props) {
           color={theme.palette.common.black}
         >
           <ArrowBackIcon className={classes.backIcon} />
-          Back
+          Voltar
         </ColoredButton>
       </DialogActions>
     </Dialog>
