@@ -17,27 +17,7 @@ function PricingSection() {
         <div className="box">
           <div className="content-title">
             <h2>Para você</h2>
-            </div>
-          <div className="content">
-            <div className="box-list">
-              <p>
-                <CableIcon sx={{ marginRight: 0.6 }} /> 100% Fibra Óptica
-              </p>
-              <p>
-                <WifiSharpIcon sx={{ marginRight: 0.6 }} /> Wi-fi incluso
-              </p>
-              <p>
-                <LiveTvIcon sx={{ marginRight: 0.6 }} /> Assista Filmes, Séries
-                e Vídeos
-              </p>
-            </div>
-            <a href="whatsapp://send?">Contratar</a>
           </div>
-        </div>
-        <div className="box">
-        <div className="content-title">
-            <h2>Para família</h2>
-            </div>
           <div className="content">
             <div className="box-list">
               <p>
@@ -55,9 +35,29 @@ function PricingSection() {
           </div>
         </div>
         <div className="box">
-        <div className="content-title">
-            <h2>Para empresa</h2>
+          <div className="content-title">
+            <h2>Para família</h2>
+          </div>
+          <div className="content">
+            <div className="box-list">
+              <p>
+                <CableIcon sx={{ marginRight: 0.6 }} /> 100% Fibra Óptica
+              </p>
+              <p>
+                <WifiSharpIcon sx={{ marginRight: 0.6 }} /> Wi-fi incluso
+              </p>
+              <p>
+                <LiveTvIcon sx={{ marginRight: 0.6 }} /> Assista Filmes, Séries
+                e Vídeos
+              </p>
             </div>
+            <a href="whatsapp://send?">Contratar</a>
+          </div>
+        </div>
+        <div className="box">
+          <div className="content-title">
+            <h2>Para empresa</h2>
+          </div>
           <div className="content">
             <div className="box-list">
               <p>

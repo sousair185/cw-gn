@@ -62,9 +62,37 @@ body,
 
 .mascote-gn {
   position: fixed;
-  width: 12vw;
+  width: 200px;
   right: 1vw;
   bottom: 1vw;
+}
+
+.mascote-texto {
+  position: fixed;
+  border-bottom: 1px dotted black;
+}
+
+.mascote-texto:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: 140px;
+  background-color: rgb(63, 6, 117);
+  color: #fff;
+  text-align: center;
+  border-radius: 15px;
+  padding: 8px;
+  transition: opacity 0.5s ease-in-out;
+
+  position: fixed;
+  z-index: 2;
+  right: 180px;
+  bottom: 250px;
+}
+
+.mascote-texto:hover:before {
+  opacity: 1;
+  visibility: visible;
 }
 
 .alerta {
@@ -260,7 +288,6 @@ input[type="submit"]:hover {
   display: none;
 }
 
-
 .data {
   position: absolute;
   top: -80px;
@@ -278,12 +305,17 @@ input[type="submit"]:hover {
   background: rgba(9, 9, 121, 1);
 }
 
-.data:before, .data:after, .data:active{
+.data:before,
+.data:after,
+.data:active {
   content: "";
   position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
-    background: rgba(#000, .4);
-    z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(#000, 0.4);
+  z-index: 2;
 }
 .data-name {
   font-size: 30px;
@@ -324,13 +356,6 @@ li.data {
   outline: none;
   transition: all 0.3s ease;
 }
-
-/* body {
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  font-family: "Raleway", sans-serif;
-} */
 
 .container-box-title {
   background-color: rgba(155, 243, 255, 0.15) !important;
@@ -620,6 +645,70 @@ li.data {
   background-size: cover;
 }
 
+.box-gnplay {
+  background-color: #5900ac;
+  background-image: url("../src/assets/gnplay-bg.png");
+  opacity: 0.8;
+  background-size: cover;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  min-height: 50vw;
+  padding: 50px;
+}
+
+.gnplay-logo {
+  width: 380px;
+  max-width: 500px;
+}
+
+.gnplay-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  padding-top: 50px;
+}
+
+.gn-title {
+  color: #fff;
+  display: block;
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.gn-subtitle {
+  color: #fff;
+  font-size: 25px;
+}
+
+.gnplay-card-card:hover {
+  transform: scale(0.95);
+  transition: all 0.3s ease;
+}
+
+.gnplay-card button {
+  font-weight: bold;
+  background-color: #1b128e;
+  color: #fff;
+  margin: 20px;
+  padding: 12px;
+  justify-content: center;
+  border-radius: 8px;
+  text-transform: uppercase;
+  border: none;
+  font-size: 16px;
+}
+
+.gnplay-card button:hover {
+  color: #000;
+  cursor: pointer;
+  background-color: #3fc4f7;
+  transform: scale(1.03);
+  transition: all 0.3s ease-in-out;
+}
+
 .header-container {
   display: block;
   width: 100%;
@@ -672,17 +761,24 @@ li.data {
   color: #00aaac;
   width: 100%;
   text-align: start;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
+}
+
+.about-text span.subtitle {
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 20px;
 }
 
 .about-btn {
   background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
   background-size: 800% 400%;
+  text-transform: uppercase;
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
-  padding: 1em 2em;
+  padding: 1em;
   display: block;
   border: none;
   position: relative;
@@ -790,6 +886,8 @@ li.data {
   padding: 0;
   margin: 0;
   width: 80%;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .business-text {
@@ -808,7 +906,7 @@ li.data {
   color: #00aaac;
   width: 100%;
   text-align: start;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -826,11 +924,11 @@ li.data {
 }
 
 .contact-form span {
-display: block;
-padding: 10px;
+  display: block;
+  padding: 10px;
 }
 
-.contact-form input{
+.contact-form input {
   width: 300px;
   height: 35px;
   border-radius: 5px;
@@ -840,7 +938,7 @@ padding: 10px;
   border-color: rgb(187, 187, 187);
 }
 
-.contact-form button{
+.contact-form button {
   padding: 15px;
   margin-top: 15px;
   border-radius: 20px;
@@ -852,7 +950,7 @@ padding: 10px;
   text-transform: uppercase;
 }
 
-.contact-form button:hover{
+.contact-form button:hover {
   background-color: forestgreen;
   transition: 00.3s;
   transform: scale(1.1);
@@ -870,7 +968,71 @@ padding: 10px;
   margin: 10vw;
 }
 
+.phone-icon {
+  display: inline;
+  width: 25vw;
+  height: 30vw;
+}
 
+.box-phone {
+  background-image: url("./assets/phone-bg.jpg");
+  min-height: 20vw;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+.box-phone button {
+  font-weight: bold;
+  background-color: #1b128e;
+  color: #fff;
+  margin: 20px;
+  padding: 12px;
+  justify-content: center;
+  border-radius: 8px;
+  text-transform: uppercase;
+  border: none;
+  font-size: 16px;
+}
+
+.box-phone button:hover {
+  color: #000;
+  cursor: pointer;
+  background-color: #3fc4f7;
+  transform: scale(1.03);
+  transition: all 0.3s ease-in-out;
+}
+
+.phone-text {
+  color: #fff;
+  width: 75vw;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  text-align: left;
+  padding: 10px 70px;
+}
+
+.phone-text span.title {
+  color: #00aaac;
+  width: 100%;
+  text-align: start;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.phone-text p {
+  padding: 0;
+  margin: 0;
+  width: 80%;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.box-phone img {
+  position: relative;
+  top: 2vw;
+  left: 20%;
+}
 
 .footer-container {
   display: flex;

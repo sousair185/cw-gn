@@ -8,6 +8,8 @@ import AboutUs from "../aboutus/AboutUs";
 import Business from "../business/Business";
 import ClientsCarrocel from "../clients/ClientsCarrocel";
 import ContactCard from "../contactCard/ContactCard";
+import Gnplay from "../gnplay/Gnplay";
+import Phone from "../phone/Phone";
 
 function Home(props) {
   const { selectHome } = props;
@@ -19,9 +21,11 @@ function Home(props) {
       <HeadSection />
       <BuscaCep2 />
       <PricingSection />
+      <Gnplay />
       <AboutUs />
       <Business />
       <ClientsCarrocel />
+      <Phone />
       <Carrocel />
       <ContactCard />
     </Fragment>

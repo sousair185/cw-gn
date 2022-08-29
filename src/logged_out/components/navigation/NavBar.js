@@ -139,7 +139,16 @@ function NavBar(props) {
           </div>
         </Toolbar>
         <a href="whatsapp://send?">
-          <img src={mascote} alt="mascote-geração-net" className="mascote-gn" />
+          <span
+            className="mascote-texto"
+            data-hover="Olá, eu sou o Geh, como posso te ajudar?"
+          >
+            <img
+              src={mascote}
+              alt="mascote-geração-net"
+              className="mascote-gn"
+            />
+          </span>
         </a>
       </AppBar>
       <NavigationDrawer

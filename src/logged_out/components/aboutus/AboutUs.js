@@ -4,7 +4,8 @@ const AboutUs = () => {
   return (
     <div className="container-aboutus">
       <div className="about-text">
-        <span className="title">Por que escolher a Geração Net?</span>
+        <span className="title">Sobre nós</span>
+        <span className="subtitle">Por que escolher a Geração Net?</span>
         <p>Somos uma Geração, estamos conectados e</p>
         <p>conectamos pessoas, ideias e empresas.</p>
         <p>Nosso compromisso é oferecer o melhor em</p>

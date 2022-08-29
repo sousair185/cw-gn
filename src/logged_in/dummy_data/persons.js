@@ -1,7 +1,7 @@
 const data = [
   {
     src: `${process.env.PUBLIC_URL}/images/logged_out/co-face.png`,
-    name: "Cocrie",
+    name: "",
   },
   // {
   //   src: `${process.env.PUBLIC_URL}/images/logged_in/image2.jpg`,

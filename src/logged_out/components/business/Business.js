@@ -1,13 +1,13 @@
 import { List, ListItem, ListItemText } from "@mui/material";
 import React from "react";
-import businessicon from "../../../assets/business-icon.png";
+import businessicon from "../../../assets/business-security.png";
 
 const Business = () => {
   return (
     <div className="container-business">
       <div className="business-text">
-        <p>Conheça as soluções de conectividade</p>
-        <span className="title">Para sua empresa</span>
+        <span className="title">Empresa</span>
+        <p>Conheça as soluções de conectividade para seu estabelecimento</p>
         <span className="business-detail">
           Desenvolvemos projetos de telecomunicação personalizados que atendem
           as necessidades de empresas exigentes que buscam segurança, alta
