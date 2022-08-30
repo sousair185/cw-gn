@@ -89,18 +89,23 @@ function CookieConsent(props) {
       open={isVisible}
       message={
         <Typography className="text-white">
-          Nosso site usa cookies para facilitar a navegação.{" "}
+          Usamos cookies em nosso site para fornecer a experiência mais
+          relevante, lembrando suas preferências e visitas repetidas. Ao clicar
+          em “Aceitar”, concorda com a utilização de TODOS os cookies{" "}
         </Typography>
       }
       action={
         <Fragment>
           <Box mr={1}>
-            <Button color="primary" onClick={handleCookieRulesDialogOpen}>
+            <Button
+              sx={{ color: "#05AFAF" }}
+              onClick={handleCookieRulesDialogOpen}
+            >
               Consulte o termo LGPD
             </Button>
           </Box>
-          <Button color="primary" onClick={onAccept}>
-            Continuar
+          <Button sx={{ color: "#05AFAF" }} onClick={onAccept}>
+            “Aceitar”
           </Button>
         </Fragment>
       }

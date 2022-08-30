@@ -1,23 +1,31 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Dialog, DialogTitle, DialogContent, DialogActions, Typography } from "@mui/material";
-import withStyles from '@mui/styles/withStyles';
+import {
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogActions,
+  Typography,
+  List,
+  ListItem,
+} from "@mui/material";
+import withStyles from "@mui/styles/withStyles";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ColoredButton from "../../../shared/components/ColoredButton";
 
-const styles = theme => ({
+const styles = (theme) => ({
   dialogActions: {
     justifyContent: "flex-start",
     paddingTop: theme.spacing(2),
     paddingBottom: theme.spacing(2),
-    paddingRight: theme.spacing(2)
+    paddingRight: theme.spacing(2),
   },
   dialog: {
-    zIndex: 1400
+    zIndex: 1400,
   },
   backIcon: {
-    marginRight: theme.spacing(1)
-  }
+    marginRight: theme.spacing(1),
+  },
 });
 
 function CookieRulesDialog(props) {
@@ -29,99 +37,156 @@ function CookieRulesDialog(props) {
       onClose={onClose}
       className={classes.dialog}
     >
-      <DialogTitle>Our Cookie Policy</DialogTitle>
+      <DialogTitle>Nossa Política de Privacidade</DialogTitle>
       <DialogContent>
         <Typography variant="h6" color="primary" paragraph>
-          What Are Cookies
+          Sobre esta política de cookies
         </Typography>
         <Typography paragraph>
-          As is common practice with almost all professional websites this site
-          uses cookies, which are tiny files that are downloaded to your
-          computer, to improve your experience. This page describes what
-          information they gather, how we use it and why we sometimes need to
-          store these cookies. We will also share how you can prevent these
-          cookies from being stored however this may downgrade or
-          &apos;break&apos; certain elements of the sites functionality. For
-          more general information on cookies see the Wikipedia article on HTTP
-          Cookies.
+          Esta Política de Cookies explica o que são cookies e como os usamos,
+          os tipos de cookies que usamos, ou seja, as informações que coletamos
+          usando cookies e como essas informações são usadas e como controlar as
+          preferências de cookies. Para obter mais informações sobre como
+          usamos, armazenamos e mantemos seus dados pessoais seguros, consulte
+          nossa Política de Privacidade.Você pode a qualquer momento alterar ou
+          retirar seu consentimento da Declaração de Cookies em nosso siteSaiba
+          mais sobre quem somos, como você pode entrar em contato conosco e como
+          processamos dados pessoais em nossa Política de Privacidade. Seu
+          consentimento se aplica aos seguintes domínios: geracaonet.com.br Seu
+          estado atual: Não foi dado consentimento.
         </Typography>
         <Typography variant="h6" color="primary" paragraph>
-          How We Use Cookies
+          O que são cookies?
         </Typography>
         <Typography paragraph>
-          We use cookies for a variety of reasons detailed below. Unfortunately
-          in most cases there are no industry standard options for disabling
-          cookies without completely disabling the functionality and features
-          they add to this site. It is recommended that you leave on all cookies
-          if you are not sure whether you need them or not in case they are used
-          to provide a service that you use.
+          Cookies são pequenos arquivos de texto que são usados ​​para armazenar
+          pequenas informações. Eles são armazenados no seu dispositivo quando o
+          site é carregado no seu navegador. Esses cookies nos ajudam a fazer o
+          site funcionar corretamente, torná-lo mais seguro, fornecer uma melhor
+          experiência ao usuário e entender como o site funciona e analisar o
+          que funciona e onde precisa ser melhorado.
         </Typography>
         <Typography variant="h6" color="primary" paragraph>
-          Disabling Cookies
+          Como usamos cookies?
         </Typography>
         <Typography paragraph>
-          You can prevent the setting of cookies by adjusting the settings on
-          your browser (see your browser Help for how to do this). Be aware that
-          disabling cookies will affect the functionality of this and many other
-          websites that you visit. Disabling cookies will usually result in also
-          disabling certain functionality and features of the this site.
-          Therefore it is recommended that you do not disable cookies.
+          Como a maioria dos serviços online, nosso site usa cookies próprios e
+          de terceiros para diversos fins. Os cookies primários são
+          principalmente necessários para que o site funcione da maneira correta
+          e não coletam nenhum dos seus dados de identificação pessoal. Os
+          cookies de terceiros usados ​​em nosso site são principalmente para
+          entender como o site funciona, como você interage com nosso site,
+          manter nossos serviços seguros, fornecer anúncios relevantes para você
+          e, em suma, fornecer a você um usuário melhor e aprimorado experiência
+          e ajudar a acelerar suas futuras interações com nosso site.
         </Typography>
         <Typography variant="h6" color="primary" paragraph>
-          The Cookies We Set
+          Que tipos de cookies usamos?
         </Typography>
-        <Typography paragraph>Account related cookies:</Typography>
+        <Typography paragraph>Essencial:</Typography>
         <Typography paragraph>
-          If you create an account with us then we will use cookies for the
-          management of the signup process and general administration. These
-          cookies will usually be deleted when you log out however in some cases
-          they may remain afterwards to remember your site preferences when
-          logged out. We use cookies to remember that you accepted this message.
+          Alguns cookies são essenciais para que você possa experimentar todas
+          as funcionalidades do nosso site. Eles nos permitem manter as sessões
+          do usuário e evitar quaisquer ameaças de segurança. Eles não coletam
+          ou armazenam nenhuma informação pessoal. Por exemplo, esses cookies
+          permitem que você faça login em sua conta e adicione produtos à sua
+          cesta e faça o checkout com segurança.
         </Typography>
-        <Typography paragraph>Login related cookies:</Typography>
+        <Typography paragraph>Estatísticas:</Typography>
         <Typography paragraph>
-          We use cookies when you are logged in so that we can remember this
-          fact. This prevents you from having to log in every single time you
-          visit a new page. These cookies are typically removed or cleared when
-          you log out to ensure that you can only access restricted features and
-          areas when logged in.
+          Esses cookies armazenam informações como o número de visitantes do
+          site, o número de visitantes únicos, quais páginas do site foram
+          visitadas, a fonte da visita etc. Esses dados nos ajudam a entender e
+          analisar o desempenho do site e onde precisa de melhorias. Marketing:
+          Nosso site exibe anúncios. Esses cookies são usados ​​para
+          personalizar os anúncios que mostramos a você para que sejam
+          significativos para você. Esses cookies também nos ajudam a acompanhar
+          a eficiência dessas campanhas publicitárias. As informações
+          armazenadas nesses cookies também podem ser usadas pelos provedores de
+          anúncios terceirizados para exibir anúncios em outros sites também no
+          navegador.
         </Typography>
-        <Typography paragraph>Site preferences cookies:</Typography>
+        <Typography paragraph>Funcionais:</Typography>
         <Typography paragraph>
-          In order to provide you with a great experience on this site we
-          provide the functionality to set your preferences for how this site
-          runs when you use it. In order to remember your preferences we need to
-          set cookies so that this information can be called whenever you
-          interact with a page is affected by your preferences.
+          São os cookies que auxiliam algumas funcionalidades não essenciais em
+          nosso site. Essas funcionalidades incluem incorporar conteúdo como
+          vídeos ou compartilhar conteúdo do site em plataformas de mídia
+          social.
         </Typography>
         <Typography variant="h6" color="primary" paragraph>
-          Third Party Cookies:
+          Preferências:
         </Typography>
         <Typography paragraph>
-          In some special cases we also use cookies provided by trusted third
-          parties. The following section details which third party cookies you
-          might encounter through this site.
+          Esses cookies nos ajudam a armazenar suas configurações e preferências
+          de navegação, como preferências de idioma, para que você tenha uma
+          experiência melhor e eficiente em futuras visitas ao site. A lista
+          abaixo detalha os cookies usados em nosso site.
         </Typography>
-        <Typography paragraph>
-          Third party analytics are used to track and measure usage of this site
-          so that we can continue to produce engaging content. These cookies may
-          track things such as how long you spend on the site or pages you visit
-          which helps us to understand how we can improve the site for you.
-        </Typography>
+        <List>
+          <ListItem>
+            <Typography sx={{marginRight: 2}} paragraph>cookielawinfo-checkbox-analytics</Typography>
+            <Typography>
+              Este cookie é definido pelo plug-in GDPR Cookie Consent. O cookie
+              é usado para armazenar o consentimento do usuário para os cookies
+              na categoria "Analytics".
+            </Typography>
+          </ListItem>
+          <ListItem>
+            <Typography sx={{marginRight: 2}} paragraph>cookielawinfo-checkbox-functional</Typography>
+            <Typography>
+              O cookie é definido pelo consentimento do cookie GDPR para
+              registrar o consentimento do usuário para os cookies na categoria
+              "Funcional".
+            </Typography>
+          </ListItem>
+          <ListItem>
+            <Typography sx={{marginRight: 2}} paragraph>cookielawinfo-checkbox-necessary</Typography>
+            <Typography>
+              Este cookie é definido pelo plug-in GDPR Cookie Consent. Os
+              cookies são usados para armazenar o consentimento do usuário para
+              os cookies na categoria "Necessário".
+            </Typography>
+          </ListItem>
+          <ListItem>
+            <Typography sx={{marginRight: 2}} paragraph>cookielawinfo-checkbox-others</Typography>
+            <Typography>
+              O cookie é definido pelo plug-in GDPR Cookie Consent e é usado
+              para armazenar se o usuário consentiu ou não com o uso de cookies.
+              <strong> Ele não armazena nenhum dado pessoal.</strong>
+            </Typography>
+          </ListItem>
+          <ListItem>
+            <Typography sx={{marginRight: 2}} paragraph>
+              cookielawinfo-checkbox-performance
+            </Typography>
+            <Typography>
+              Este cookie é definido pelo plug-in GDPR Cookie Consent. O cookie
+              é usado para armazenar o consentimento do usuário para os cookies
+              na categoria "Desempenho".
+            </Typography>
+          </ListItem>
+          <ListItem>
+            <Typography sx={{marginRight: 2}} paragraph>viewed_cookie_policy</Typography>
+            <Typography>
+              O cookie é definido pelo plug-in GDPR Cookie Consent e é usado
+              para armazenar se o usuário consentiu ou não com o uso de cookies.
+              <strong> Ele não armazena nenhum dado pessoal.</strong>
+            </Typography>
+          </ListItem>
+        </List>
         <Typography variant="h6" color="primary" paragraph>
-          More Information
+          Como posso controlar as preferências de cookies?
         </Typography>
         <Typography paragraph>
-          Hopefully that has clarified things for you and as was previously
-          mentioned if there is something that you aren&apos;t sure whether you
-          need or not it&apos;s usually safer to leave cookies enabled in case
-          it does interact with one of the features you use on our site. This
-          Cookies Policy was created with the help of the Cookies Policy
-          Template Generator and the Terms and Conditions Template.
-        </Typography>
-        <Typography paragraph>
-          However if you are still looking for more information then you can
-          contact us by sending an email to tim.v.kaenel@gmail.com.
+          Caso decida alterar suas preferências posteriormente durante sua
+          sessão de navegação, você pode clicar na guia “Política de Privacidade
+          e Cookies” na tela. Isso exibirá o aviso de consentimento novamente,
+          permitindo que você altere suas preferências ou retire totalmente seu
+          consentimento. Além disso, diferentes navegadores fornecem métodos
+          diferentes para bloquear e excluir cookies usados ​​por sites. Você
+          pode alterar as configurações do seu navegador para bloquear/excluir
+          os cookies. Para saber mais sobre como gerenciar e excluir cookies,
+          visite wikipedia.org, www.allaboutcookies.org.
         </Typography>
       </DialogContent>
       <DialogActions className={classes.dialogActions}>
@@ -142,7 +207,7 @@ CookieRulesDialog.propTypes = {
   classes: PropTypes.object.isRequired,
   onClose: PropTypes.func.isRequired,
   open: PropTypes.bool.isRequired,
-  theme: PropTypes.object.isRequired
+  theme: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles, { withTheme: true })(CookieRulesDialog);

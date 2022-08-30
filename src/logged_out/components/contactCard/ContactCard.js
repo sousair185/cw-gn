@@ -1,3 +1,4 @@
+import { Typography } from "@mui/material";
 import React, { useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
@@ -89,9 +90,15 @@ const ContactForm = () => {
 
   return (
     <div className="container-contact">
+    <Typography
+        variant="h5"
+        align="center"
+        sx={{ paddingBottom: 2, fontWeight: "bold" }}
+      >
     <strong>
         Preencha os campos abaixo que <span>retornamos</span> o contato!
       </strong>
+      </Typography>
       <form
         className="contact-form"
         action={FORM_ENDPOINT}
@@ -99,21 +106,21 @@ const ContactForm = () => {
         method="POST"
         target="_blank"
       >
-        <div>
+        <Typography variant="h6">
           <span>Nome</span>
           <input type="text" placeholder="Seu nome" name="name" required />
-        </div>
-        <div>
+        </Typography>
+        <Typography variant="h6">
           <span>E-mail de contato</span>
           <input type="email" placeholder="E-mail" name="email" required />
-        </div>
-        <div aria-label="Telefone">
+        </Typography>
+        <Typography variant="h6" aria-label="Telefone">
           <span>Telefone</span>
           <PhoneInputGn />
-        </div>
-        <div>
+        </Typography>
+        <Typography variant="h6">
           <button type="submit"> Enviar </button>
-        </div>
+        </Typography>
       </form>
     </div>
   );

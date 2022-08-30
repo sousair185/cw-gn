@@ -6,7 +6,7 @@ const Phone = () => {
     <Fragment>
       <div className="box-phone">
         <div className="phone-text">
-          <span className="title">Soluões completas</span>
+          <span className="title">Soluções completas</span>
           <p>Telefonia e Portaria eletrônica</p>
           <span className="phone-detail">
             Desenvolvemos projetos de telecomunicação personalizados que atendem

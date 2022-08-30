@@ -3,12 +3,7 @@ import { useEffect } from "react";
 
 
 const useLocationBlocker = () => {
-  /** 
-   * Prevents react-router from pushing the same
-   * page to the history twice which leads to
-   * multiple clicks on the back icon of the browser
-   * being necessary to go back into the history.
-  */
+  
   const history = useHistory();
   useEffect(
     () =>
@@ -17,7 +12,7 @@ const useLocationBlocker = () => {
           action !== "PUSH" ||
           getLocationId(location) !== getLocationId(history.location)
       ),
-    [] // eslint-disable-line react-hooks/exhaustive-deps
+    []
   );
 }
 
