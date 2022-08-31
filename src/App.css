@@ -289,34 +289,24 @@ input[type="submit"]:hover {
 }
 
 .data {
-  position: absolute;
-  top: -80px;
-  bottom: -115px;
-  height: 50vh;
+  position: relative;
+  top: -100px;
   left: 0;
   right: 0;
-  z-index: 3;
   list-style: none;
   color: white;
-  width: 50vw;
+  width: 100%;
   margin: 0 auto;
-  border-radius: 15px;
+  border-radius: 8px;
   padding: 30px;
   background: rgba(9, 9, 121, 1);
 }
 
-.data:before,
-.data:after,
-.data:active {
-  content: "";
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(#000, 0.4);
-  z-index: 2;
+.data:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
 }
+
 .data-name {
   font-size: 30px;
 }
@@ -326,6 +316,19 @@ input[type="submit"]:hover {
   color: #fff;
   text-decoration: none;
   font-size: 25px;
+}
+.data-desc-not {
+  position: relative;
+  right: 0;
+  top: -20px;
+  left: 0;
+  margin: 0 auto;
+  width: 70%;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ea3838;
+  font-size: 25px;
+  color: #fff;
 }
 
 .ul-data {
@@ -1110,13 +1113,13 @@ li.data {
 }
 
 @media screen and (max-width: 480px) {
-  .btn-home{
+  .btn-home {
     width: 200px;
     padding: 7px;
     left: 0;
     bottom: 0;
   }
-  .gnplay-logo{
+  .gnplay-logo {
     width: 300px;
   }
   .container-aboutus {
@@ -1170,7 +1173,7 @@ li.data {
     right: 0;
   }
 
-  .phone-text{
+  .phone-text {
     padding: 0;
   }
   .nav-mobile {

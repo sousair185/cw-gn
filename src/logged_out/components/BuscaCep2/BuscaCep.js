@@ -1,3 +1,4 @@
+/* eslint-disable no-unreachable */
 import { Link, List, Typography } from "@mui/material";
 import React, { useState } from "react";
 import ReactModal from "react-modal";
@@ -61,6 +62,44 @@ function BuscaCep2() {
     setCep(keyword);
   };
 
+  const cepfound = (data) => {
+    switch (data.length) {
+      case 0:
+        return (
+          <div data-aos="zoom-in" data-aos-delay="200">
+          <Typography className="data-name"></Typography>
+          <Typography className="data-desc-not">
+            "Ultravelocidade não encontrada para este cep"
+          </Typography>
+          </div>
+        );
+        break;
+      case 1:
+        return (
+          <List className="ul-data" data-aos="zoom-in" data-aos-delay="200">
+            {foundData.map((data) => (
+              <List key={data.name} className="data">
+                <Typography className="data-name"></Typography>
+                <Typography className="data-desc">
+                  "Nossa tecnologia Ultraveloz está disponível para este endereço"
+                </Typography>
+                <br />
+                <Typography className="data-desc">
+                  <Link className="link" href="/planos">
+                    Clique aqui{" "}
+                  </Link>
+                  e escolha o melhor pacote para você
+                </Typography>
+              </List>
+            ))}
+          </List>
+        );
+        break;
+      default:
+        return <ExampleApp {...props} className="modal" />;
+    }
+  };
+
   return (
     <div className="form">
       <Typography
@@ -92,7 +131,9 @@ function BuscaCep2() {
         <a href="/planos">clique aqui</a>
       </p>
       <br />
-      {foundData.length === 1 ? (
+      {cepfound(foundData)}
+
+      {/* {foundData.length === 1 ? (
         <List className="ul-data" data-aos="zoom-in" data-aos-delay="200">
           {foundData.map((data) => (
             <List key={data.name} className="data">
@@ -112,7 +153,7 @@ function BuscaCep2() {
         </List>
       ) : (
         <ExampleApp {...props} className="modal" />
-      )}
+      )} */}
     </div>
   );
 }
