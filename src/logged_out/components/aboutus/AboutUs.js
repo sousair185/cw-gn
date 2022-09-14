@@ -1,9 +1,9 @@
 import { Card, CardContent, Typography } from "@mui/material";
 import React from "react";
-import internet from "../../../assets/internet.png"
-import atendimento from "../../../assets/atendimento.png"
-import seguranca from "../../../assets/seguranca.png"
-import cobertura from "../../../assets/cobertura.png"
+import internet from "../../../assets/gnrede.png"
+import atendimento from "../../../assets/gnatendent.png"
+import seguranca from "../../../assets/gnsecurity.png"
+import cobertura from "../../../assets/gnlocation.png"
 
 const AboutUs = () => {
   return (

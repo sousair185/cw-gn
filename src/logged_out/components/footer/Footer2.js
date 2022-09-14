@@ -9,16 +9,10 @@ import {
   FooterLink,
   Heading,
 } from "./FooterStyles";
-import WaveBorder from "../../../shared/components/WaveBorder";
 
 const Footer2 = () => {
   return (
     <footer className="lg-p-top">
-      <WaveBorder
-        upperColor="#FFFFFF"
-        lowerColor="#170061"
-        animationNegativeDelay={3}
-      />
       <Box className="footer">
         <Container
           style={{

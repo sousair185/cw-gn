@@ -12,7 +12,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     const injectedData = {
-      Contact_Received_by: "Herotofu - Geração Net",
+      Contact_Received_by: "Contato recebido via site - Geração Net",
     };
     const inputs = e.target.elements;
     const data = {};
@@ -90,14 +90,14 @@ const ContactForm = () => {
 
   return (
     <div className="container-contact">
-    <Typography
+      <Typography
         variant="h5"
         align="center"
         sx={{ paddingBottom: 2, fontWeight: "bold" }}
       >
-    <strong>
-        Preencha os campos abaixo que <span>retornamos</span> o contato!
-      </strong>
+        <strong>
+          Preencha os campos abaixo que <span>retornamos</span> o contato!
+        </strong>
       </Typography>
       <form
         className="contact-form"

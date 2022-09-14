@@ -1,81 +1,46 @@
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
 import React from "react";
-import { Typography } from "@mui/material";
-import a from "../../../assets/a.png";
-import c from "../../../assets/c.png";
-import h from "../../../assets/h.png";
-import p from "../../../assets/p.png";
-
-const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 5,
-    slidesToSlide: 3, // optional, default to 1.
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-    slidesToSlide: 2, // optional, default to 1.
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-    slidesToSlide: 1, // optional, default to 1.
-  },
-};
+import { List, Typography } from "@mui/material";
+import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 
 const clients = [
-  { nome: "cliente", icon: a },
-  { nome: "cliente", icon: c },
-  { nome: "cliente", icon: h },
-  { nome: "cliente", icon: p },
-  { nome: "cliente", icon: a },
-  { nome: "cliente", icon: c },
-  { nome: "cliente", icon: h },
-  { nome: "cliente", icon: p },
+  {
+    label:
+      "Empresa competente e eficaz quando acionada, tanto em atendimento técnico como em atendimento de suporte obrigado a todos os colabores pela atenção.",
+    icon: <FormatQuoteIcon />,
+  },
+  {
+    label:
+      "Internet com excelente qualidade, preço acessível e suporte técnico super atenciosos. Super recomendo!! Melhor internet e zero dor de cabeça!",
+    icon: <FormatQuoteIcon />,
+  },
+  {
+    label:
+      "A melhor internet de Limeira, atendimento rápido, os técnicos super educados e prestativos. Indico e recomendo Geração Net.",
+    icon: <FormatQuoteIcon />,
+  },
 ];
 
 export const ClientsCarrocel = () => {
   return (
     <div className="container-clients">
+      <Typography variant="h4" align="center" sx={{ fontWeight: "bold" }}>
+        O que dizem sobre nós
+      </Typography>
       <Typography
-        variant="h4"
+        variant="h5"
         align="center"
         sx={{ paddingBottom: 2, fontWeight: "bold" }}
       >
-        Alguns de nossos clientes
+        Buscamos diariamente entregar nosso melhor para você
       </Typography>
-      <Carousel
-        centerMode={true}
-        swipeable={false}
-        draggable={false}
-        showDots={false}
-        responsive={responsive}
-        ssr={true} // means to render carousel on server-side.
-        infinite={true}
-        autoPlay={true}
-        autoPlaySpeed={3000}
-        keyBoardControl={false}
-        customTransition="all .5"
-        transitionDuration={500}
-        containerClass="carousel-container"
-        removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
-        deviceType={responsive}
-        dotListClass="custom-dot-list-style"
-        itemClass="carousel-item-padding-40-px"
-      >
-        {clients.map((element) => (
-          <img
-            className="client-icon"
-            key={element.nome}
-            data-aos="zoom-in-up"
-            data-aos-delay="200"
-            src={element.icon}
-            alt={element.nome}
-          />
+      <List className="testemunhal">
+        {clients.map((element, index) => (
+          <List key={index} className="testemunhal-list">
+            <FormatQuoteIcon sx={{marginLeft: 18}} />
+            <Typography>{element.label}</Typography>
+          </List>
         ))}
-      </Carousel>
+      </List>
     </div>
   );
 };

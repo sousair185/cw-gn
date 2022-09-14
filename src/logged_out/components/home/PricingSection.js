@@ -74,6 +74,26 @@ function PricingSection() {
             <a href="whatsapp://send?">Contratar</a>
           </div>
         </div>
+        <div className="box">
+          <div className="content-title">
+            <h2>Para área rual</h2>
+          </div>
+          <div className="content">
+            <div className="box-list">
+              <p>
+                <CableIcon sx={{ marginRight: 0.6 }} /> 100% Fibra Óptica
+              </p>
+              <p>
+                <WifiSharpIcon sx={{ marginRight: 0.6 }} /> Wi-fi incluso
+              </p>
+              <p>
+                <AssuredWorkloadSharpIcon sx={{ marginRight: 0.6 }} /> Suporte,
+                estabilidade e segurança
+              </p>
+            </div>
+            <a href="whatsapp://send?">Contratar</a>
+          </div>
+        </div>
       </div>
     </div>
   );

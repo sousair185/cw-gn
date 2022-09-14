@@ -13,12 +13,19 @@ import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import WifiIcon from "@mui/icons-material/Wifi";
 import DownloadIcon from "@mui/icons-material/Download";
 import TvIcon from "@mui/icons-material/Tv";
+import studios from "../../../assets/gnplaystudios.png";
 
 const Gnplay = () => {
   return (
     <Fragment>
       <div className="box-gnplay">
-        <img data-aos="zoom-in-down" data-aos-delay="200" src={gnplaylogo} alt="gnplay" className="gnplay-logo" />
+        <img
+          data-aos="zoom-in-down"
+          data-aos-delay="200"
+          src={gnplaylogo}
+          alt="gnplay"
+          className="gnplay-logo"
+        />
         <div className="gn-title">O melhor combo</div>
         <div className="gn-subtitle">
           Para conectar o que realmente importa!
@@ -271,6 +278,10 @@ const Gnplay = () => {
             </List>
             <button>Confira Nossos Preços</button>
           </Card>
+        </div>
+        <div className="gnplay-studio">
+          Alguns de nossos estúdios
+          <img src={studios} alt="gnplay-studios" />
         </div>
       </div>
     </Fragment>

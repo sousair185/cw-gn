@@ -67,10 +67,10 @@ function BuscaCep2() {
       case 0:
         return (
           <div data-aos="zoom-in" data-aos-delay="200">
-          <Typography className="data-name"></Typography>
-          <Typography className="data-desc-not">
-            "Ultravelocidade não encontrada para este cep"
-          </Typography>
+            <Typography className="data-name"></Typography>
+            <Typography className="data-desc-not">
+              "Ultravelocidade não encontrada para este cep"
+            </Typography>
           </div>
         );
         break;
@@ -81,7 +81,8 @@ function BuscaCep2() {
               <List key={data.name} className="data">
                 <Typography className="data-name"></Typography>
                 <Typography className="data-desc">
-                  "Nossa tecnologia Ultraveloz está disponível para este endereço"
+                  "Nossa tecnologia Ultraveloz está disponível para este
+                  endereço"
                 </Typography>
                 <br />
                 <Typography className="data-desc">
@@ -132,28 +133,6 @@ function BuscaCep2() {
       </p>
       <br />
       {cepfound(foundData)}
-
-      {/* {foundData.length === 1 ? (
-        <List className="ul-data" data-aos="zoom-in" data-aos-delay="200">
-          {foundData.map((data) => (
-            <List key={data.name} className="data">
-              <Typography className="data-name"></Typography>
-              <Typography className="data-desc">
-                "Nossa tecnologia está disponível neste endereço"
-              </Typography>
-              <br />
-              <Typography className="data-desc">
-                <Link className="link" href="/planos">
-                  Clique aqui{" "}
-                </Link>
-                e escolha o melhor pacote para você
-              </Typography>
-            </List>
-          ))}
-        </List>
-      ) : (
-        <ExampleApp {...props} className="modal" />
-      )} */}
     </div>
   );
 }

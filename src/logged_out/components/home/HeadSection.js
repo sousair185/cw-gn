@@ -3,8 +3,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import { Box } from "@mui/material";
 import withStyles from "@mui/styles/withStyles";
-import WaveBorder from "../../../shared/components/WaveBorder";
-import HeaderCarrocel from "../header/HeaderCarrocel";
+import { Particles } from "@blackbox-vision/react-particles";
 
 const styles = (theme) => ({
   extraLargeButtonLabel: {
@@ -90,17 +89,43 @@ const styles = (theme) => ({
       maxWidth: "none !important",
     },
   },
-  waveBorder: {
-    paddingTop: theme.spacing(4),
-  },
 });
 
+const ParticlesJs = () => (
+  <Particles
+    id="simple"
+    width="auto"
+    height="100vh"
+    style={{
+      backgroundColor: "blue",
+    }}
+    params={{
+      particles: {
+        number: {
+          value: 200,
+        },
+        size: {
+          value: 4,
+        },
+      },
+      interactivity: {
+        events: {
+          onhover: {
+            enable: true,
+            mode: "repulse",
+          },
+        },
+      },
+    }}
+  />
+);
+
 function HeadSection(props) {
-  const { classes, theme } = props;
+  const { classes } = props;
 
   return (
     <Fragment>
-      <div className={classNames(classes.wrapper)}>
+      <div className={classNames(classes.bg)}>
         <div className={classNames("container-fluid-standard")}>
           <Box
             data-aos-delay="200"
@@ -111,22 +136,21 @@ function HeadSection(props) {
             <div
               className={classNames(classes.containerFix, "header-container")}
             >
-              <HeaderCarrocel />
+              <div
+                className="header-container-text"
+                data-aos-delay="1000"
+                data-aos="zoom"
+              >
+                <p>Conecte-se sem limites</p>
+              </div>
+              <ParticlesJs />
             </div>
           </Box>
         </div>
         <a className="btn-home" href="/planos">
-          <div className="home-button">
-            Contrate Aqui
-          </div>
+          <div className="home-button">Contrate Aqui</div>
         </a>
       </div>
-      <WaveBorder
-        upperColor={theme.palette.secondary.main}
-        lowerColor="#FFFFFF"
-        className={classes.waveBorder}
-        animationNegativeDelay={2}
-      />
     </Fragment>
   );
 }
