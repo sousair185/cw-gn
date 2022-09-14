@@ -114,6 +114,10 @@ const ParticlesJs = () => (
             enable: true,
             mode: "repulse",
           },
+          parallax: {
+            force: 2,
+            smooth: 10,
+          },
         },
       },
     }}
