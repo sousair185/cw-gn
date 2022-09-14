@@ -21,8 +21,8 @@ function Home(props) {
       <HeadSection />
       <BuscaCep2 />
       <PricingSection />
-      <Gnplay />
       <AboutUs />
+      <Gnplay />
       <Business />
       <ClientsCarrocel />
       <Phone />

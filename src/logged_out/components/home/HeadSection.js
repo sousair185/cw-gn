@@ -102,10 +102,10 @@ const ParticlesJs = () => (
     params={{
       particles: {
         number: {
-          value: 200,
+          value: 500,
         },
         size: {
-          value: 4,
+          value: 5,
         },
       },
       interactivity: {

@@ -7,7 +7,7 @@ const Business = () => {
     <div className="container-business">
       <div className="business-text">
         <span className="title">Empresa</span>
-        <p>Conheça as soluções de conectividade para seu estabelecimento</p>
+        <p>Conheça as soluções de conectividade para seu comércio</p>
         <span className="business-detail">
           Desenvolvemos projetos de telecomunicação personalizados que atendem
           as necessidades de empresas exigentes que buscam segurança, alta
@@ -19,25 +19,53 @@ const Business = () => {
           arial-label="business-services"
         >
           <ListItem disablePadding data-aos="fade-right" data-aos-delay="300">
-            <ListItemText primary="Internet banda larga (fibra óptica)" />
+            <ListItemText
+              sx={{ fontSize: "25px" }}
+              disableTypography
+              primary="Internet banda larga (fibra óptica)"
+            />
           </ListItem>
           <ListItem disablePadding data-aos="fade-right" data-aos-delay="600">
-            <ListItemText primary="IP dinâmico ou fixo" />
+            <ListItemText
+              sx={{ fontSize: "25px" }}
+              disableTypography
+              primary="IP dinâmico ou fixo"
+            />
           </ListItem>
           <ListItem disablePadding data-aos="fade-right" data-aos-delay="900">
-            <ListItemText primary="SLA de 12 ou 24 horas" />
+            <ListItemText
+              sx={{ fontSize: "25px" }}
+              disableTypography
+              primary="SLA de 12 ou 24 horas"
+            />
           </ListItem>
           <ListItem disablePadding data-aos="fade-right" data-aos-delay="1200">
-            <ListItemText primary="90% de garantia de banda" />
+            <ListItemText
+              sx={{ fontSize: "25px" }}
+              disableTypography
+              primary="90% de garantia de banda"
+            />
           </ListItem>
           <ListItem disablePadding data-aos="fade-right" data-aos-delay="1500">
-            <ListItemText primary="50% de upload da velocidade contratada" />
+            <ListItemText
+              sx={{ fontSize: "25px" }}
+              disableTypography
+              primary="50% de upload da velocidade contratada"
+            />
           </ListItem>
           <ListItem disablePadding data-aos="fade-right" data-aos-delay="1800">
-            <ListItemText primary="Suporte técnico especializado das 8h às 23h" />
+            <ListItemText
+              sx={{ fontSize: "25px" }}
+              disableTypography
+              primary="Suporte técnico especializado das 8h às 23h"
+            />
           </ListItem>
           <ListItem disablePadding data-aos="fade-right" data-aos-delay="2100">
-            <ListItemText primary="Segurança dos dados da sua empresa" />
+            <ListItemText
+              sx={{ fontSize: "25px" }}
+              disableTypography
+              primary="Segurança dos dados da sua empresa"
+            />
           </ListItem>
         </List>
       </div>

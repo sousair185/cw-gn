@@ -576,6 +576,7 @@ li.data {
   min-height: 100%;
   display: flex;
   padding: 0 80px;
+  margin-bottom: 15vw;
   margin-top: 8vw;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -617,7 +618,9 @@ li.data {
 .about-text p {
   padding: 0;
   margin: 0;
-  width: 100%;
+  line-height: 1.7em;
+  width: 60%;
+  font-weight: 600;
   text-align: start;
   color: #ffffff;
   margin-right: 10px;
@@ -628,13 +631,14 @@ li.data {
   color: #00aaac;
   width: 100%;
   text-align: start;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
 }
 
 .about-text span.subtitle {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 60px;
+  width: 60%;
   margin-bottom: 20px;
 }
 
@@ -746,8 +750,9 @@ li.data {
 .business-text p {
   padding: 0;
   margin: 0;
-  width: 80%;
-  font-size: 25px;
+  width: 70%;
+  line-height: 1.3em;
+  font-size: 60px;
   font-weight: bold;
 }
 
@@ -766,8 +771,15 @@ li.data {
   color: #00aaac;
   width: 100%;
   text-align: start;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
+}
+
+.business-detail {
+  width: 70%;
+  line-height: 1.9em;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .container-contact {
@@ -850,7 +862,7 @@ li.data {
 
 .box-phone {
   background-image: url("./assets/phone-bg.jpg");
-  min-height: 20vw;
+  min-height: 15vw;
   margin-top: 50px;
   margin-bottom: 150px;
   padding: 30px;
@@ -862,8 +874,9 @@ li.data {
 }
 .box-phone img {
   position: relative;
-  top: 0;
+  top: -15vw;
   left: 20%;
+  width: 400px;
 }
 
 .phone-text {
@@ -880,16 +893,21 @@ li.data {
   color: #00aaac;
   width: 100%;
   text-align: start;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
 }
 
 .phone-text p {
   padding: 0;
   margin: 0;
-  width: 80%;
-  font-size: 25px;
+  width: 60%;
+  font-size: 60px;
   font-weight: bold;
+}
+
+.phone-detail {
+  font-size: 20px;
+  width: 75%;
 }
 
 .box-phone button {
@@ -897,12 +915,13 @@ li.data {
   background-color: #1b128e;
   color: #fff;
   margin: 20px;
-  padding: 12px;
+  position: absolute;
+  padding: 15px;
   justify-content: center;
   border-radius: 8px;
   text-transform: uppercase;
   border: none;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .box-phone button:hover {
