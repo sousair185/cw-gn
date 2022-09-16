@@ -1,9 +1,9 @@
 import { Card, CardContent, Typography } from "@mui/material";
 import React from "react";
-import internet from "../../../assets/gnrede.png"
-import atendimento from "../../../assets/gnatendent.png"
-import seguranca from "../../../assets/gnsecurity.png"
-import cobertura from "../../../assets/gnlocation.png"
+import internet from "../../../assets/gnrede.png";
+import atendimento from "../../../assets/gnatendent.png";
+import seguranca from "../../../assets/gnsecurity.png";
+import cobertura from "../../../assets/gnlocation.png";
 
 const AboutUs = () => {
   return (
@@ -35,8 +35,17 @@ const AboutUs = () => {
           }}
         >
           <CardContent>
-            <img src={internet} alt="" />
-            <Typography variant="h5">Internet ultraveloz</Typography>
+            <Typography
+              variant="h5"
+              display="flex"
+              textAlign="initial"
+              fontWeight="600"
+              paddingBottom="10px"
+              alignItems="center"
+            >
+              <img src={internet} alt="" />
+              Internet ultraveloz
+            </Typography>
             <Typography variant="span">
               Ultravelocidade para compartilhar a internet com as pessoas que
               moram com você e ainda curtir jogos online, vídeos, filmes e
@@ -54,8 +63,15 @@ const AboutUs = () => {
           }}
         >
           <CardContent>
-            <img src={atendimento} alt="" />
-            <Typography variant="h5">
+            <Typography
+              variant="h5"
+              display="flex"
+              textAlign="initial"
+              fontWeight="600"
+              alignItems="center"
+              paddingBottom="10px"
+            >
+              <img src={atendimento} alt="" />
               Atendimento personalizado e especializado
             </Typography>
             <Typography variant="span">
@@ -74,8 +90,17 @@ const AboutUs = () => {
           }}
         >
           <CardContent>
-            <img src={seguranca} alt="" />
-            <Typography variant="h5">Soluções em segurança</Typography>
+            <Typography
+              variant="h5"
+              display="flex"
+              textAlign="initial"
+              fontWeight="600"
+              alignItems="center"
+              paddingBottom="10px"
+            >
+              <img src={seguranca} alt="" />
+              Soluções em segurança
+            </Typography>
             <Typography variant="span">
               Buscamos as melhores e mais tecnológicas ferramentas de mercado
               para garantir a qualidade e eficiência nos serviços prestados.
@@ -92,8 +117,17 @@ const AboutUs = () => {
           }}
         >
           <CardContent>
-            <img src={cobertura} alt="" />
-            <Typography variant="h5">Ampla cobertura</Typography>
+            <Typography
+              variant="h5"
+              display="flex"
+              textAlign="initial"
+              fontWeight="600"
+              alignItems="center"
+              paddingBottom="10px"
+            >
+              <img src={cobertura} alt="" />
+              Ampla cobertura
+            </Typography>
             <Typography variant="span">
               Estamos em constante expansão para atender sua necessidade aonde
               você estiver.

@@ -606,7 +606,8 @@ li.data {
 
 .about-card-container img {
   display: flex;
-  width: 50px;
+  width: 100px;
+  padding-right: 10px;
 }
 
 .about-text {
@@ -632,7 +633,7 @@ li.data {
 }
 
 .about-text span.title {
-  color: #00aaac;
+  color: #2e8ee0;
   width: 100%;
   text-align: start;
   font-size: 30px;
@@ -703,10 +704,13 @@ li.data {
   height: 180px;
   border-radius: 20px;
   transition: all 0.3s;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
 .card2 {
   width: 180px;
+
   height: 180px;
   color: #fff;
   background-color: #6d00fb;
@@ -773,7 +777,7 @@ li.data {
 }
 
 .business-text span.title {
-  color: #00aaac;
+  color: #2e8ee0;
   width: 100%;
   text-align: start;
   font-size: 30px;
@@ -789,13 +793,18 @@ li.data {
 
 .container-contact {
   background-image: url("../src/assets/contact-bg.jpg");
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
+  color: #000;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
   padding: 30px;
-  margin-top: 70px;
+  margin-top: -78px;
+  margin-bottom: 200px;
   background-position: right;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
@@ -813,6 +822,16 @@ li.data {
   outline: none;
   border: 0.1em solid;
   border-color: rgb(187, 187, 187);
+}
+
+.container-contact-left {
+  display: grid;
+  text-align: start;
+  align-content: stretch;
+  justify-items: start;
+  width: 40%;
+  justify-content: center;
+  align-items: start;
 }
 
 .contact-form button {
@@ -895,7 +914,7 @@ li.data {
 }
 
 .phone-text span.title {
-  color: #00aaac;
+  color: #2e8ee0;
   width: 100%;
   text-align: start;
   font-size: 30px;

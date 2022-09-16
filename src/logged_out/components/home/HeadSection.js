@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import { Box } from "@mui/material";
+import { Box, List, ListItem, ListItemText } from "@mui/material";
 import withStyles from "@mui/styles/withStyles";
 
 const styles = (theme) => ({
@@ -98,7 +98,7 @@ function HeadSection(props) {
       <div className={classNames(classes.bg)}>
         <div className={classNames("container-fluid-standard")}>
           <Box
-            data-aos-delay="200"
+            data-aos-delay="100"
             data-aos="zoom-in"
             display="flex"
             justifyContent="start"
@@ -108,10 +108,50 @@ function HeadSection(props) {
             >
               <div
                 className="header-container-text"
-                data-aos-delay="1000"
+                data-aos-delay="500"
                 data-aos="zoom"
               >
                 <span>Conecte-se sem limites</span>
+                <List
+          sx={{ width: "100%", maxWidth: 660 }}
+          arial-label="business-services"
+        >
+          <ListItem disablePadding data-aos="fade-right" data-aos-delay="600">
+            <ListItemText
+              sx={{ fontSize: "25px", fontWeight: "normal" }}
+              disableTypography
+              primary="Internet banda larga (fibra óptica)"
+            />
+          </ListItem>
+          <ListItem disablePadding data-aos="fade-right" data-aos-delay="900">
+            <ListItemText
+              sx={{ fontSize: "25px", fontWeight: "normal" }}
+              disableTypography
+              primary="Sem franquia de consumo"
+            />
+          </ListItem>
+          <ListItem disablePadding data-aos="fade-right" data-aos-delay="1200">
+            <ListItemText
+              sx={{ fontSize: "25px", fontWeight: "normal" }}
+              disableTypography
+              primary="Pacotes para você, sua família e sua empresa"
+            />
+          </ListItem>
+          <ListItem disablePadding data-aos="fade-right" data-aos-delay="1500">
+            <ListItemText
+              sx={{ fontSize: "25px", fontWeight: "normal" }}
+              disableTypography
+              primary="50% de upload da velocidade contratada"
+            />
+          </ListItem>
+          <ListItem disablePadding data-aos="fade-right" data-aos-delay="1800">
+            <ListItemText
+              sx={{ fontSize: "25px", fontWeight: "normal" }}
+              disableTypography
+              primary="Suporte técnico especializado das 8h às 23h"
+            />
+          </ListItem>
+        </List>
               </div>
             </div>
           </Box>
