@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import { Box } from "@mui/material";
 import withStyles from "@mui/styles/withStyles";
-import { Particles } from "@blackbox-vision/react-particles";
 
 const styles = (theme) => ({
   extraLargeButtonLabel: {
@@ -91,39 +90,6 @@ const styles = (theme) => ({
   },
 });
 
-const ParticlesJs = () => (
-  <Particles
-    id="simple"
-    width="auto"
-    height="100vh"
-    style={{
-      backgroundColor: "blue",
-    }}
-    params={{
-      particles: {
-        number: {
-          value: 500,
-        },
-        size: {
-          value: 5,
-        },
-      },
-      interactivity: {
-        events: {
-          onhover: {
-            enable: true,
-            mode: "repulse",
-          },
-          parallax: {
-            force: 2,
-            smooth: 10,
-          },
-        },
-      },
-    }}
-  />
-);
-
 function HeadSection(props) {
   const { classes } = props;
 
@@ -145,9 +111,8 @@ function HeadSection(props) {
                 data-aos-delay="1000"
                 data-aos="zoom"
               >
-                <p>Conecte-se sem limites</p>
+                <span>Conecte-se sem limites</span>
               </div>
-              <ParticlesJs />
             </div>
           </Box>
         </div>

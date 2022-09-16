@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800;900&display=swap");
 
 *,
 html,
 body,
 :root {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", Helvetica, Arial, Lucida, sans-serif;
 }
 #root {
   box-sizing: border-box;
@@ -12,7 +12,6 @@ body,
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: "Raleway", sans-serif;
 }
 
 .whats {
@@ -32,22 +31,22 @@ body,
 
 .btn-home {
   display: flex;
-  padding: 20px 30px;
+  padding: 25px 30px;
   text-align: center;
   justify-content: center;
   position: relative;
   border-radius: 100px;
   text-transform: uppercase;
   font-size: 20px;
-  font-weight: 800;
-  left: 25vw;
-  bottom: 10vw;
+  font-weight: 900;
+  /* left: 25vw; */
+  bottom: 20vw;
   margin: 0 auto;
-  width: 250px;
+  width: 280px;
   min-width: 5vw;
   background-color: rgb(255, 255, 255);
   text-decoration: none;
-  color: rgb(3, 27, 92);
+  color: #2c84cb;
 }
 
 .btn-home:hover {
@@ -56,7 +55,7 @@ body,
 }
 
 .home-button {
-  font-weight: bold;
+  font-weight: 900;
   letter-spacing: 0.1rem;
 }
 
@@ -424,6 +423,7 @@ li.data {
 
 .box-list {
   margin: 20px;
+  min-height: 200px;
   border-bottom: 2px solid rgba(207, 207, 207, 0.7);
 }
 
@@ -459,11 +459,15 @@ li.data {
 
 .container-fluid-standard {
   min-height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: auto;
   margin: 0 auto;
+  background-image: url("../src/assets/gnbgtexture.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #008dff;
+  background-image: linear-gradient(45deg, #008dff 0%, #0becd3 100%);
 }
 
 .box-gnplay {
@@ -554,9 +558,9 @@ li.data {
   position: absolute;
   left: 10vw;
   width: 40%;
-  top: 30vh;
-  font-weight: bold;
-  font-size: 6em;
+  top: 20vh;
+  font-weight: 900;
+  font-size: 5em;
 }
 
 .container-banners {
@@ -638,7 +642,8 @@ li.data {
 .about-text span.subtitle {
   font-weight: bold;
   font-size: 60px;
-  width: 60%;
+  width: 70%;
+  line-height: 1.3em;
   margin-bottom: 20px;
 }
 
