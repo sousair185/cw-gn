@@ -57,22 +57,22 @@ function NavBar(props) {
       icon: <BookIcon className="text-white" />,
     },
     {
-      link: "",
+      link: "https://api.whatsapp.com/send?phone=5519999705420&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano",
       name: "Para você",
       icon: <BookIcon className="text-white" />,
     },
     {
-      link: "",
+      link: "https://api.whatsapp.com/send?phone=5519999705420&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano",
       name: "Para sua empresa",
       icon: <BookIcon className="text-white" />,
     },
     {
-      link: "",
+      link: "https://api.whatsapp.com/send?phone=5519999705420&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano",
       name: "Contrate",
       icon: <BookIcon className="text-white" />,
     },
     {
-      link: "",
+      link: "https://api.whatsapp.com/send?phone=5519999705420&text=Oi%2C%20sou%20assinante%20e%20preciso%20de%20atendimento",
       name: "Área do Assinante",
       icon: <BookIcon className="text-white" />,
     },
@@ -121,16 +121,14 @@ function NavBar(props) {
                       className={classes.noDecoration}
                       onClick={handleMobileDrawerClose}
                     >
-                      <Button className="menu-text">{element.name}</Button>
+                      <Button onClick={element.onClick} className="menu-text">
+                        {element.name}
+                      </Button>
                     </Link>
                   );
                 }
                 return (
-                  <Button
-                    onClick={element.onClick}
-                    className="menu-text"
-                    key={element.name}
-                  >
+                  <Button className="menu-text" key={element.name}>
                     {element.name}
                   </Button>
                 );
@@ -138,7 +136,7 @@ function NavBar(props) {
             </Hidden>
           </div>
         </Toolbar>
-        <a href="whatsapp://send?">
+        <a href="https://wa.me/5519999705420">
           <span
             className="mascote-texto"
             data-hover="Olá, eu sou o Geh, como posso te ajudar?"

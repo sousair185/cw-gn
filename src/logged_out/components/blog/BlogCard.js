@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import classNames from "classnames";
 import { Typography, Card, Box } from "@mui/material";
 
-
 import withStyles from "@mui/styles/withStyles";
 
 const styles = (theme) => ({
@@ -70,14 +69,17 @@ function BlogCard(props) {
           to={url}
           className={classNames(classes.noDecoration, classes.showFocus)}
         >
-          <Typography variant="h6">
-            <span className={classes.title}>{title}</span>
+          <Typography variant="h6" component={"span"} className={classes.title}>
+            {title}
           </Typography>
         </Link>
         <Typography variant="body1" color="textSecondary">
           {snippet}
           <Link to={url} className={classes.noDecoration} tabIndex={-1}>
-            <span className={classes.link}> saiba mais...</span>
+            <Typography component={"span"} className={classes.link}>
+              {" "}
+              saiba mais...
+            </Typography>
           </Link>
         </Typography>
       </Box>
@@ -89,8 +91,8 @@ BlogCard.propTypes = {
   classes: PropTypes.object.isRequired,
   url: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  date: PropTypes.number.isRequired,
-  snippet: PropTypes.string.isRequired,
+  // date: PropTypes.number.isRequired,
+  // snippet: PropTypes.string.isRequired,
   src: PropTypes.string,
 };
 

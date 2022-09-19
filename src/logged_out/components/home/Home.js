@@ -9,6 +9,7 @@ import Business from "../business/Business";
 import ClientsCarrocel from "../clients/ClientsCarrocel";
 import Gnplay from "../gnplay/Gnplay";
 import Phone from "../phone/Phone";
+import { HashRouter } from "react-router-dom";
 
 function Home(props) {
   const { selectHome } = props;
@@ -17,6 +18,7 @@ function Home(props) {
   }, [selectHome]);
   return (
     <Fragment>
+    <HashRouter>
       <HeadSection />
       <BuscaCep2 />
       <PricingSection />
@@ -26,6 +28,7 @@ function Home(props) {
       <ClientsCarrocel />
       <Phone />
       <Carrocel />
+      </HashRouter>
     </Fragment>
   );
 }
