@@ -47,12 +47,13 @@ function NavBar(props) {
       icon: <HomeIcon className="text-white" />,
     },
     {
-      link: "/planos",
+      link: "/precos",
       name: "Planos",
       icon: <BookIcon className="text-white" />,
     },
     {
-      link: "",
+      link: "/sobre",
+      ref: "/sobre",
       name: "Sobre nós",
       icon: <BookIcon className="text-white" />,
     },
@@ -105,7 +106,7 @@ function NavBar(props) {
               <IconButton
                 className={classes.menuButton}
                 onClick={handleMobileDrawerOpen}
-                aria-label="Abrir navegação"
+                aria-label="Abrir nselectAboutavegação"
                 size="large"
               >
                 <MenuIcon color="secondary" />
@@ -121,7 +122,11 @@ function NavBar(props) {
                       className={classes.noDecoration}
                       onClick={handleMobileDrawerClose}
                     >
-                      <Button onClick={element.onClick} className="menu-text">
+                      <Button
+                        href={element.ref}
+                        onClick={element.onClick}
+                        className="menu-text"
+                      >
                         {element.name}
                       </Button>
                     </Link>

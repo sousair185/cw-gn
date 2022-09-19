@@ -1,14 +1,13 @@
 import { List, ListItem, ListItemText } from "@mui/material";
 import React from "react";
+import { useRef } from "react";
 import businessicon from "../../../assets/business-security.png";
 
-
-
 const Business = () => {
-
+  const ref = useRef(null);
 
   return (
-    <div className="container-business" >
+    <div id="business" className="container-business" ref={ref}>
       <div className="business-text">
         <span className="title">Empresa</span>
         <p>Conheça as soluções de conectividade para seu comércio</p>

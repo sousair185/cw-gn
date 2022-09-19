@@ -7,7 +7,7 @@ import cobertura from "../../../assets/gnlocation.png";
 
 const AboutUs = () => {
   return (
-    <div className="container-aboutus">
+    <div className="container-aboutus" id="aboutus">
       <div className="about-text">
         <span className="title">Sobre nós</span>
         <span className="subtitle">Por que escolher a Geração Net?</span>

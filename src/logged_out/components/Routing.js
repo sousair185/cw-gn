@@ -6,9 +6,11 @@ import Home from "./home/Home";
 import Blog from "./blog/Blog";
 import BlogPost from "./blog/BlogPost";
 import useLocationBlocker from "../../shared/functions/useLocationBlocker";
+import AboutPage from "../sobre/AboutPage";
+import PlanosPage from "../planos/PlanosPage";
 
 function Routing(props) {
-  const { blogPosts, selectBlog, selectHome } = props;
+  const { blogPosts, selectBlog, selectHome, selectAbout, selectPlain } = props;
   useLocationBlocker();
   return (
     <Switch>
@@ -32,6 +34,18 @@ function Routing(props) {
         component={Blog}
         selectBlog={selectBlog}
         blogPosts={blogPosts}
+      />
+      <PropsRoute
+        exact
+        path="/sobre"
+        component={AboutPage}
+        selectAbout={selectAbout}
+      />
+      <PropsRoute
+        exact
+        path="/precos"
+        component={PlanosPage}
+        selectAbout={selectPlain}
       />
       <PropsRoute path="/" component={Home} selectHome={selectHome} />
     </Switch>
