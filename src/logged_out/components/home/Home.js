@@ -7,7 +7,6 @@ import Carrocel from "../carousel/Carousel";
 import AboutUs from "../aboutus/AboutUs";
 import Business from "../business/Business";
 import ClientsCarrocel from "../clients/ClientsCarrocel";
-// import ContactCard from "../contactCard/ContactCard";
 import Gnplay from "../gnplay/Gnplay";
 import Phone from "../phone/Phone";
 
@@ -27,7 +26,6 @@ function Home(props) {
       <ClientsCarrocel />
       <Phone />
       <Carrocel />
-      {/* <ContactCard /> */}
     </Fragment>
   );
 }
