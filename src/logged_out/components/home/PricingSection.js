@@ -31,7 +31,9 @@ function PricingSection() {
                 baixo
               </p>
             </div>
-            <a href="whatsapp://send?">Contratar</a>
+            <a href="https://api.whatsapp.com/send?phone=5519999705420&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano">
+              Contratar
+            </a>
           </div>
         </div>
         <div className="box">
@@ -51,7 +53,9 @@ function PricingSection() {
                 e Vídeos
               </p>
             </div>
-            <a href="whatsapp://send?">Contratar</a>
+            <a href="https://api.whatsapp.com/send?phone=5519999705420&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano">
+              Contratar
+            </a>
           </div>
         </div>
         <div className="box">
@@ -71,7 +75,9 @@ function PricingSection() {
                 estabilidade e segurança
               </p>
             </div>
-            <a href="whatsapp://send?">Contratar</a>
+            <a href="https://api.whatsapp.com/send?phone=5519999705420&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano">
+              Contratar
+            </a>
           </div>
         </div>
         <div className="box">
@@ -91,7 +97,9 @@ function PricingSection() {
                 estabilidade e segurança
               </p>
             </div>
-            <a href="whatsapp://send?">Contratar</a>
+            <a href="https://api.whatsapp.com/send?phone=5519999705420&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano">
+              Contratar
+            </a>
           </div>
         </div>
       </div>
