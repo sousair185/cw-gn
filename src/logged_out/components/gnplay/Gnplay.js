@@ -89,7 +89,7 @@ const Gnplay = () => {
                 </ListItemText>
               </ListItem>
             </List>
-            <a href="http://wa.me/" className="gnplay-link">
+            <a href="http://wa.me/5519999705420/" className="gnplay-link">
               <button>Confira Nossos Preços</button>
             </a>
           </Card>
@@ -152,7 +152,9 @@ const Gnplay = () => {
                 </ListItemText>
               </ListItem>
             </List>
-            <button>Confira Nossos Preços</button>
+            <a href="http://wa.me/5519999705420/" className="gnplay-link">
+              <button>Confira Nossos Preços</button>
+            </a>
           </Card>
           <Card
             className="gnplay-card-card"
@@ -214,7 +216,9 @@ const Gnplay = () => {
                 </ListItemText>
               </ListItem>
             </List>
-            <button>Confira Nossos Preços</button>
+            <a href="http://wa.me/5519999705420/" className="gnplay-link">
+              <button>Confira Nossos Preços</button>
+            </a>
           </Card>
           <Card
             className="gnplay-card-card"
@@ -276,7 +280,9 @@ const Gnplay = () => {
                 </ListItemText>
               </ListItem>
             </List>
-            <button>Confira Nossos Preços</button>
+            <a href="http://wa.me/5519999705420/" className="gnplay-link">
+              <button>Confira Nossos Preços</button>
+            </a>
           </Card>
         </div>
         <div className="gnplay-studio">

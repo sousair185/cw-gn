@@ -38,7 +38,7 @@ function Main(props) {
 
   const selectBlog = useCallback(() => {
     smoothScrollTop();
-    document.title = "Geração Net - Blog";
+    document.title = "Geração Net";
     setSelectedTab("Blog");
   }, [setSelectedTab]);
 

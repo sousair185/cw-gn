@@ -113,50 +113,70 @@ function HeadSection(props) {
               >
                 <span>Conecte-se sem limites</span>
                 <List
-          sx={{ width: "100%", maxWidth: 660 }}
-          arial-label="business-services"
-        >
-          <ListItem disablePadding data-aos="fade-right" data-aos-delay="600">
-            <ListItemText
-              sx={{ fontSize: "25px", fontWeight: "normal" }}
-              disableTypography
-              primary="Internet banda larga (fibra óptica)"
-            />
-          </ListItem>
-          <ListItem disablePadding data-aos="fade-right" data-aos-delay="900">
-            <ListItemText
-              sx={{ fontSize: "25px", fontWeight: "normal" }}
-              disableTypography
-              primary="Sem franquia de consumo"
-            />
-          </ListItem>
-          <ListItem disablePadding data-aos="fade-right" data-aos-delay="1200">
-            <ListItemText
-              sx={{ fontSize: "25px", fontWeight: "normal" }}
-              disableTypography
-              primary="Pacotes para você, sua família e sua empresa"
-            />
-          </ListItem>
-          <ListItem disablePadding data-aos="fade-right" data-aos-delay="1500">
-            <ListItemText
-              sx={{ fontSize: "25px", fontWeight: "normal" }}
-              disableTypography
-              primary="50% de upload da velocidade contratada"
-            />
-          </ListItem>
-          <ListItem disablePadding data-aos="fade-right" data-aos-delay="1800">
-            <ListItemText
-              sx={{ fontSize: "25px", fontWeight: "normal" }}
-              disableTypography
-              primary="Suporte técnico especializado das 8h às 23h"
-            />
-          </ListItem>
-        </List>
+                  sx={{ width: "100%", maxWidth: 660 }}
+                  arial-label="business-services"
+                >
+                  <ListItem
+                    disablePadding
+                    data-aos="fade-right"
+                    data-aos-delay="600"
+                  >
+                    <ListItemText
+                      sx={{ fontSize: "25px", fontWeight: "normal" }}
+                      disableTypography
+                      primary="Internet banda larga (fibra óptica)"
+                    />
+                  </ListItem>
+                  <ListItem
+                    disablePadding
+                    data-aos="fade-right"
+                    data-aos-delay="900"
+                  >
+                    <ListItemText
+                      sx={{ fontSize: "25px", fontWeight: "normal" }}
+                      disableTypography
+                      primary="Sem franquia de consumo"
+                    />
+                  </ListItem>
+                  <ListItem
+                    disablePadding
+                    data-aos="fade-right"
+                    data-aos-delay="1200"
+                  >
+                    <ListItemText
+                      sx={{ fontSize: "25px", fontWeight: "normal" }}
+                      disableTypography
+                      primary="Pacotes para você, sua família e sua empresa"
+                    />
+                  </ListItem>
+                  <ListItem
+                    disablePadding
+                    data-aos="fade-right"
+                    data-aos-delay="1500"
+                  >
+                    <ListItemText
+                      sx={{ fontSize: "25px", fontWeight: "normal" }}
+                      disableTypography
+                      primary="50% de upload da velocidade contratada"
+                    />
+                  </ListItem>
+                  <ListItem
+                    disablePadding
+                    data-aos="fade-right"
+                    data-aos-delay="1800"
+                  >
+                    <ListItemText
+                      sx={{ fontSize: "25px", fontWeight: "normal" }}
+                      disableTypography
+                      primary="Suporte técnico especializado das 8h às 23h"
+                    />
+                  </ListItem>
+                </List>
               </div>
             </div>
           </Box>
         </div>
-        <a className="btn-home" href="/planos">
+        <a className="btn-home" href="http://wa.me/5519999705420/">
           <div className="home-button">Contrate Aqui</div>
         </a>
       </div>

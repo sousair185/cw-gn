@@ -462,12 +462,10 @@ li.data {
   height: 100vh;
   width: auto;
   margin: 0 auto;
-  background-image: url("../src/assets/gnbgtexture.png");
-  background-position: center;
+  background-image: url("../src/assets/gnheaderbg.png");
+  background-position: unset;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #008dff;
-  background-image: linear-gradient(45deg, #008dff 0%, #0becd3 100%);
 }
 
 .box-gnplay {

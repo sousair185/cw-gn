@@ -6,7 +6,7 @@ import withStyles from "@mui/styles/withStyles";
 import MenuIcon from "@mui/icons-material/Menu";
 import HomeIcon from "@mui/icons-material/Home";
 // import HowToRegIcon from "@mui/icons-material/HowToReg";
-import LockOpenIcon from "@mui/icons-material/LockOpen";
+// import LockOpenIcon from "@mui/icons-material/LockOpen";
 import BookIcon from "@mui/icons-material/Book";
 import NavigationDrawer from "../../../shared/components/NavigationDrawer";
 import logo from "../../../assets/menu-logo.png";
@@ -31,10 +31,15 @@ const styles = (theme) => ({
 });
 
 function NavBar(props) {
+  const linkcontrate =
+    "https://api.whatsapp.com/send?phone=5519999705420&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano";
+
+  const linkatendimento =
+    "https://api.whatsapp.com/send?phone=5519999705420&text=Oi%2C%20sou%20assinante%20e%20preciso%20de%20atendimento";
   const {
     classes,
     // openRegisterDialog,
-    openLoginDialog,
+    // openLoginDialog,
     handleMobileDrawerOpen,
     handleMobileDrawerClose,
     mobileDrawerOpen,
@@ -53,27 +58,26 @@ function NavBar(props) {
     },
     {
       link: "/sobre",
-      ref: "/sobre",
       name: "Sobre nós",
       icon: <BookIcon className="text-white" />,
     },
     {
-      link: "https://api.whatsapp.com/send?phone=5519999705420&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano",
+      link: linkcontrate,
       name: "Para você",
       icon: <BookIcon className="text-white" />,
     },
     {
-      link: "https://api.whatsapp.com/send?phone=5519999705420&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano",
+      link: linkcontrate,
       name: "Para sua empresa",
       icon: <BookIcon className="text-white" />,
     },
     {
-      link: "https://api.whatsapp.com/send?phone=5519999705420&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano",
+      link: linkcontrate,
       name: "Contrate",
       icon: <BookIcon className="text-white" />,
     },
     {
-      link: "https://api.whatsapp.com/send?phone=5519999705420&text=Oi%2C%20sou%20assinante%20e%20preciso%20de%20atendimento",
+      link: linkatendimento,
       name: "Área do Assinante",
       icon: <BookIcon className="text-white" />,
     },
@@ -82,11 +86,11 @@ function NavBar(props) {
     //   onClick: openRegisterDialog,
     //   icon: <HowToRegIcon className="text-white" />,
     // },
-    {
-      name: "Login",
-      onClick: openLoginDialog,
-      icon: <LockOpenIcon className="text-white" />,
-    },
+    // {
+    //   name: "Login",
+    //   onClick: openLoginDialog,
+    //   icon: <LockOpenIcon className="text-white" />,
+    // },
   ];
   return (
     <div className={classes.root}>
@@ -122,13 +126,7 @@ function NavBar(props) {
                       className={classes.noDecoration}
                       onClick={handleMobileDrawerClose}
                     >
-                      <Button
-                        href={element.ref}
-                        onClick={element.onClick}
-                        className="menu-text"
-                      >
-                        {element.name}
-                      </Button>
+                      <Button className="menu-text">{element.name}</Button>
                     </Link>
                   );
                 }
