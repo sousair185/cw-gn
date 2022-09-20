@@ -14,7 +14,9 @@ const Phone = () => {
             qualidade e ultravelocidade.
           </span>
         </div>
-        <button>Saiba Mais</button>
+        <a href="http://wa.me/5519999705420/">
+          <button>Saiba Mais</button>
+        </a>
         <img
           data-aos="zoom"
           data-aos-delay="200"

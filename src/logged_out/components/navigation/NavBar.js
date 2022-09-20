@@ -62,22 +62,22 @@ function NavBar(props) {
       icon: <BookIcon className="text-white" />,
     },
     {
-      link: linkcontrate,
+      onClick: linkcontrate,
       name: "Para você",
       icon: <BookIcon className="text-white" />,
     },
     {
-      link: linkcontrate,
+      onClick: linkcontrate,
       name: "Para sua empresa",
       icon: <BookIcon className="text-white" />,
     },
     {
-      link: linkcontrate,
+      onClick: linkcontrate,
       name: "Contrate",
       icon: <BookIcon className="text-white" />,
     },
     {
-      link: linkatendimento,
+      onClick: linkatendimento,
       name: "Área do Assinante",
       icon: <BookIcon className="text-white" />,
     },
@@ -130,10 +130,19 @@ function NavBar(props) {
                     </Link>
                   );
                 }
+                if (element.name === "Login") {
+                  return (
+                    <Button className="menu-text" key={element.name}>
+                      {element.name}
+                    </Button>
+                  );
+                }
                 return (
-                  <Button className="menu-text" key={element.name}>
-                    {element.name}
-                  </Button>
+                  <a className="menu-text" href="http://wa.me/5519999705420/">
+                    <Button className="menu-text" key={element.name}>
+                      {element.name}
+                    </Button>
+                  </a>
                 );
               })}
             </Hidden>
