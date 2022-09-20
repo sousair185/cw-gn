@@ -15,7 +15,7 @@ const Phone = () => {
           </span>
         </div>
         <a href="http://wa.me/5519999705420/">
-          <button>Saiba Mais</button>
+          Saiba Mais
         </a>
         <img
           data-aos="zoom"

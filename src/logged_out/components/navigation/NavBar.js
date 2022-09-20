@@ -130,16 +130,9 @@ function NavBar(props) {
                     </Link>
                   );
                 }
-                if (element.name === "Login") {
-                  return (
-                    <Button className="menu-text" key={element.name}>
-                      {element.name}
-                    </Button>
-                  );
-                }
                 return (
                   <a className="menu-text" href="http://wa.me/5519999705420/">
-                    <Button className="menu-text" key={element.name}>
+                    <Button className="menu-text">
                       {element.name}
                     </Button>
                   </a>

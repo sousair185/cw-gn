@@ -26,9 +26,9 @@ const Gnplay = () => {
           alt="gnplay"
           className="gnplay-logo"
         />
-        <div className="gn-title">O melhor combo</div>
+        <div className="gn-title">O melhor combo para se conectar</div>
         <div className="gn-subtitle">
-          Para conectar o que realmente importa!
+          Com o que realmente importa
         </div>
         <div className="gnplay-card">
           <Card

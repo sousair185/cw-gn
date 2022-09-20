@@ -13,15 +13,26 @@ const AboutUs = () => {
         <span className="subtitle">Por que escolher a Geração Net?</span>
         <p>
           Somos uma Geração, estamos conectados e conectamos pessoas, ideias e
-          empresas. Nosso compromisso é oferecer o melhor em tecnologia,
-          competência técnica e alta qualidade, tudo isso sem perder a
-          humanização. Somos uma empresa composta por pessoas que entregam seu
-          melhor para conectar novas histórias, criar novos negócios e promover
-          novos encontros! Prezamos pela ética, pela valorização do ser humano e
-          pela entrega de um serviço que facilite, entretenha e transforme a
-          vida dos nossos clientes. Nos comprometemos diariamente em fazer o
-          nosso melhor.
+          empresas.
         </p>
+        <p>
+          Nosso compromisso é oferecer o melhor em tecnologia, competência
+          técnica e alta qualidade, tudo isso sem perder a humanização.
+        </p>
+        <p>
+          Somos uma empresa composta por pessoas que entregam seu melhor para
+          conectar novas histórias, criar novos negócios e promover novos
+          encontros!
+        </p>
+        <p>
+          Prezamos pela ética, pela valorização do ser humano e pela entrega de
+          um serviço que facilite, entretenha e transforme a vida dos nossos
+          clientes. Nos comprometemos diariamente em fazer o nosso melhor.
+        </p>
+
+        <a href="/precos" className="about-btn">
+          Conheça nossos Planos
+        </a>
       </div>
 
       <div className="about-card-container">
@@ -33,6 +44,8 @@ const AboutUs = () => {
             borderRadius: 4,
             boxShadow: "0px 3px 9px 3px rgba(0,0,0,0.45)",
           }}
+          data-aos="fade"
+          data-aos-delay="300"
         >
           <CardContent>
             <Typography
@@ -46,7 +59,14 @@ const AboutUs = () => {
               <img src={internet} alt="" />
               Internet ultraveloz
             </Typography>
-            <Typography variant="span">
+            <Typography
+              variant="span"
+              width="70%"
+              display="block"
+              marginLeft="27%"
+              position="relative"
+              top="-2vw"
+            >
               Ultravelocidade para compartilhar a internet com as pessoas que
               moram com você e ainda curtir jogos online, vídeos, filmes e
               músicas.
@@ -61,6 +81,8 @@ const AboutUs = () => {
             borderRadius: 4,
             boxShadow: "0px 3px 9px 3px rgba(0,0,0,0.45)",
           }}
+          data-aos="fade"
+          data-aos-delay="600"
         >
           <CardContent>
             <Typography
@@ -74,7 +96,14 @@ const AboutUs = () => {
               <img src={atendimento} alt="" />
               Atendimento personalizado e especializado
             </Typography>
-            <Typography variant="span">
+            <Typography
+              variant="span"
+              width="70%"
+              display="block"
+              marginLeft="27%"
+              position="relative"
+              top="-2vw"
+            >
               Estamos preparados para entender sua necessidade e oferecer a
               melhor solução para suas dúvidas.
             </Typography>
@@ -88,6 +117,8 @@ const AboutUs = () => {
             borderRadius: 4,
             boxShadow: "0px 3px 9px 3px rgba(0,0,0,0.45)",
           }}
+          data-aos="fade"
+          data-aos-delay="900"
         >
           <CardContent>
             <Typography
@@ -101,7 +132,14 @@ const AboutUs = () => {
               <img src={seguranca} alt="" />
               Soluções em segurança
             </Typography>
-            <Typography variant="span">
+            <Typography
+              variant="span"
+              width="70%"
+              display="block"
+              marginLeft="27%"
+              position="relative"
+              top="-2vw"
+            >
               Buscamos as melhores e mais tecnológicas ferramentas de mercado
               para garantir a qualidade e eficiência nos serviços prestados.
             </Typography>
@@ -115,6 +153,8 @@ const AboutUs = () => {
             borderRadius: 4,
             boxShadow: "0px 3px 9px 3px rgba(0,0,0,0.45)",
           }}
+          data-aos="fade"
+          data-aos-delay="1200"
         >
           <CardContent>
             <Typography
@@ -128,16 +168,20 @@ const AboutUs = () => {
               <img src={cobertura} alt="" />
               Ampla cobertura
             </Typography>
-            <Typography variant="span">
+            <Typography
+              variant="span"
+              width="70%"
+              display="block"
+              marginLeft="27%"
+              position="relative"
+              top="-2vw"
+            >
               Estamos em constante expansão para atender sua necessidade aonde
               você estiver.
             </Typography>
           </CardContent>
         </Card>
       </div>
-      <a href="/planos" className="about-btn">
-        Conheça nossos Planos
-      </a>
     </div>
   );
 };

@@ -5,20 +5,27 @@ import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
 import CableIcon from "@mui/icons-material/Cable";
 import WifiSharpIcon from "@mui/icons-material/WifiSharp";
 import AssuredWorkloadSharpIcon from "@mui/icons-material/AssuredWorkloadSharp";
+import AddTaskIcon from "@mui/icons-material/AddTask";
 
 function PricingSection() {
   return (
     <div className="container-box-title">
-      <strong>
-        Conheças as melhores opções de <span>planos de internet</span> para
-        você, sua família e empresa
-      </strong>
+      <div className="container-box-text">
+        <strong>
+          Conheças as melhores opções de <span>planos de internet</span> para
+          você, sua família e empresa
+        </strong>
+      </div>
+      <div className="container-box-subtext">
+        <p>Selecione o plano que mais combina com você</p>
+      </div>
       <div className="container-box">
         <div className="box">
           <div className="content-title">
             <h2>Para você</h2>
           </div>
           <div className="content">
+            <h1>300Mb</h1>
             <div className="box-list">
               <p>
                 <CableIcon sx={{ marginRight: 0.6 }} /> 100% Fibra Óptica
@@ -29,6 +36,14 @@ function PricingSection() {
               <p>
                 <SportsEsportsIcon sx={{ marginRight: 0.6 }} /> Jogue com ping
                 baixo
+              </p>
+              <p>
+                <AddTaskIcon sx={{ marginRight: 0.6 }} />
+                Instalação inclusa
+              </p>
+              <p>
+                <AddTaskIcon sx={{ marginRight: 0.6 }} />
+                Até 3 dispositivos conectados
               </p>
             </div>
             <a href="https://api.whatsapp.com/send?phone=5519999705420&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano">
@@ -41,6 +56,7 @@ function PricingSection() {
             <h2>Para família</h2>
           </div>
           <div className="content">
+          <h1>500Mb</h1>
             <div className="box-list">
               <p>
                 <CableIcon sx={{ marginRight: 0.6 }} /> 100% Fibra Óptica
@@ -51,6 +67,14 @@ function PricingSection() {
               <p>
                 <LiveTvIcon sx={{ marginRight: 0.6 }} /> Assista Filmes, Séries
                 e Vídeos
+              </p>
+              <p>
+                <AddTaskIcon sx={{ marginRight: 0.6 }} />
+                Instalação inclusa
+              </p>
+              <p>
+                <AddTaskIcon sx={{ marginRight: 0.6 }} />
+                Até 4 dispositivos conectados
               </p>
             </div>
             <a href="https://api.whatsapp.com/send?phone=5519999705420&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano">
@@ -63,16 +87,19 @@ function PricingSection() {
             <h2>Para empresa</h2>
           </div>
           <div className="content">
+          <h1>+500Mb</h1>
             <div className="box-list">
               <p>
-                <CableIcon sx={{ marginRight: 0.6 }} /> 100% Fibra Óptica
-              </p>
-              <p>
-                <WifiSharpIcon sx={{ marginRight: 0.6 }} /> Wi-fi incluso
+                <AddTaskIcon sx={{ marginRight: 0.6 }} />
+                Planos personalizados conforme a necessidade de cada cliente
               </p>
               <p>
                 <AssuredWorkloadSharpIcon sx={{ marginRight: 0.6 }} /> Suporte,
                 estabilidade e segurança
+              </p>
+              <p>
+                <AddTaskIcon sx={{ marginRight: 0.6 }} />
+                Instalação inclusa
               </p>
             </div>
             <a href="https://api.whatsapp.com/send?phone=5519999705420&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano">
@@ -85,6 +112,7 @@ function PricingSection() {
             <h2>Para área rual</h2>
           </div>
           <div className="content">
+          <h1>200Mb</h1>
             <div className="box-list">
               <p>
                 <CableIcon sx={{ marginRight: 0.6 }} /> 100% Fibra Óptica
@@ -95,6 +123,14 @@ function PricingSection() {
               <p>
                 <AssuredWorkloadSharpIcon sx={{ marginRight: 0.6 }} /> Suporte,
                 estabilidade e segurança
+              </p>
+              <p>
+                <AddTaskIcon sx={{ marginRight: 0.6 }} />
+                Instalação inclusa
+              </p>
+              <p>
+                <AddTaskIcon sx={{ marginRight: 0.6 }} />
+                Até 2 dispositivos conectados
               </p>
             </div>
             <a href="https://api.whatsapp.com/send?phone=5519999705420&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano">

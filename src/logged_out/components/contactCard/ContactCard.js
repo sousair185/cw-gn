@@ -1,8 +1,8 @@
 import { Typography } from "@mui/material";
 import React, { useState } from "react";
 import PhoneInput from "react-phone-input-2";
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import WhereToVoteIcon from '@mui/icons-material/WhereToVote';
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import WhereToVoteIcon from "@mui/icons-material/WhereToVote";
 import "react-phone-input-2/lib/style.css";
 
 const FORM_ENDPOINT =
@@ -95,7 +95,7 @@ const ContactForm = () => {
       <div className="container-contact-right">
         <Typography
           variant="h2"
-          align="center"
+          align="start"
           sx={{ paddingBottom: 2, fontWeight: "bold" }}
         >
           Fale Conosco
@@ -108,15 +108,15 @@ const ContactForm = () => {
           target="_blank"
         >
           <Typography variant="h6">
-            <span>Nome</span>
+            <span></span>
             <input type="text" placeholder="Seu nome" name="name" required />
           </Typography>
           <Typography variant="h6">
-            <span>E-mail de contato</span>
+            <span></span>
             <input type="email" placeholder="E-mail" name="email" required />
           </Typography>
           <Typography variant="h6" aria-label="Telefone">
-            <span>Telefone</span>
+            <span></span>
             <PhoneInputGn />
           </Typography>
           <Typography variant="h6">
@@ -127,19 +127,26 @@ const ContactForm = () => {
       <div className="container-contact-left">
         <Typography
           variant="h2"
-          align="center"
+          align="start"
           sx={{ paddingBottom: 2, fontWeight: "bold" }}
         >
           Nossos Contatos
         </Typography>
-        <Typography variant="h6" sx={{fontWeight: "600"}}>
-        <WhatsAppIcon />
-        Whatsapp: (19) 99970.5420</Typography>
-        <Typography variant="h6" sx={{fontWeight: "600"}}>
-        <WhereToVoteIcon />
+        <WhatsAppIcon
+          sx={{ color: "#0c71c3", position: "relative", top: "25px", fontSize: "30px" }}
+        />
+        <Typography variant="h6" sx={{ marginLeft: "50px", fontWeight: "600" }}>
+          Whatsapp: (19) 99970.5420
+        </Typography>
+        <WhereToVoteIcon
+          sx={{ color: "#0c71c3", position: "relative", top: "25px", fontSize: "30px" }}
+        />
+        <Typography variant="h6" sx={{ marginLeft: "50px", fontWeight: "600" }}>
           Rua Pedro Elias, 681 - Vista Alegre, Limeira - SP
         </Typography>
-        <Typography variant="h7">Segunda a Sábado: 8h às 18h</Typography>
+        <Typography variant="h7" sx={{ marginLeft: "50px" }}>
+          Segunda a Sábado: 8h às 18h
+        </Typography>
       </div>
     </div>
   );

@@ -172,13 +172,13 @@ function HeadSection(props) {
                     />
                   </ListItem>
                 </List>
+        <a className="btn-home" href="http://wa.me/5519999705420/">
+          <div className="home-button">Contrate Aqui</div>
+        </a>
               </div>
             </div>
           </Box>
         </div>
-        <a className="btn-home" href="http://wa.me/5519999705420/">
-          <div className="home-button">Contrate Aqui</div>
-        </a>
       </div>
     </Fragment>
   );
