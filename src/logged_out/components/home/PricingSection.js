@@ -25,7 +25,9 @@ function PricingSection() {
             <h2>Para você</h2>
           </div>
           <div className="content">
-            <h1>300Mb</h1>
+            <h1>
+              <span>300</span>Mb
+            </h1>
             <div className="box-list">
               <p>
                 <CableIcon sx={{ marginRight: 0.6 }} /> 100% Fibra Óptica
@@ -56,7 +58,9 @@ function PricingSection() {
             <h2>Para família</h2>
           </div>
           <div className="content">
-          <h1>500Mb</h1>
+            <h1>
+              <span>500</span>Mb
+            </h1>
             <div className="box-list">
               <p>
                 <CableIcon sx={{ marginRight: 0.6 }} /> 100% Fibra Óptica
@@ -87,11 +91,11 @@ function PricingSection() {
             <h2>Para empresa</h2>
           </div>
           <div className="content">
-          <h1>+500Mb</h1>
+            <h1>Plano personalizado</h1>
             <div className="box-list">
               <p>
                 <AddTaskIcon sx={{ marginRight: 0.6 }} />
-                Planos personalizados conforme a necessidade de cada cliente
+                Conforme a necessidade da empresa
               </p>
               <p>
                 <AssuredWorkloadSharpIcon sx={{ marginRight: 0.6 }} /> Suporte,
@@ -112,7 +116,9 @@ function PricingSection() {
             <h2>Para área rual</h2>
           </div>
           <div className="content">
-          <h1>200Mb</h1>
+            <h1>
+              <span>200</span>Mb
+            </h1>
             <div className="box-list">
               <p>
                 <CableIcon sx={{ marginRight: 0.6 }} /> 100% Fibra Óptica

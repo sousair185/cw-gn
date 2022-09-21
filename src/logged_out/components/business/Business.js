@@ -14,7 +14,7 @@ const Business = () => {
             as necessidades de empresas exigentes que buscam segurança, alta
             qualidade e ultravelocidade.
           </span>
-          <a href="http://wa.me/">Saiba Mais</a>
+          <a href="http://wa.me/5519999705420/">Saiba Mais</a>
         </div>
         <div className="business-list">
           <span>O que oferecemos:</span>
@@ -88,7 +88,9 @@ const Business = () => {
               />
             </ListItem>
           </List>
-            <a href="http://wa.me/">Conheça tudo que a GN pode oferecer</a>
+          <a href="http://wa.me/5519999705420/">
+            Conheça tudo que a GN pode oferecer
+          </a>
         </div>
       </div>
       <img src={businessicon} alt="business-icon" className="business-icon" />
