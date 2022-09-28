@@ -6,6 +6,7 @@ import CableIcon from "@mui/icons-material/Cable";
 import WifiSharpIcon from "@mui/icons-material/WifiSharp";
 import AssuredWorkloadSharpIcon from "@mui/icons-material/AssuredWorkloadSharp";
 import AddTaskIcon from "@mui/icons-material/AddTask";
+import { Typography } from "@mui/material";
 
 function PricingSection() {
   return (
@@ -41,7 +42,7 @@ function PricingSection() {
               </p>
               <p>
                 <AddTaskIcon sx={{ marginRight: 0.6 }} />
-                Instalação inclusa
+                **Instalação Grátis
               </p>
               <p>
                 <AddTaskIcon sx={{ marginRight: 0.6 }} />
@@ -74,7 +75,7 @@ function PricingSection() {
               </p>
               <p>
                 <AddTaskIcon sx={{ marginRight: 0.6 }} />
-                Instalação inclusa
+                **Instalação Grátis
               </p>
               <p>
                 <AddTaskIcon sx={{ marginRight: 0.6 }} />
@@ -103,7 +104,7 @@ function PricingSection() {
               </p>
               <p>
                 <AddTaskIcon sx={{ marginRight: 0.6 }} />
-                Instalação inclusa
+                **Instalação Grátis
               </p>
             </div>
             <a href="https://api.whatsapp.com/send?phone=5519999705420&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano">
@@ -132,7 +133,7 @@ function PricingSection() {
               </p>
               <p>
                 <AddTaskIcon sx={{ marginRight: 0.6 }} />
-                Instalação inclusa
+                **Instalação Grátis
               </p>
               <p>
                 <AddTaskIcon sx={{ marginRight: 0.6 }} />
@@ -145,6 +146,9 @@ function PricingSection() {
           </div>
         </div>
       </div>
+      <Typography sx={{ fontSize: "15px" }}>
+        **Mediante validação de crédito
+      </Typography>
     </div>
   );
 }

@@ -111,7 +111,8 @@ function HeadSection(props) {
                 data-aos-delay="500"
                 data-aos="zoom"
               >
-                <span>Conecte-se sem limites</span>
+                <span>Conecte-se </span>
+                <span>sem limites</span>
                 <List
                   sx={{ width: "100%", maxWidth: 660 }}
                   arial-label="business-services"
@@ -153,13 +154,7 @@ function HeadSection(props) {
                     disablePadding
                     data-aos="fade-right"
                     data-aos-delay="1500"
-                  >
-                    <ListItemText
-                      sx={{ fontSize: "25px", fontWeight: "normal" }}
-                      disableTypography
-                      primary="50% de upload da velocidade contratada"
-                    />
-                  </ListItem>
+                  ></ListItem>
                   <ListItem
                     disablePadding
                     data-aos="fade-right"
@@ -168,13 +163,13 @@ function HeadSection(props) {
                     <ListItemText
                       sx={{ fontSize: "25px", fontWeight: "normal" }}
                       disableTypography
-                      primary="Suporte técnico especializado das 8h às 23h"
+                      primary="Suporte técnico especializado"
                     />
                   </ListItem>
                 </List>
-        <a className="btn-home" href="http://wa.me/5519999705420/">
-          <div className="home-button">Contrate Aqui</div>
-        </a>
+                <a className="btn-home" href="http://wa.me/5519999705420/">
+                  <div className="home-button">Contrate Aqui</div>
+                </a>
               </div>
             </div>
           </Box>

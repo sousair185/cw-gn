@@ -129,7 +129,7 @@ function BuscaCep2() {
       />
       <p className="input-detail">
         Caso sua região ainda não seja atendida por nós{" "}
-        <a href="/planos">clique aqui</a>
+        <a href="/precos">clique aqui</a>
       </p>
       <br />
       {cepfound(foundData)}

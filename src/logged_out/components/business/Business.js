@@ -8,13 +8,13 @@ const Business = () => {
       <div className="business-text">
         <div className="business-text-left">
           <span className="title">Empresa</span>
-          <p>Conheça as soluções de conectividade para sua empresa</p>
+          <span className="subtitle">Conheça as soluções de conectividade para sua empresa</span>
           <span className="business-detail">
             Desenvolvemos projetos de telecomunicação personalizados que atendem
             as necessidades de empresas exigentes que buscam segurança, alta
             qualidade e ultravelocidade.
           </span>
-          <a href="http://wa.me/5519999705420/">Saiba Mais</a>
+          <a className="about-btn" href="http://wa.me/5519999705420/">Saiba Mais</a>
         </div>
         <div className="business-list">
           <span>O que oferecemos:</span>
@@ -88,7 +88,7 @@ const Business = () => {
               />
             </ListItem>
           </List>
-          <a href="http://wa.me/5519999705420/">
+          <a className="about-btn" href="http://wa.me/5519999705420/">
             Conheça tudo que a GN pode oferecer
           </a>
         </div>

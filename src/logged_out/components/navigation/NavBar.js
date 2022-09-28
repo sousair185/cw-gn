@@ -17,13 +17,14 @@ const styles = (theme) => ({
   appBar: {
     boxShadow: theme.shadows[6],
     backgroundColor: theme.palette.common.white,
+    marginBottom: "30px",
   },
   toolbar: {
     display: "flex",
     justifyContent: "space-around",
   },
   logo: {
-    width: "300px",
+    width: "250px",
   },
   noDecoration: {
     textDecoration: "none !important",
@@ -117,24 +118,26 @@ function NavBar(props) {
               </IconButton>
             </Hidden>
             <Hidden mdDown>
-              {menuItems.map((element) => {
+              {menuItems.map((element, index) => {
                 if (element.link) {
                   return (
                     <Link
-                      key={element.name}
                       to={element.link}
                       className={classes.noDecoration}
                       onClick={handleMobileDrawerClose}
+                      key={index}
                     >
                       <Button className="menu-text">{element.name}</Button>
                     </Link>
                   );
                 }
                 return (
-                  <a className="menu-text" href="http://wa.me/5519999705420/">
-                    <Button className="menu-text">
-                      {element.name}
-                    </Button>
+                  <a
+                    className="menu-text"
+                    href="http://wa.me/5519999705420/"
+                    key={index}
+                  >
+                    <Button className="menu-text">{element.name}</Button>
                   </a>
                 );
               })}

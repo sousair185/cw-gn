@@ -51,7 +51,7 @@ const AboutUs = () => {
             <Typography
               variant="h5"
               display="flex"
-              textAlign="initial"
+              textAlign="left"
               fontWeight="600"
               paddingBottom="10px"
               alignItems="center"
@@ -88,7 +88,7 @@ const AboutUs = () => {
             <Typography
               variant="h5"
               display="flex"
-              textAlign="initial"
+              textAlign="left"
               fontWeight="600"
               alignItems="center"
               paddingBottom="10px"
@@ -105,7 +105,7 @@ const AboutUs = () => {
               top="-2vw"
             >
               Estamos preparados para entender sua necessidade e oferecer a
-              melhor solução para suas dúvidas.
+              melhor solução.
             </Typography>
           </CardContent>
         </Card>
@@ -124,7 +124,7 @@ const AboutUs = () => {
             <Typography
               variant="h5"
               display="flex"
-              textAlign="initial"
+              textAlign="left"
               fontWeight="600"
               alignItems="center"
               paddingBottom="10px"
@@ -160,7 +160,7 @@ const AboutUs = () => {
             <Typography
               variant="h5"
               display="flex"
-              textAlign="initial"
+              textAlign="left"
               fontWeight="600"
               alignItems="center"
               paddingBottom="10px"

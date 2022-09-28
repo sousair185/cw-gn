@@ -10,7 +10,7 @@ const Phone = () => {
           <p>Telefonia e Portaria digital</p>
           <span className="phone-detail">
             Desenvolvemos projetos de telecomunicação personalizados que atendem
-            as necessidades de empresas exigentes que buscam segurança, alta
+            as necessidades de empresas, condomínios, prédios e comércios exigentes que buscam segurança, alta
             qualidade e ultravelocidade.
           </span>
         </div>

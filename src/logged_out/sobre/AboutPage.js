@@ -4,7 +4,7 @@ import React, { Fragment } from "react";
 function AboutPage() {
   return (
     <Fragment>
-      <Typography variant="h2">Um pouco sobre nós...</Typography>
+      <Typography variant="h2" sx={{fontWeight: 600}}>Contato</Typography>
     </Fragment>
   );
 }

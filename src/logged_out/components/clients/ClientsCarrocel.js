@@ -41,6 +41,7 @@ export const ClientsCarrocel = () => {
           </List>
         ))}
       </List>
+      <Typography><a href="www.google.com">Clique aqui </a>para ver mais avaliações no Google</Typography>
     </div>
   );
 };

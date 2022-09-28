@@ -6,10 +6,12 @@ body,
 :root {
   font-family: "Raleway", Helvetica, Arial, Lucida, sans-serif;
 }
+
 #root {
   box-sizing: border-box;
   max-width: 100vw;
   margin: 0;
+  margin-top: 70px;
   padding: 0;
   text-align: center;
 }
@@ -451,6 +453,7 @@ li.data {
 .container-box {
   font-size: 18px;
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -462,7 +465,7 @@ li.data {
 .container-box .box {
   position: relative;
   background-color: #fff;
-  width: 320px;
+  width: 300px;
   height: 100%;
   padding-bottom: 2%;
   display: block;
@@ -536,7 +539,11 @@ li.data {
   transition: all 0.3s ease;
 }
 
-.gnplay-card button {
+.gnplay-card a {
+  display: block;
+  margin: 20px auto;
+}
+/* .gnplay-card button {
   font-weight: bold;
   background-color: #1b128e;
   color: #fff;
@@ -555,7 +562,7 @@ li.data {
   background-color: #3fc4f7;
   transform: scale(1.03);
   transition: all 0.3s ease-in-out;
-}
+} */
 
 .gnplay-studio {
   margin-top: 40px;
@@ -576,7 +583,7 @@ li.data {
   color: #fff;
   position: absolute;
   left: 30vw;
-  width: 30%;
+  max-width: 7em;
   top: 20vh;
   font-weight: 900;
   font-size: 5em;
@@ -627,9 +634,9 @@ li.data {
 .about-card-container img {
   display: flex;
   width: 150px;
-  padding-right: 10px;
-  position: relative;
-  top: 2vw;
+  padding-right: 10%;
+  margin-top: 10%;
+  position: inherit;
 }
 
 .about-text {
@@ -685,6 +692,7 @@ li.data {
   min-width: 280px;
   border-radius: 25px;
   text-decoration: none;
+  text-align: center;
   font-size: 17px;
   font-weight: 700;
   color: white;
@@ -777,13 +785,16 @@ li.data {
   margin-bottom: 10vw;
 }
 
-.business-text p {
+.business-text .subtitle {
   padding: 0;
   margin: 0;
-  width: 70%;
+  max-width: 7em;
   line-height: 1.3em;
   font-size: 60px;
   font-weight: bold;
+  text-align: left;
+  align-self: normal;
+  margin-left: 5vw;
 }
 
 .business-text {
@@ -794,7 +805,6 @@ li.data {
   flex-wrap: wrap;
   text-align: left;
   padding: 10px 70px;
-  margin-left: 100px;
 }
 
 .business-text span.title {
@@ -826,6 +836,7 @@ li.data {
   height: fit-content;
   text-transform: uppercase;
   margin-bottom: 40px;
+  text-align: center;
 }
 .business-text-left a:hover {
   background-color: #00eef7;
@@ -959,6 +970,10 @@ li.data {
 .testemunhal p {
   padding: 20px;
 }
+.container-clients a {
+  text-decoration: none;
+  color: #170061;
+}
 
 .client-icon {
   width: 150px;
@@ -972,6 +987,9 @@ li.data {
   margin-top: 50px;
   margin-bottom: 150px;
   padding: 30px 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 }
 
 .phone-icon {
@@ -1022,7 +1040,7 @@ li.data {
   color: #fff;
   margin: 20px;
   position: absolute;
-  left: 17vw;
+  left: 19vw;
   padding: 10px;
   justify-content: center;
   border-radius: 45px;

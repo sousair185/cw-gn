@@ -27,9 +27,7 @@ const Gnplay = () => {
           className="gnplay-logo"
         />
         <div className="gn-title">O melhor combo para se conectar</div>
-        <div className="gn-subtitle">
-          Com o que realmente importa
-        </div>
+        <div className="gn-subtitle">Com o que realmente importa</div>
         <div className="gnplay-card">
           <Card
             className="gnplay-card-card"
@@ -89,8 +87,8 @@ const Gnplay = () => {
                 </ListItemText>
               </ListItem>
             </List>
-            <a href="http://wa.me/5519999705420/" className="gnplay-link">
-              <button>Confira Nossos Preços</button>
+            <a href="http://wa.me/5519999705420/" className="about-btn">
+              Confira Nossos Preços
             </a>
           </Card>
           <Card
@@ -152,8 +150,8 @@ const Gnplay = () => {
                 </ListItemText>
               </ListItem>
             </List>
-            <a href="http://wa.me/5519999705420/" className="gnplay-link">
-              <button>Confira Nossos Preços</button>
+            <a href="http://wa.me/5519999705420/" className="about-btn">
+              Confira Nossos Preços
             </a>
           </Card>
           <Card
@@ -216,8 +214,8 @@ const Gnplay = () => {
                 </ListItemText>
               </ListItem>
             </List>
-            <a href="http://wa.me/5519999705420/" className="gnplay-link">
-              <button>Confira Nossos Preços</button>
+            <a href="http://wa.me/5519999705420/" className="about-btn">
+              Confira Nossos Preços
             </a>
           </Card>
           <Card
@@ -280,8 +278,8 @@ const Gnplay = () => {
                 </ListItemText>
               </ListItem>
             </List>
-            <a href="http://wa.me/5519999705420/" className="gnplay-link">
-              <button>Confira Nossos Preços</button>
+            <a href="http://wa.me/5519999705420/" className="about-btn">
+              Confira Nossos Preços
             </a>
           </Card>
         </div>

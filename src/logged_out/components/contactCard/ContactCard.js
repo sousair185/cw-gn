@@ -95,7 +95,7 @@ const ContactForm = () => {
       <div className="container-contact-right">
         <Typography
           variant="h2"
-          align="start"
+          align="left"
           sx={{ paddingBottom: 2, fontWeight: "bold" }}
         >
           Fale Conosco
@@ -127,25 +127,35 @@ const ContactForm = () => {
       <div className="container-contact-left">
         <Typography
           variant="h2"
-          align="start"
+          align="left"
           sx={{ paddingBottom: 2, fontWeight: "bold" }}
         >
           Nossos Contatos
         </Typography>
         <WhatsAppIcon
-          sx={{ color: "#0c71c3", position: "relative", top: "25px", fontSize: "30px" }}
+          sx={{
+            color: "#0c71c3",
+            position: "relative",
+            top: "25px",
+            fontSize: "30px",
+          }}
         />
         <Typography variant="h6" sx={{ marginLeft: "50px", fontWeight: "600" }}>
           Whatsapp: (19) 99970.5420
         </Typography>
         <WhereToVoteIcon
-          sx={{ color: "#0c71c3", position: "relative", top: "25px", fontSize: "30px" }}
+          sx={{
+            color: "#0c71c3",
+            position: "relative",
+            top: "25px",
+            fontSize: "30px",
+          }}
         />
         <Typography variant="h6" sx={{ marginLeft: "50px", fontWeight: "600" }}>
           Rua Pedro Elias, 681 - Vista Alegre, Limeira - SP
         </Typography>
         <Typography variant="h7" sx={{ marginLeft: "50px" }}>
-          Segunda a Sábado: 8h às 18h
+          Segunda a Sexta: 8h às 18h Sábado: 8h às 12h
         </Typography>
       </div>
     </div>
