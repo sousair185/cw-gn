@@ -40,7 +40,7 @@ const Gnplay = () => {
           >
             <CardContent
               sx={{
-                fontWeight: "bold",
+                fontWeight: "600",
                 backgroundColor: "#170061",
                 color: "#fff",
                 fontSize: 20,
@@ -51,38 +51,38 @@ const Gnplay = () => {
             <List>
               <ListItem>
                 <ListItemText>
-                  <Typography>
-                    <SpeedIcon sx={{ marginRight: 1 }} /> 100Mb
+                  <Typography sx={{fontWeight: "600"}}>
+                    <SpeedIcon sx={{ marginRight: 1, color: "darkviolet" }} /> 100Mb
                   </Typography>
                 </ListItemText>
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography>
-                    <PhoneInTalkIcon sx={{ marginRight: 1 }} /> 100min
+                  <Typography sx={{fontWeight: "600"}}>
+                    <PhoneInTalkIcon sx={{ marginRight: 1, color: "darkviolet" }} /> 100min
                   </Typography>
                 </ListItemText>
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography>
-                    <WifiIcon sx={{ marginRight: 1 }} />
+                  <Typography sx={{fontWeight: "600"}}>
+                    <WifiIcon sx={{ marginRight: 1, color: "darkviolet" }} />
                     Wi-fi Grátis
                   </Typography>
                 </ListItemText>
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography>
-                    <DownloadIcon sx={{ marginRight: 1 }} /> Downloads
+                  <Typography sx={{fontWeight: "600"}}>
+                    <DownloadIcon sx={{ marginRight: 1, color: "darkviolet" }} /> Downloads
                     ilimitados
                   </Typography>
                 </ListItemText>
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography>
-                    <TvIcon sx={{ marginRight: 1 }} />+ de 50 Canais
+                  <Typography sx={{fontWeight: "600"}}>
+                    <TvIcon sx={{ marginRight: 1, color: "darkviolet" }} />+ de 50 Canais
                   </Typography>
                 </ListItemText>
               </ListItem>
@@ -102,7 +102,7 @@ const Gnplay = () => {
           >
             <CardContent
               sx={{
-                fontWeight: "bold",
+                fontWeight: "600",
                 backgroundColor: "#170061",
                 fontSize: 20,
                 color: "#fff",
@@ -113,39 +113,39 @@ const Gnplay = () => {
             <List>
               <ListItem>
                 <ListItemText>
-                  <Typography>
-                    <SpeedIcon sx={{ marginRight: 1 }} /> 200Mb
+                  <Typography sx={{fontWeight: "600"}}>
+                    <SpeedIcon sx={{ marginRight: 1, color: "darkviolet" }} /> 200Mb
                   </Typography>
                 </ListItemText>
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography>
-                    <PhoneInTalkIcon sx={{ marginRight: 1 }} />
+                  <Typography sx={{fontWeight: "600"}}>
+                    <PhoneInTalkIcon sx={{ marginRight: 1, color: "darkviolet" }} />
                     100min + 30 min
                   </Typography>
                 </ListItemText>
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography>
-                    <WifiIcon sx={{ marginRight: 1 }} />
+                  <Typography sx={{fontWeight: "600"}}>
+                    <WifiIcon sx={{ marginRight: 1, color: "darkviolet" }} />
                     Wi-fi Grátis
                   </Typography>
                 </ListItemText>
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography>
-                    <DownloadIcon sx={{ marginRight: 1 }} /> Downloads
+                  <Typography sx={{fontWeight: "600"}}>
+                    <DownloadIcon sx={{ marginRight: 1, color: "darkviolet" }} /> Downloads
                     ilimitados
                   </Typography>
                 </ListItemText>
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography>
-                    <TvIcon sx={{ marginRight: 1 }} />+ de 50 Canais
+                  <Typography sx={{fontWeight: "600"}}>
+                    <TvIcon sx={{ marginRight: 1, color: "darkviolet" }} />+ de 50 Canais
                   </Typography>
                 </ListItemText>
               </ListItem>
@@ -166,7 +166,7 @@ const Gnplay = () => {
             <CardContent
               sx={{
                 fontSize: 20,
-                fontWeight: "bold",
+                fontWeight: "600",
                 backgroundColor: "#170061",
                 color: "#fff",
               }}
@@ -176,40 +176,40 @@ const Gnplay = () => {
             <List>
               <ListItem>
                 <ListItemText>
-                  <Typography>
-                    <SpeedIcon sx={{ marginRight: 1 }} />
+                  <Typography sx={{fontWeight: "600"}}>
+                    <SpeedIcon sx={{ marginRight: 1, color: "darkviolet" }} />
                     300Mb
                   </Typography>
                 </ListItemText>
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography>
-                    <PhoneInTalkIcon sx={{ marginRight: 1 }} />
+                  <Typography sx={{fontWeight: "600"}}>
+                    <PhoneInTalkIcon sx={{ marginRight: 1, color: "darkviolet" }} />
                     250min + 50min
                   </Typography>
                 </ListItemText>
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography>
-                    <WifiIcon sx={{ marginRight: 1 }} />
+                  <Typography sx={{fontWeight: "600"}}>
+                    <WifiIcon sx={{ marginRight: 1, color: "darkviolet" }} />
                     Wi-fi Grátis
                   </Typography>
                 </ListItemText>
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography>
-                    <DownloadIcon sx={{ marginRight: 1 }} /> Downloads
+                  <Typography sx={{fontWeight: "600"}}>
+                    <DownloadIcon sx={{ marginRight: 1, color: "darkviolet" }} /> Downloads
                     ilimitados
                   </Typography>
                 </ListItemText>
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography>
-                    <TvIcon sx={{ marginRight: 1 }} />+ 50 Canais
+                  <Typography sx={{fontWeight: "600"}}>
+                    <TvIcon sx={{ marginRight: 1, color: "darkviolet" }} />+ 50 Canais
                   </Typography>
                 </ListItemText>
               </ListItem>
@@ -230,7 +230,7 @@ const Gnplay = () => {
             <CardContent
               sx={{
                 fontSize: 20,
-                fontWeight: "bold",
+                fontWeight: "600",
                 backgroundColor: "#170061",
                 color: "#fff",
               }}
@@ -240,40 +240,40 @@ const Gnplay = () => {
             <List>
               <ListItem>
                 <ListItemText>
-                  <Typography>
-                    <SpeedIcon sx={{ marginRight: 1 }} />
+                  <Typography sx={{fontWeight: "600"}}>
+                    <SpeedIcon sx={{ marginRight: 1, color: "darkviolet" }} />
                     500Mb
                   </Typography>
                 </ListItemText>
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography>
-                    <PhoneInTalkIcon sx={{ marginRight: 1 }} />
+                  <Typography sx={{fontWeight: "600"}}>
+                    <PhoneInTalkIcon sx={{ marginRight: 1, color: "darkviolet" }} />
                     500min + 100min
                   </Typography>
                 </ListItemText>
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography>
-                    <WifiIcon sx={{ marginRight: 1 }} />
+                  <Typography sx={{fontWeight: "600"}}>
+                    <WifiIcon sx={{ marginRight: 1, color: "darkviolet" }} />
                     Wi-fi Grátis
                   </Typography>
                 </ListItemText>
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography>
-                    <DownloadIcon sx={{ marginRight: 1 }} /> Downloads
+                  <Typography sx={{fontWeight: "600"}}>
+                    <DownloadIcon sx={{ marginRight: 1, color: "darkviolet" }} /> Downloads
                     ilimitados
                   </Typography>
                 </ListItemText>
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography>
-                    <TvIcon sx={{ marginRight: 1 }} />+ 50 Canais
+                  <Typography sx={{fontWeight: "600"}}>
+                    <TvIcon sx={{ marginRight: 1, color: "darkviolet" }} />+ 50 Canais
                   </Typography>
                 </ListItemText>
               </ListItem>

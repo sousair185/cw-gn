@@ -48,6 +48,7 @@ const AboutUs = () => {
           data-aos-delay="300"
         >
           <CardContent>
+            <img src={internet} alt="" />
             <Typography
               variant="h5"
               display="flex"
@@ -56,17 +57,9 @@ const AboutUs = () => {
               paddingBottom="10px"
               alignItems="center"
             >
-              <img src={internet} alt="" />
               Internet ultraveloz
             </Typography>
-            <Typography
-              variant="span"
-              width="70%"
-              display="block"
-              marginLeft="27%"
-              position="relative"
-              top="-2vw"
-            >
+            <Typography variant="span" display="flex">
               Ultravelocidade para compartilhar a internet com as pessoas que
               moram com você e ainda curtir jogos online, vídeos, filmes e
               músicas.
@@ -85,6 +78,7 @@ const AboutUs = () => {
           data-aos-delay="600"
         >
           <CardContent>
+            <img src={atendimento} alt="" />
             <Typography
               variant="h5"
               display="flex"
@@ -93,17 +87,9 @@ const AboutUs = () => {
               alignItems="center"
               paddingBottom="10px"
             >
-              <img src={atendimento} alt="" />
               Atendimento personalizado e especializado
             </Typography>
-            <Typography
-              variant="span"
-              width="70%"
-              display="block"
-              marginLeft="27%"
-              position="relative"
-              top="-2vw"
-            >
+            <Typography variant="span" display="flex">
               Estamos preparados para entender sua necessidade e oferecer a
               melhor solução.
             </Typography>
@@ -121,6 +107,7 @@ const AboutUs = () => {
           data-aos-delay="900"
         >
           <CardContent>
+            <img src={seguranca} alt="" />
             <Typography
               variant="h5"
               display="flex"
@@ -129,17 +116,9 @@ const AboutUs = () => {
               alignItems="center"
               paddingBottom="10px"
             >
-              <img src={seguranca} alt="" />
               Soluções em segurança
             </Typography>
-            <Typography
-              variant="span"
-              width="70%"
-              display="block"
-              marginLeft="27%"
-              position="relative"
-              top="-2vw"
-            >
+            <Typography variant="span" display="flex">
               Buscamos as melhores e mais tecnológicas ferramentas de mercado
               para garantir a qualidade e eficiência nos serviços prestados.
             </Typography>
@@ -157,6 +136,7 @@ const AboutUs = () => {
           data-aos-delay="1200"
         >
           <CardContent>
+            <img src={cobertura} alt="" />
             <Typography
               variant="h5"
               display="flex"
@@ -165,17 +145,9 @@ const AboutUs = () => {
               alignItems="center"
               paddingBottom="10px"
             >
-              <img src={cobertura} alt="" />
               Ampla cobertura
             </Typography>
-            <Typography
-              variant="span"
-              width="70%"
-              display="block"
-              marginLeft="27%"
-              position="relative"
-              top="-2vw"
-            >
+            <Typography variant="span" display="flex">
               Estamos em constante expansão para atender sua necessidade aonde
               você estiver.
             </Typography>

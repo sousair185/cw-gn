@@ -13,10 +13,10 @@ const Phone = () => {
             as necessidades de empresas, condomínios, prédios e comércios exigentes que buscam segurança, alta
             qualidade e ultravelocidade.
           </span>
-        </div>
-        <a href="http://wa.me/5519999705420/">
+        <a href="http://wa.me/5519999705420/" className="about-btn">
           Saiba Mais
         </a>
+        </div>
         <img
           data-aos="zoom"
           data-aos-delay="200"

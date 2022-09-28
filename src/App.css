@@ -542,27 +542,8 @@ li.data {
 .gnplay-card a {
   display: block;
   margin: 20px auto;
+  border-radius: 30px;
 }
-/* .gnplay-card button {
-  font-weight: bold;
-  background-color: #1b128e;
-  color: #fff;
-  margin: 20px;
-  padding: 12px;
-  justify-content: center;
-  border-radius: 8px;
-  text-transform: uppercase;
-  border: none;
-  font-size: 16px;
-}
-
-.gnplay-card button:hover {
-  color: #000;
-  cursor: pointer;
-  background-color: #3fc4f7;
-  transform: scale(1.03);
-  transition: all 0.3s ease-in-out;
-} */
 
 .gnplay-studio {
   margin-top: 40px;
@@ -603,10 +584,10 @@ li.data {
 
 .container-aboutus {
   background-image: url("../src/assets/aboutus-bg.jpg");
-  width: 100vw;
+  width: fit-content;
   min-height: 100%;
   display: flex;
-  padding: 0 250px;
+  padding: 0 10%;
   margin-bottom: 15vw;
   margin-top: 8vw;
   background-position: bottom;
@@ -631,22 +612,31 @@ li.data {
   margin-right: 20px;
 }
 
+.about-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .about-card-container img {
   display: flex;
   width: 150px;
   padding-right: 10%;
-  margin-top: 10%;
+  margin: 0 auto;
   position: inherit;
 }
 
 .about-text {
   color: #fff;
-  width: 50%;
+  width: 34em;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   text-align: left;
   padding: 10px 50px;
+}
+.about-text a {
+  margin-left: 0;
 }
 
 .about-text p {
@@ -664,7 +654,7 @@ li.data {
 
 .about-text span.title {
   color: #2e8ee0;
-  width: 100%;
+  width: 5em;
   text-align: start;
   font-size: 30px;
   font-weight: bold;
@@ -673,7 +663,7 @@ li.data {
 .about-text span.subtitle {
   font-weight: bold;
   font-size: 60px;
-  width: 70%;
+  min-width: 6em;
   line-height: 1.3em;
   margin-bottom: 20px;
 }
@@ -828,15 +818,9 @@ li.data {
   align-items: center;
 }
 .business-text-left a {
-  text-decoration: none;
-  color: #00eef7;
-  padding: 15px 40px;
-  border: #00eef7 solid 2px;
   border-radius: 55px;
-  height: fit-content;
-  text-transform: uppercase;
   margin-bottom: 40px;
-  text-align: center;
+  margin-left: 5vw;
 }
 .business-text-left a:hover {
   background-color: #00eef7;
@@ -849,7 +833,7 @@ li.data {
 
 .business-list {
   position: relative;
-  left: 100%;
+  left: 45vw;
   display: flex;
   flex-direction: column;
 }
@@ -997,24 +981,21 @@ li.data {
   width: 200px;
 }
 .box-phone img {
-  position: relative;
-  top: -15vw;
-  left: 20%;
   width: 400px;
 }
 
 .phone-text {
   color: #fff;
-  width: 50%;
+  min-width: 60%;
   display: flex;
   justify-content: flex-start;
-  flex-wrap: wrap;
   text-align: left;
   padding: 10px 70px;
+  flex-direction: column;
 }
 
 .phone-text span.title {
-  color: #2e8ee0;
+  color: #1616a1;
   width: 100%;
   text-align: start;
   font-size: 30px;
@@ -1031,22 +1012,16 @@ li.data {
 
 .phone-detail {
   font-size: 20px;
-  width: 100%;
+  width: 50vw;
 }
 
 .box-phone a {
-  font-weight: bold;
-  border: #00eef7 solid 2px;
   color: #fff;
-  margin: 20px;
-  position: absolute;
-  left: 19vw;
-  padding: 10px;
-  justify-content: center;
   border-radius: 45px;
   text-transform: uppercase;
   font-size: 18px;
   text-decoration: none;
+  margin-left: 0;
 }
 
 .box-phone a:hover {
@@ -1136,6 +1111,12 @@ li.data {
     padding: 40px;
     top: 0;
     margin: 0;
+  }
+  .business-text .subtitle {
+    margin-left: 0;
+  }
+  .business-text-left a {
+    margin-left: 0;
   }
   .business-text span.title {
     margin-left: 0;

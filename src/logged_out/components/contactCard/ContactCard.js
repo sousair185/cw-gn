@@ -155,7 +155,10 @@ const ContactForm = () => {
           Rua Pedro Elias, 681 - Vista Alegre, Limeira - SP
         </Typography>
         <Typography variant="h7" sx={{ marginLeft: "50px" }}>
-          Segunda a Sexta: 8h às 18h Sábado: 8h às 12h
+          Segunda a Sexta: 8h às 18h
+        </Typography>
+        <Typography variant="h7" sx={{ marginLeft: "50px" }}>
+          Sábado: 8h às 12h
         </Typography>
       </div>
     </div>
