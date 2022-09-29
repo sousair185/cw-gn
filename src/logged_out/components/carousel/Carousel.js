@@ -12,7 +12,7 @@ const iconSize = 40;
 const features = [
   {
     color: "#F72585",
-    url: "https://www.google.com.br",
+    url: "https://www.geracaonet.com.br/central_assinante_web/login",
     headline: "2ª via da fatura",
     text: "Texto descritivo",
     icon: <DescriptionIcon style={{ fontSize: iconSize }} />,
@@ -21,7 +21,7 @@ const features = [
   },
   {
     color: "#7201B7",
-    url: "https://www.google.com.br",
+    url: "geracaonet.speedtestcustom.com",
     headline: "Teste a velocidade da sua internet",
     text: "Texto descritivo",
     icon: <SpeedIcon style={{ fontSize: iconSize }} />,
@@ -30,7 +30,7 @@ const features = [
   },
   {
     color: "#480CA8",
-    url: "https://www.google.com.br",
+    url: "https://play.google.com/store/apps/details?id=br.com.geracaonet.centraldoassinante",
     headline: "Baixe nosso aplicativo",
     text: "Texto descritivo",
     icon: <PhoneIphoneIcon style={{ fontSize: iconSize }} />,
@@ -39,7 +39,7 @@ const features = [
   },
   {
     color: "#4895EF",
-    url: "https://www.google.com.br",
+    url: "https://api.whatsapp.com/send?phone=5519999705420",
     headline: "Fale com o Suporte",
     text: "Texto descritivo",
     icon: <ContactSupportIcon style={{ fontSize: iconSize }} />,
@@ -48,7 +48,7 @@ const features = [
   },
   {
     color: "#4361EE",
-    url: "https://www.google.com.br",
+    url: "https://api.whatsapp.com/send?phone=5519999705420",
     headline: "Fale com o Financeiro",
     text: "Whatsapp (11) 99991-0621",
     icon: <WhatsAppIcon style={{ fontSize: iconSize }} />,
@@ -57,7 +57,7 @@ const features = [
   },
   {
     color: "#4CC9F0",
-    url: "https://www.google.com.br",
+    url: "https://www.geracaonet.com.br/central_assinante_web/login",
     headline: "Central do Assinante",
     text: "Texto descritivo",
     icon: <HeadsetMicIcon style={{ fontSize: iconSize }} />,
@@ -82,7 +82,12 @@ export const Carrocel = () => {
       <div className="container-carrocel">
         {features.map((element) => (
           <Card className="card" key={element.headline}>
-            <CardActionArea href={element.url} className="card2">
+            <CardActionArea
+              href={element.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card2"
+            >
               <CardContent>
                 {element.icon}
                 <Typography variant="h6">{element.headline}</Typography>

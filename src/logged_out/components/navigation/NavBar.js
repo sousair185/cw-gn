@@ -36,7 +36,7 @@ function NavBar(props) {
     "https://api.whatsapp.com/send?phone=5519999705420&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano";
 
   const linkatendimento =
-    "https://api.whatsapp.com/send?phone=5519999705420&text=Oi%2C%20sou%20assinante%20e%20preciso%20de%20atendimento";
+    "https://www.geracaonet.com.br/central_assinante_web/login";
   const {
     classes,
     // openRegisterDialog,
@@ -135,6 +135,8 @@ function NavBar(props) {
                   <a
                     className="menu-text"
                     href="http://wa.me/5519999705420/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     key={index}
                   >
                     <Button className="menu-text">{element.name}</Button>
