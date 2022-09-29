@@ -146,7 +146,11 @@ function NavBar(props) {
             </Hidden>
           </div>
         </Toolbar>
-        <a href="https://wa.me/5519999705420">
+        <a
+          href="https://wa.me/5519999705420/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <span
             className="mascote-texto"
             data-hover="Olá, eu sou o Geh, como posso te ajudar?"
