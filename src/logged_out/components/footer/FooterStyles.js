@@ -8,7 +8,7 @@ export const Box = styled.div`
   width: 100%;
 
   @media (max-width: 1000px) {
-    padding: 50px 30px;
+    padding: 50px 5px;
   }
 `;
 

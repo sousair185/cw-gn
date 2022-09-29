@@ -588,8 +588,8 @@ li.data {
   min-height: 100%;
   display: flex;
   padding: 0 10%;
-  margin-bottom: 15vw;
-  margin-top: 8vw;
+  margin-bottom: 10vw;
+  /* margin-top: 8vw; */
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -621,8 +621,8 @@ li.data {
 .about-card-container img {
   display: flex;
   width: 150px;
-  padding-right: 10%;
-  margin: 0 auto;
+  /* padding: 10%; */
+  margin: 15px auto;
   position: inherit;
 }
 
@@ -833,7 +833,7 @@ li.data {
 
 .business-list {
   position: relative;
-  left: 45vw;
+  left: 30vw;
   display: flex;
   flex-direction: column;
 }
@@ -946,9 +946,15 @@ li.data {
 }
 
 .testemunhal-list {
-  background-color: lightgray;
+  background-color: rgb(213 213 213 / 35%);
+  box-shadow: 2px 1px 7px 0px #76767663;
+  border-radius: 10px;
   margin: 10px;
   width: 300px;
+}
+.testemunhal-list:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
 }
 
 .testemunhal p {
@@ -990,8 +996,10 @@ li.data {
   display: flex;
   justify-content: flex-start;
   text-align: left;
-  padding: 10px 70px;
+  padding: 10px 20px;
   flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
 }
 
 .phone-text span.title {
@@ -1005,7 +1013,6 @@ li.data {
 .phone-text p {
   padding: 0;
   margin: 0;
-  width: 90%;
   font-size: 60px;
   font-weight: bold;
 }
@@ -1212,6 +1219,9 @@ li.data {
   .gnplay-logo {
     width: 300px;
   }
+  .form input {
+    font-size: 1em;
+  }
   .container-aboutus {
     padding-left: 10px;
     padding-right: 10px;
@@ -1244,7 +1254,9 @@ li.data {
       rgb(1, 125, 150) 100%
     );
   }
-
+  .business-text .subtitle {
+    font-size: 12vw;
+  }
   .business-detail {
     text-align: start;
   }

@@ -7,7 +7,7 @@ const Phone = () => {
       <div className="box-phone">
         <div className="phone-text">
           <span className="title">Soluções completas</span>
-          <p>Telefonia e Portaria digital</p>
+          <p>Telefonia e</p><p>Portaria digital</p>
           <span className="phone-detail">
             Desenvolvemos projetos de telecomunicação personalizados que atendem
             as necessidades de empresas, condomínios, prédios e comércios exigentes que buscam segurança, alta
