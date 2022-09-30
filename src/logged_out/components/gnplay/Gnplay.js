@@ -51,21 +51,25 @@ const Gnplay = () => {
             <List>
               <ListItem>
                 <ListItemText>
-                  <Typography sx={{fontWeight: "600"}}>
-                    <SpeedIcon sx={{ marginRight: 1, color: "darkviolet" }} /> 100Mb
+                  <Typography sx={{ fontWeight: "600" }}>
+                    <SpeedIcon sx={{ marginRight: 1, color: "darkviolet" }} />{" "}
+                    100Mb
                   </Typography>
                 </ListItemText>
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography sx={{fontWeight: "600"}}>
-                    <PhoneInTalkIcon sx={{ marginRight: 1, color: "darkviolet" }} /> 100min
+                  <Typography sx={{ fontWeight: "600" }}>
+                    <PhoneInTalkIcon
+                      sx={{ marginRight: 1, color: "darkviolet" }}
+                    />{" "}
+                    100min
                   </Typography>
                 </ListItemText>
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography sx={{fontWeight: "600"}}>
+                  <Typography sx={{ fontWeight: "600" }}>
                     <WifiIcon sx={{ marginRight: 1, color: "darkviolet" }} />
                     Wi-fi Grátis
                   </Typography>
@@ -73,16 +77,19 @@ const Gnplay = () => {
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography sx={{fontWeight: "600"}}>
-                    <DownloadIcon sx={{ marginRight: 1, color: "darkviolet" }} /> Downloads
-                    ilimitados
+                  <Typography sx={{ fontWeight: "600" }}>
+                    <DownloadIcon
+                      sx={{ marginRight: 1, color: "darkviolet" }}
+                    />{" "}
+                    Downloads ilimitados
                   </Typography>
                 </ListItemText>
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography sx={{fontWeight: "600"}}>
-                    <TvIcon sx={{ marginRight: 1, color: "darkviolet" }} />+ de 50 Canais
+                  <Typography sx={{ fontWeight: "600" }}>
+                    <TvIcon sx={{ marginRight: 1, color: "darkviolet" }} />+ de
+                    50 Canais
                   </Typography>
                 </ListItemText>
               </ListItem>
@@ -113,22 +120,25 @@ const Gnplay = () => {
             <List>
               <ListItem>
                 <ListItemText>
-                  <Typography sx={{fontWeight: "600"}}>
-                    <SpeedIcon sx={{ marginRight: 1, color: "darkviolet" }} /> 200Mb
+                  <Typography sx={{ fontWeight: "600" }}>
+                    <SpeedIcon sx={{ marginRight: 1, color: "darkviolet" }} />{" "}
+                    200Mb
                   </Typography>
                 </ListItemText>
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography sx={{fontWeight: "600"}}>
-                    <PhoneInTalkIcon sx={{ marginRight: 1, color: "darkviolet" }} />
+                  <Typography sx={{ fontWeight: "600" }}>
+                    <PhoneInTalkIcon
+                      sx={{ marginRight: 1, color: "darkviolet" }}
+                    />
                     100min + 30 min
                   </Typography>
                 </ListItemText>
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography sx={{fontWeight: "600"}}>
+                  <Typography sx={{ fontWeight: "600" }}>
                     <WifiIcon sx={{ marginRight: 1, color: "darkviolet" }} />
                     Wi-fi Grátis
                   </Typography>
@@ -136,21 +146,29 @@ const Gnplay = () => {
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography sx={{fontWeight: "600"}}>
-                    <DownloadIcon sx={{ marginRight: 1, color: "darkviolet" }} /> Downloads
-                    ilimitados
+                  <Typography sx={{ fontWeight: "600" }}>
+                    <DownloadIcon
+                      sx={{ marginRight: 1, color: "darkviolet" }}
+                    />{" "}
+                    Downloads ilimitados
                   </Typography>
                 </ListItemText>
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography sx={{fontWeight: "600"}}>
-                    <TvIcon sx={{ marginRight: 1, color: "darkviolet" }} />+ de 50 Canais
+                  <Typography sx={{ fontWeight: "600" }}>
+                    <TvIcon sx={{ marginRight: 1, color: "darkviolet" }} />+ de
+                    50 Canais
                   </Typography>
                 </ListItemText>
               </ListItem>
             </List>
-            <a href="http://wa.me/5519999705420/" className="about-btn">
+            <a
+              href="http://wa.me/5519999705420/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="about-btn"
+            >
               Confira Nossos Preços
             </a>
           </Card>
@@ -176,7 +194,7 @@ const Gnplay = () => {
             <List>
               <ListItem>
                 <ListItemText>
-                  <Typography sx={{fontWeight: "600"}}>
+                  <Typography sx={{ fontWeight: "600" }}>
                     <SpeedIcon sx={{ marginRight: 1, color: "darkviolet" }} />
                     300Mb
                   </Typography>
@@ -184,15 +202,17 @@ const Gnplay = () => {
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography sx={{fontWeight: "600"}}>
-                    <PhoneInTalkIcon sx={{ marginRight: 1, color: "darkviolet" }} />
+                  <Typography sx={{ fontWeight: "600" }}>
+                    <PhoneInTalkIcon
+                      sx={{ marginRight: 1, color: "darkviolet" }}
+                    />
                     250min + 50min
                   </Typography>
                 </ListItemText>
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography sx={{fontWeight: "600"}}>
+                  <Typography sx={{ fontWeight: "600" }}>
                     <WifiIcon sx={{ marginRight: 1, color: "darkviolet" }} />
                     Wi-fi Grátis
                   </Typography>
@@ -200,16 +220,19 @@ const Gnplay = () => {
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography sx={{fontWeight: "600"}}>
-                    <DownloadIcon sx={{ marginRight: 1, color: "darkviolet" }} /> Downloads
-                    ilimitados
+                  <Typography sx={{ fontWeight: "600" }}>
+                    <DownloadIcon
+                      sx={{ marginRight: 1, color: "darkviolet" }}
+                    />{" "}
+                    Downloads ilimitados
                   </Typography>
                 </ListItemText>
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography sx={{fontWeight: "600"}}>
-                    <TvIcon sx={{ marginRight: 1, color: "darkviolet" }} />+ 50 Canais
+                  <Typography sx={{ fontWeight: "600" }}>
+                    <TvIcon sx={{ marginRight: 1, color: "darkviolet" }} />+ 50
+                    Canais
                   </Typography>
                 </ListItemText>
               </ListItem>
@@ -240,7 +263,7 @@ const Gnplay = () => {
             <List>
               <ListItem>
                 <ListItemText>
-                  <Typography sx={{fontWeight: "600"}}>
+                  <Typography sx={{ fontWeight: "600" }}>
                     <SpeedIcon sx={{ marginRight: 1, color: "darkviolet" }} />
                     500Mb
                   </Typography>
@@ -248,15 +271,17 @@ const Gnplay = () => {
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography sx={{fontWeight: "600"}}>
-                    <PhoneInTalkIcon sx={{ marginRight: 1, color: "darkviolet" }} />
+                  <Typography sx={{ fontWeight: "600" }}>
+                    <PhoneInTalkIcon
+                      sx={{ marginRight: 1, color: "darkviolet" }}
+                    />
                     500min + 100min
                   </Typography>
                 </ListItemText>
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography sx={{fontWeight: "600"}}>
+                  <Typography sx={{ fontWeight: "600" }}>
                     <WifiIcon sx={{ marginRight: 1, color: "darkviolet" }} />
                     Wi-fi Grátis
                   </Typography>
@@ -264,21 +289,29 @@ const Gnplay = () => {
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography sx={{fontWeight: "600"}}>
-                    <DownloadIcon sx={{ marginRight: 1, color: "darkviolet" }} /> Downloads
-                    ilimitados
+                  <Typography sx={{ fontWeight: "600" }}>
+                    <DownloadIcon
+                      sx={{ marginRight: 1, color: "darkviolet" }}
+                    />{" "}
+                    Downloads ilimitados
                   </Typography>
                 </ListItemText>
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  <Typography sx={{fontWeight: "600"}}>
-                    <TvIcon sx={{ marginRight: 1, color: "darkviolet" }} />+ 50 Canais
+                  <Typography sx={{ fontWeight: "600" }}>
+                    <TvIcon sx={{ marginRight: 1, color: "darkviolet" }} />+ 50
+                    Canais
                   </Typography>
                 </ListItemText>
               </ListItem>
             </List>
-            <a href="http://wa.me/5519999705420/" className="about-btn">
+            <a
+              href="http://wa.me/5519999705420/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="about-btn"
+            >
               Confira Nossos Preços
             </a>
           </Card>

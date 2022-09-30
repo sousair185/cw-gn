@@ -51,7 +51,11 @@ export const ClientsCarrocel = () => {
         ))}
       </List>
       <Typography>
-        <a href="https://www.google.com/search?q=geracao+net&oq=ger&aqs=chrome.0.69i59l2j69i61l3j69i65l2j69i60.2310j0j7&sourceid=chrome&ie=UTF-8#">
+        <a
+          href="https://www.google.com/search?q=geracao+net&oq=ger&aqs=chrome.0.69i59l2j69i61l3j69i65l2j69i60.2310j0j7&sourceid=chrome&ie=UTF-8#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Clique aqui{" "}
         </a>
         para ver mais avaliações no Google
