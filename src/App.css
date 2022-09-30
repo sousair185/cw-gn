@@ -403,7 +403,6 @@ li.data {
   margin: 0;
   color: #d32072;
   line-height: 1.1em;
-  /* text-shadow: 2px 2px 6px rgb(5 0 90); */
 }
 .container-box .box h1 span {
   font-size: 5rem;
@@ -491,6 +490,53 @@ li.data {
   background-position: unset;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.faq-container {
+  background-image: url("../src/assets/gn-faq.jpg");
+  background-position: unset;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2vw;
+  padding-bottom: 4vw;
+}
+.faq-list {
+  text-align: left;
+  width: 60%;
+  border-radius: 15px;
+  line-height: 1em;
+  padding: 2%;
+  margin: 0 auto;
+  font-size: 30px;
+  background-color: rgba(10, 18, 63, 0.445);
+}
+.faq-question {
+  background-color: #0b00a7;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 2em;
+  padding: 10px;
+}
+.faq-resposta {
+  padding: 2vw 0;
+  color: #fff;
+}
+.faq-resposta a {
+  text-decoration: none;
+  color: #00aaac;
+  background-color: #132068;
+  padding: 5px;
+  border-radius: 10px;
+}
+.faq-resposta a:hover {
+  background-color: #00aaac;
+  text-transform: uppercase;
+  color: #170061;
+  transition: all 0.5s ease-in-out;
 }
 
 .box-gnplay {

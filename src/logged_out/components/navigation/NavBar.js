@@ -58,6 +58,11 @@ function NavBar(props) {
       icon: <BookIcon className="text-white" />,
     },
     {
+      link: "/faq",
+      name: "Dúvidas",
+      icon: <BookIcon className="text-white" />,
+    },
+    {
       link: "/sobre",
       name: "Sobre nós",
       icon: <BookIcon className="text-white" />,

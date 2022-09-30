@@ -1,14 +1,11 @@
 import footerbg from "../../../assets/fbgtexture.png";
 import React from "react";
-import {
-  Box,
-  Container
-} from "./FooterStyles";
+import { Box, Container } from "./FooterStyles";
 import ContactForm from "../contactCard/ContactCard";
 
 const Footer2 = () => {
   return (
-    <footer className="lg-p-top">
+    <footer className="lg-p-top2">
       <Box className="footer">
         <Container
           style={{
@@ -16,7 +13,7 @@ const Footer2 = () => {
             width: "100%",
           }}
         >
-        <ContactForm />
+          <ContactForm />
         </Container>
       </Box>
     </footer>
