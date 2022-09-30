@@ -94,7 +94,12 @@ const Gnplay = () => {
                 </ListItemText>
               </ListItem>
             </List>
-            <a href="http://wa.me/5519999705420/" className="about-btn">
+            <a
+              href="http://wa.me/5519999705420/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="about-btn"
+            >
               Confira Nossos Preços
             </a>
           </Card>
@@ -237,7 +242,12 @@ const Gnplay = () => {
                 </ListItemText>
               </ListItem>
             </List>
-            <a href="http://wa.me/5519999705420/" className="about-btn">
+            <a
+              href="http://wa.me/5519999705420/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="about-btn"
+            >
               Confira Nossos Preços
             </a>
           </Card>

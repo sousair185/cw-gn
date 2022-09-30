@@ -139,6 +139,9 @@ a.btn.btn-link {
   font-weight: bold;
   text-decoration: none;
 }
+.menu-btn-link {
+  text-decoration: none;
+}
 
 .menu-text:hover {
   background: #00aaac;

@@ -167,7 +167,12 @@ function HeadSection(props) {
                     />
                   </ListItem>
                 </List>
-                <a className="btn-home" href="http://wa.me/5519999705420/">
+                <a
+                  className="btn-home"
+                  href="https://api.whatsapp.com/send?phone=5519999705420&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className="home-button">Contrate Aqui</div>
                 </a>
               </div>

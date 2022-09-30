@@ -16,7 +16,12 @@ const Business = () => {
             as necessidades de empresas exigentes que buscam segurança, alta
             qualidade e ultravelocidade.
           </span>
-          <a className="about-btn" href="http://wa.me/5519999705420/">
+          <a
+            className="about-btn"
+            href="http://wa.me/5519999705420/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Saiba Mais
           </a>
         </div>
@@ -92,7 +97,12 @@ const Business = () => {
               />
             </ListItem>
           </List>
-          <a className="about-btn" href="http://wa.me/5519999705420/">
+          <a
+            className="about-btn"
+            href="http://wa.me/5519999705420/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Conheça tudo que a GN pode oferecer
           </a>
         </div>

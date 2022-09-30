@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React, { Fragment, memo } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { AppBar, Toolbar, Button, Hidden, IconButton } from "@mui/material";
@@ -116,7 +116,7 @@ function NavBar(props) {
               <IconButton
                 className={classes.menuButton}
                 onClick={handleMobileDrawerOpen}
-                aria-label="Abrir nselectAboutavegação"
+                aria-label="Abrir selectAboutnavegação"
                 size="large"
               >
                 <MenuIcon color="secondary" />
@@ -137,15 +137,18 @@ function NavBar(props) {
                   );
                 }
                 return (
-                  <a
-                    className="menu-text"
-                    href="http://wa.me/5519999705420/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    key={index}
-                  >
-                    <Button className="menu-text">{element.name}</Button>
-                  </a>
+                  <Fragment>
+                    <a
+                    className="menu-btn-link"
+                      href={element.onClick}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      key={index}
+                    >
+                      <Button className="menu-text">{element.name}</Button>
+                    </a>
+                  </Fragment>
+                  
                 );
               })}
             </Hidden>
