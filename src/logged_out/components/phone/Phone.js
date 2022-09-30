@@ -16,7 +16,6 @@ const Phone = () => {
         <a href="http://wa.me/5519999705420/" className="about-btn">
           Saiba Mais
         </a>
-        </div>
         <img
           data-aos="zoom"
           data-aos-delay="200"
@@ -24,6 +23,7 @@ const Phone = () => {
           alt="telefone-gn"
           className="phone-icon"
         />
+        </div>
       </div>
     </Fragment>
   );

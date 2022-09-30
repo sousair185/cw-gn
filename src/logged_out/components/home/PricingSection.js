@@ -49,7 +49,11 @@ function PricingSection() {
                 Até 3 dispositivos conectados
               </p>
             </div>
-            <a href="https://api.whatsapp.com/send?phone=5519999705420&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://api.whatsapp.com/send?phone=5519999705420&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano"
+            >
               Contratar
             </a>
           </div>
@@ -82,7 +86,11 @@ function PricingSection() {
                 Até 4 dispositivos conectados
               </p>
             </div>
-            <a href="https://api.whatsapp.com/send?phone=5519999705420&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://api.whatsapp.com/send?phone=5519999705420&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano"
+            >
               Contratar
             </a>
           </div>
@@ -107,7 +115,11 @@ function PricingSection() {
                 **Instalação Grátis
               </p>
             </div>
-            <a href="https://api.whatsapp.com/send?phone=5519999705420&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://api.whatsapp.com/send?phone=5519999705420&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano"
+            >
               Contratar
             </a>
           </div>
@@ -140,7 +152,11 @@ function PricingSection() {
                 Até 2 dispositivos conectados
               </p>
             </div>
-            <a href="https://api.whatsapp.com/send?phone=5519999705420&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://api.whatsapp.com/send?phone=5519999705420&text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20um%20plano"
+            >
               Contratar
             </a>
           </div>

@@ -21,7 +21,7 @@ const features = [
   },
   {
     color: "#7201B7",
-    url: "geracaonet.speedtestcustom.com",
+    url: "http://geracaonet.speedtestcustom.com",
     headline: "Teste a velocidade da sua internet",
     text: "Texto descritivo",
     icon: <SpeedIcon style={{ fontSize: iconSize }} />,
