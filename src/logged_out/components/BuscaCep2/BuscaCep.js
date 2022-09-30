@@ -86,7 +86,7 @@ function BuscaCep2() {
                 </Typography>
                 <br />
                 <Typography className="data-desc">
-                  <Link className="link" href="/planos">
+                  <Link className="link" href="/precos">
                     Clique aqui{" "}
                   </Link>
                   e escolha o melhor pacote para você
