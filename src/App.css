@@ -502,8 +502,8 @@ li.data {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  padding-top: 2vw;
-  padding-bottom: 4vw;
+  padding-top: 4vw;
+  padding-bottom: 10vw;
 }
 .faq-list {
   text-align: left;
