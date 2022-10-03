@@ -1,12 +1,12 @@
 import { Typography } from "@mui/material";
 import React, { useState } from "react";
-import PhoneInput from "react-phone-input-2";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import WhereToVoteIcon from "@mui/icons-material/WhereToVote";
 import "react-phone-input-2/lib/style.css";
 
 const FORM_ENDPOINT =
-  "https://public.herotofu.com/v1/4839e490-256d-11ed-9dc3-136bfcd2b0ee";
+  // "https://public.herotofu.com/v1/4839e490-256d-11ed-9dc3-136bfcd2b0ee";
+  "https://formsubmit.co/atendimento@geracaonet.com.br";
 
 const ContactForm = () => {
   const [status, setStatus] = useState();
@@ -14,7 +14,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     const injectedData = {
-      Contact_Received_by: "Contato recebido via site - Geração Net",
+      Contato_recebido: "Contato recebido via site - Geração Net",
     };
     const inputs = e.target.elements;
     const data = {};
@@ -64,30 +64,8 @@ const ContactForm = () => {
     return (
       <>
         <div className="text-2xl">Agradecemos o contato!</div>
-        <div className="text-md">{status}</div>
       </>
     );
-  }
-
-  class PhoneInputGn extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = { phone: "" };
-    }
-    render() {
-      return (
-        <div>
-          <PhoneInput
-            country={"br"}
-            value={this.state.phone}
-            onChange={(phone) => this.setState({ phone })}
-            placeholder="Telefone"
-            name="phone"
-            required
-          />
-        </div>
-      );
-    }
   }
 
   return (
@@ -109,7 +87,7 @@ const ContactForm = () => {
         >
           <Typography variant="h6">
             <span></span>
-            <input type="text" placeholder="Seu nome" name="name" required />
+            <input type="text" placeholder="Seu nome" name="nome" required />
           </Typography>
           <Typography variant="h6">
             <span></span>
@@ -117,8 +95,14 @@ const ContactForm = () => {
           </Typography>
           <Typography variant="h6" aria-label="Telefone">
             <span></span>
-            <PhoneInputGn />
+            <input
+              type="phone"
+              placeholder="Telefone"
+              name="telefone"
+              required
+            />
           </Typography>
+          <input type="hidden" name="_captcha" value="false"></input>
           <Typography variant="h6">
             <button type="submit"> Enviar </button>
           </Typography>

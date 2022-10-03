@@ -116,7 +116,7 @@ function NavBar(props) {
               <IconButton
                 className={classes.menuButton}
                 onClick={handleMobileDrawerOpen}
-                aria-label="Abrir selectAboutnavegação"
+                aria-label="Abrir"
                 size="large"
               >
                 <MenuIcon color="secondary" />
@@ -137,18 +137,16 @@ function NavBar(props) {
                   );
                 }
                 return (
-                  <Fragment>
+                  <Fragment key={index}>
                     <a
-                    className="menu-btn-link"
+                      className="menu-btn-link"
                       href={element.onClick}
                       target="_blank"
                       rel="noopener noreferrer"
-                      key={index}
                     >
                       <Button className="menu-text">{element.name}</Button>
                     </a>
                   </Fragment>
-                  
                 );
               })}
             </Hidden>
